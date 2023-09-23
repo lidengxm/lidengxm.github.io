@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>无标签 on Lidengxm&#39;s Blog</title>
+    <link>https://lidengxm.github.io/tags/%E6%97%A0%E6%A0%87%E7%AD%BE/</link>
+    <description>Recent content in 无标签 on Lidengxm&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Sat, 23 Sep 2023 20:30:00 +0800</lastBuildDate><atom:link href="https://lidengxm.github.io/tags/%E6%97%A0%E6%A0%87%E7%AD%BE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aaa</title>
+      <link>https://lidengxm.github.io/posts/tech/aaa/</link>
+      <pubDate>Sat, 23 Sep 2023 20:30:00 +0800</pubDate>
+      
+      <guid>https://lidengxm.github.io/posts/tech/aaa/</guid>
+      <description>描述</description>
+    </item>
+    
+  </channel>
+</rss>
