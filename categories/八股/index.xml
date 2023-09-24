@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>八股 on Lidengxm&#39;s Blog</title>
+    <link>https://lidengxm.github.io/categories/%E5%85%AB%E8%82%A1/</link>
+    <description>Recent content in 八股 on Lidengxm&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 25 Sep 2023 00:23:47 +0800</lastBuildDate><atom:link href="https://lidengxm.github.io/categories/%E5%85%AB%E8%82%A1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JUC并发编程八股</title>
+      <link>https://lidengxm.github.io/posts/java/juc%E5%85%AB%E8%82%A1/</link>
+      <pubDate>Mon, 25 Sep 2023 00:23:47 +0800</pubDate>
+      
+      <guid>https://lidengxm.github.io/posts/java/juc%E5%85%AB%E8%82%A1/</guid>
+      <description>线程与进程篇 线程和进程的区别？ 在操作系统中，进程是指一个正在执行中的程序，而线程是进程的一部分，是一个程序中执行的代码片段。 进程是操作系统资源分配的最小单位，一个进程至少包括一个线程，进程拥有自己的内存空间、文件句柄、环境变量等系统资源。进程间相互独立，互不干扰，每个进程都拥有自</description>
+    </item>
+    
+    <item>
+      <title>计算机基础八股</title>
+      <link>https://lidengxm.github.io/posts/java/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80%E5%85%AB%E8%82%A1/</link>
+      <pubDate>Mon, 25 Sep 2023 00:22:12 +0800</pubDate>
+      
+      <guid>https://lidengxm.github.io/posts/java/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80%E5%85%AB%E8%82%A1/</guid>
+      <description>计算机网络与操作系统的知识</description>
+    </item>
+    
+    <item>
+      <title>框架八股</title>
+      <link>https://lidengxm.github.io/posts/java/%E6%A1%86%E6%9E%B6%E5%85%AB%E8%82%A1/</link>
+      <pubDate>Mon, 25 Sep 2023 00:19:38 +0800</pubDate>
+      
+      <guid>https://lidengxm.github.io/posts/java/%E6%A1%86%E6%9E%B6%E5%85%AB%E8%82%A1/</guid>
+      <description>框架面试题合集 spring 当涉及校招应届生的 Spring 框架相关面试题时，通常会着重考察基础知识和理解能力。以下是一些常见的 Spring 相关面试题，希望对你有所帮助： 什么是 Spring 框架？ 解释 Spring 框架的概念、作用和特点。 Spring 框架的核心模块是什么？ 提及 Spring 框架的核心模块，如 Spring Core、Spring Context、Spring</description>
+    </item>
+    
+    <item>
+      <title>Redis八股</title>
+      <link>https://lidengxm.github.io/posts/java/redis%E5%85%AB%E8%82%A1/</link>
+      <pubDate>Mon, 25 Sep 2023 00:18:23 +0800</pubDate>
+      
+      <guid>https://lidengxm.github.io/posts/java/redis%E5%85%AB%E8%82%A1/</guid>
+      <description>Redis 是什么？使用场景有哪些？ Redis 是什么？ **Redis（Remote Dictionary Server）是一个开源的内存数据存储系统，它被广泛用作缓存、消息队列和数据库。**Redis 支持多种数据结构，包括字符串、列表、集合、有序集合、哈希等，并提供了丰富的操作命令，非常适合作为中间件使用 怎么使用？ 首先</description>
+    </item>
+    
+    <item>
+      <title>Java基础八股</title>
+      <link>https://lidengxm.github.io/posts/java/java%E5%9F%BA%E7%A1%80%E5%85%AB%E8%82%A1/</link>
+      <pubDate>Tue, 05 Sep 2023 00:18:23 +0800</pubDate>
+      
+      <guid>https://lidengxm.github.io/posts/java/java%E5%9F%BA%E7%A1%80%E5%85%AB%E8%82%A1/</guid>
+      <description>整理的Java基础相关八股</description>
+    </item>
+    
+    <item>
+      <title>MySQL八股</title>
+      <link>https://lidengxm.github.io/posts/java/mysql%E5%85%AB%E8%82%A1/</link>
+      <pubDate>Tue, 05 Sep 2023 00:18:23 +0800</pubDate>
+      
+      <guid>https://lidengxm.github.io/posts/java/mysql%E5%85%AB%E8%82%A1/</guid>
+      <description>整理的MySQL相关八股</description>
+    </item>
+    
+  </channel>
+</rss>

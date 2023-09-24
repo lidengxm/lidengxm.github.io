@@ -1,0 +1,2307 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>框架八股 | Lidengxm&#39;s Blog</title>
+<meta name="keywords" content="框架, 八股">
+<meta name="description" content="框架面试题合集 spring 当涉及校招应届生的 Spring 框架相关面试题时，通常会着重考察基础知识和理解能力。以下是一些常见的 Spring 相关面试题，希望对你有所帮助： 什么是 Spring 框架？ 解释 Spring 框架的概念、作用和特点。 Spring 框架的核心模块是什么？ 提及 Spring 框架的核心模块，如 Spring Core、Spring Context、Spring">
+<meta name="author" content="Lidengxm">
+<link rel="canonical" href="https://lidengxm.github.io/posts/java/%E6%A1%86%E6%9E%B6%E5%85%AB%E8%82%A1/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.js" onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://lidengxm.github.io/img/logo.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://lidengxm.github.io/img/logo.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://lidengxm.github.io/img/logo.png">
+<link rel="apple-touch-icon" href="https://lidengxm.github.io/img/logo.png">
+<link rel="mask-icon" href="https://lidengxm.github.io/img/logo.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = ""; 
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<meta property="og:title" content="框架八股" />
+<meta property="og:description" content="框架面试题合集 spring 当涉及校招应届生的 Spring 框架相关面试题时，通常会着重考察基础知识和理解能力。以下是一些常见的 Spring 相关面试题，希望对你有所帮助： 什么是 Spring 框架？ 解释 Spring 框架的概念、作用和特点。 Spring 框架的核心模块是什么？ 提及 Spring 框架的核心模块，如 Spring Core、Spring Context、Spring" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://lidengxm.github.io/posts/java/%E6%A1%86%E6%9E%B6%E5%85%AB%E8%82%A1/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-09-25T00:19:38+08:00" />
+<meta property="article:modified_time" content="2023-09-25T00:19:38+08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="框架八股"/>
+<meta name="twitter:description" content="框架面试题合集 spring 当涉及校招应届生的 Spring 框架相关面试题时，通常会着重考察基础知识和理解能力。以下是一些常见的 Spring 相关面试题，希望对你有所帮助： 什么是 Spring 框架？ 解释 Spring 框架的概念、作用和特点。 Spring 框架的核心模块是什么？ 提及 Spring 框架的核心模块，如 Spring Core、Spring Context、Spring"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+
+        {
+          "@type": "ListItem",
+          "position":  1 ,
+          "name": "📚文章",
+          "item": "https://lidengxm.github.io/posts/"
+        },
+
+        {
+          "@type": "ListItem",
+          "position":  2 ,
+          "name": "🧱 Java",
+          "item": "https://lidengxm.github.io/posts/java/"
+        }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "框架八股",
+      "item": "https://lidengxm.github.io/posts/java/%E6%A1%86%E6%9E%B6%E5%85%AB%E8%82%A1/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "框架八股",
+  "name": "框架八股",
+  "description": "框架面试题合集 spring 当涉及校招应届生的 Spring 框架相关面试题时，通常会着重考察基础知识和理解能力。以下是一些常见的 Spring 相关面试题，希望对你有所帮助： 什么是 Spring 框架？ 解释 Spring 框架的概念、作用和特点。 Spring 框架的核心模块是什么？ 提及 Spring 框架的核心模块，如 Spring Core、Spring Context、Spring",
+  "keywords": [
+    "框架", "八股"
+  ],
+  "articleBody": "框架面试题合集 spring 当涉及校招应届生的 Spring 框架相关面试题时，通常会着重考察基础知识和理解能力。以下是一些常见的 Spring 相关面试题，希望对你有所帮助：\n什么是 Spring 框架？\n解释 Spring 框架的概念、作用和特点。 Spring 框架的核心模块是什么？\n提及 Spring 框架的核心模块，如 Spring Core、Spring Context、Spring AOP 和 Spring Beans。 什么是 IoC（控制反转）和 DI（依赖注入）？\n解释 IoC 和 DI 的概念，以及它们在 Spring 中的实现。 Spring 中的 Bean 是什么？\n说明 Spring 中的 Bean 是如何定义和管理的。 如何在 Spring 中进行 Bean 的装配？\n解释通过 XML 配置文件、注解或 Java 配置类来实现 Bean 的装配。 Spring 的 AOP 是什么？\n介绍 Spring AOP 的概念和应用场景。 在 Spring AOP 中，切面、连接点和通知分别是什么？\n解释 AOP 中的这些概念，以及它们之间的关系。 Spring 中的事务管理是怎样实现的？\n解释 Spring 中的事务管理机制，并说明如何配置和使用事务。 Spring 中的 MVC 是什么？\n介绍 Spring MVC 的概念和工作原理。 Spring Boot 和 Spring 框架有什么区别？\n比较 Spring Boot 和传统 Spring 框架的特点和使用场景。 Spring Security 是做什么的？\n解释 Spring Security 的作用和目的。 什么是 Spring Bean 的作用域？\n解释 Spring Bean 的单例、原型、会话和请求等作用域。 如何解决 Spring 中的循环依赖问题？\n说明 Spring 是如何处理循环依赖的。 Spring 中的异常处理机制是什么？\n解释 Spring 中的异常处理方式，例如使用 @ControllerAdvice 和 @ExceptionHandler。 如何集成 Spring 和其他技术？\n举例说明如何集成 Spring 和数据库、消息队列、缓存等技术。 这些问题涵盖了 Spring 框架的一些核心概念和常见用法。在准备面试时，建议深入学习 Spring 框架的基础知识，并通过实践来加深理解。此外，还可以尝试解决一些与 Spring 相关的小项目或实际问题，以加强自己在面试中的表现。祝你面试顺利！\nspringmvc 当涉及校招应届生的 Spring MVC 框架相关面试题时，通常会重点考察基础知识和理解能力。以下是一些常见的 Spring MVC 相关面试题，希望对你有所帮助：\n什么是 Spring MVC 框架？\n解释 Spring MVC 框架的概念、作用和特点。 Spring MVC 的主要组件是什么？\n提及 Spring MVC 的主要组件，如 DispatcherServlet、HandlerMapping、Controller、ViewResolver 等。 Spring MVC 的工作原理是什么？\n说明客户端请求到达服务器并经过 Spring MVC 框架处理的流程。 Spring MVC 中的 DispatcherServlet 是什么？\n解释 DispatcherServlet 的作用和工作方式。 如何在 Spring MVC 中定义 Controller？\n介绍在 Spring MVC 中定义 Controller 的几种方式，如使用注解、实现接口等。 Spring MVC 中的请求映射是怎样实现的？\n解释请求映射的方式，如使用注解、XML 配置等。 Spring MVC 中的数据绑定是什么？\n解释数据绑定的概念，以及如何将请求参数绑定到方法参数或模型属性。 如何处理 Spring MVC 中的表单提交？\n说明如何在 Controller 中处理表单提交，并如何验证表单数据。 Spring MVC 中的视图解析器是什么？\n解释视图解析器的作用，以及如何配置和使用它。 什么是拦截器（Interceptor）？\n解释拦截器的概念和作用，以及如何在 Spring MVC 中配置和使用拦截器。 Spring MVC 的异常处理机制是什么？\n解释 Spring MVC 如何处理控制器中的异常，并如何自定义异常处理。 如何使用 RESTful 风格的 API 开发？\n说明如何在 Spring MVC 中设计和实现 RESTful 风格的 API。 Spring MVC 中的文件上传是怎样实现的？\n解释 Spring MVC 如何处理文件上传，并如何配置和使用文件上传功能。 如何进行 Spring MVC 的单元测试？\n说明如何编写和执行 Spring MVC 控制器的单元测试。 Spring MVC 和 Spring Boot 有什么区别？\n比较 Spring MVC 和 Spring Boot 的特点和使用场景。 这些问题涵盖了 Spring MVC 框架的一些核心概念和常见用法。在准备面试时，建议深入学习 Spring MVC 框架的基础知识，并通过实践来加深理解。还可以尝试解决一些与 Spring MVC 相关的小项目或实际问题，以加强自己在面试中的表现。祝你面试顺利！\nspringboot 当涉及校招应届生的 Spring Boot 框架相关面试题时，通常会考察基础知识和对 Spring Boot 的理解。以下是一些常见的 Spring Boot 相关面试题，希望对你有所帮助：\n什么是 Spring Boot？\n解释 Spring Boot 的概念、作用和特点。 Spring Boot 的主要优点是什么？\n介绍使用 Spring Boot 的好处，如简化配置、快速开发等。 Spring Boot 中的自动配置是什么？\n解释 Spring Boot 自动配置的原理和作用。 如何创建一个 Spring Boot 项目？\n说明如何使用 Spring Initializr 创建一个新的 Spring Boot 项目。 如何配置 Spring Boot 项目的属性？\n介绍如何使用 application.properties 或 application.yml 文件来配置项目属性。 如何在 Spring Boot 中定义一个 RESTful API？\n解释如何在 Spring Boot 中创建和暴露 RESTful 风格的 API。 Spring Boot 中的启动类是什么？\n解释 Spring Boot 项目中的启动类作用和特点。 Spring Boot 的热部署是怎样实现的？\n说明 Spring Boot 如何支持热部署和开发者热部署的区别。 如何使用 Spring Boot 进行数据访问？\n介绍如何使用 Spring Boot 和 Spring Data JPA 或其他数据访问技术来操作数据库。 Spring Boot 中的 Bean 是什么？\n解释 Spring Boot 中的 Bean 是如何定义和管理的。 如何在 Spring Boot 中处理异常？\n解释如何定义全局异常处理器来处理项目中的异常。 Spring Boot 中如何进行单元测试？\n说明如何编写和执行 Spring Boot 应用的单元测试。 如何在 Spring Boot 中使用缓存？\n解释如何配置和使用 Spring Boot 中的缓存功能。 Spring Boot 中的配置文件有哪些种类？\n介绍 application.properties 和 application.yml 之间的区别和使用场景。 如何集成其他技术到 Spring Boot 项目中？\n举例说明如何集成消息队列、NoSQL 数据库等技术到 Spring Boot 项目中。 这些问题涵盖了 Spring Boot 框架的一些核心概念和常见用法。在准备面试时，建议深入学习 Spring Boot 框架的基础知识，并通过实践来加深理解。还可以尝试解决一些与 Spring Boot 相关的小项目或实际问题，以加强自己在面试中的表现。祝你面试顺利！\nSpring Spring 是什么？特性？有哪些模块？ Spring是一个开源的Java应用程序框架，它提供了全面的基础设施，用于帮助开发人员构建高效、灵活和可维护的企业级Java应用程序。\nSpring的特性包括：\nIoC（控制反转）： Spring采用IoC容器来管理和组织对象的生命周期和依赖关系。通过IoC，对象的创建和依赖关系不再由代码硬编码决定，而是由Spring容器动态地管理。\nDI（依赖注入）： DI是IoC的一种实现方式，通过依赖注入，Spring容器会自动将依赖关系注入到需要它们的对象中，从而实现对象之间的松耦合。\nAOP（面向切面编程）： Spring支持AOP，它允许开发人员在不修改原有代码的情况下，将横切关注点（如日志、安全性等）从应用程序中提取出来，以增强代码的复用性和可维护性。\n事务管理： Spring提供了强大的事务管理功能，它支持声明式事务和编程式事务，能够轻松地管理数据库事务。\nMVC框架： Spring提供了一个灵活的MVC框架，用于构建Web应用程序。它支持将请求映射到控制器、视图渲染、数据绑定等功能。\n面向切面编程（AOP）： Spring支持AOP，允许开发人员将横切关注点（如日志、安全性等）从应用程序代码中提取出来，实现横向代码的重用。\nJDBC支持： Spring提供了JDBC模块，简化了JDBC的使用，提供了更便捷的数据库访问方式。\nSpring框架主要由以下几个模块组成：\nSpring Core（核心容器）： 提供了Spring框架的基本功能，包括IoC容器的实现、Bean的创建和管理、依赖注入等。\nSpring AOP（面向切面编程）： 提供了AOP的支持，允许开发人员将横切关注点从应用程序代码中解耦出来，以增强代码的复用性和可维护性。\nSpring JDBC（数据库访问）： 提供了简化JDBC操作的功能，使得开发人员可以更方便地访问数据库。\nSpring ORM（对象关系映射）： 提供了集成各种ORM框架（如Hibernate、JPA）的功能，简化了对象和数据库之间的映射。\nSpring Web（Web开发）： 提供了构建Web应用程序的支持，包括MVC框架、RESTful Web服务等。\nSpring Test（测试）： 提供了对Spring应用程序进行单元测试和集成测试的功能。\n总体来说，Spring框架为Java开发者提供了丰富的功能和工具，使得开发高效、可维护和可扩展的应用程序变得更加简单。\nSpring 的两大核心概念是什么？简单讲一下你对它们的理解 来自：编程导航官方、yes.\nSpring 框架的两大核心概念是控制反转（Inversion of Control，IoC）和面向切面编程（Aspect Oriented Programming，AOP）。\n控制反转IOC指的是将对象的创建和依赖注入由应用代码转移到了 Spring 容器中进行，即由 Spring 容器负责创建对象和管理它们之间的依赖关系。这样，应用代码只需要关注业务逻辑的实现，而不需要关注对象的创建和管理，降低了应用代码的复杂度，提高了代码的可重用性和可维护性。\n面向切面编程AOP是指将与业务逻辑无关的代码（如日志、安全、事务等）从业务逻辑中剥离出来，以便于统一管理和维护。通过 AOP，我们可以将这些与业务逻辑无关的横切关注点（Cross-cutting Concerns）定义为切面（Aspect），并将它们织入到业务逻辑中，从而实现了业务逻辑与横切关注点的解耦。并且可维护性也大大提高\n扩展：\n那AOP是如何实现的呢？ (见 面试题挑战 Day3 JDK 动态代理和 CGLIB 动态代理的区别是什么？) 如果你简历上写了设计模式，那么这两个核心概念中有涉及到什么设计模式可以讲讲吗？ 工厂模式：spring中使用了BeanFactory和ApplicationContext创建了Bean对象。 单例模式：在IOC中的对象默认都是单例的，可以通过配置文件修改。 代理模式：AOP就是基于动态代理的，如果对象实现了接口，使用JDK的动态代理，如果对象没有实现接口则使用CGLIB的动态代理。（这里可以暗示往这两个动态代理方面问，就又撞到前几天刷过的题了） Spring的 IOC 和 AOP 怎么理解 控制的是对象的创建权，管理权。反转的是权利，使用对象时，由主动new产生对象转换为由外部提供对象\nSpring容器负责创建、配置和管理 bean，也就是它管理着 bean 的生命周期，控制着 bean 的依赖注入\n控制对象⽣命周期的不再是引⽤它的对象，⽽是容器。对具体对象，以前是它控制其它对象，现在所有对象都被容器控制，所以这就叫控制反转\nAOP切面编程简单说，就是把⼀些业务逻辑中相同代码抽取到⼀个独⽴的模块中，让业务逻辑更加清爽。\n通过切面技术为业务主体增加额外的通知（Advice），从而对声明为“切点”（Pointcut）的代码块进行统一管理和装饰\nAOP是面向对象OOP的一种补充，OOP的核心单元是类class，AOP的核心单元是切面aspect。利用AOP可以对业务逻辑各个部分进行隔离，从而降低耦合度，提高程序的可重用性，也提高了效率\nSpringAOP主要想解决什么问题？\nSpring AOP主要解决的是横切关注点的问题，即在一个系统中，可能存在多个模块或组件都需要实现类似的功能，比如日志记录、权限校验、事务管理等等。\n如果每个模块都去实现这些功能，就会导致代码冗余，可维护性和可扩展性降低。\n而AOP则是基于动态代理的机制，在不修改原有代码的情况下，通过在代码执行前后插入增强代码的方式，可以减少系统中的重复代码，降低了模块间的耦合度。实现对横切关注点的统一处理，从而提高代码的复用性和可维护性。\nAOP的原理了解吗？\nSpring AOP 是基于动态代理的，它使用 JDK 的动态代理或 CGLIB 动态代理来为目标对象生成代理对象，进而实现切面功能。主要应⽤于处理⼀些具有横切性质的系统级服务，如⽇志收集、事务管理、权限校验、安全检查、缓存、对象池管理等。\n**JDK 动态代理：**通过目标对象实现的接口来为目标对象生成代理对象，利用反射机制实现方法的调用。 **CGLIB 动态代理：**通过目标对象的子类来为目标对象生成代理对象，利用字节码技术实现方法的调用。 实现 Spring AOP，需要定义切面（Aspect）和连接点（Join Point），并将切面织入到连接点处，生成代理对象。\nJoin Point：连接点指的是程序中进行方法调用的点。Spring AOP 可以对类的方法调用进行拦截，并在目标方法的前后添加额外的功能逻辑。\nAspect：切面是一系列横切逻辑的集合，可通过 Spring AOP 把这些横切逻辑模块化，然后把它们应用到多个对象当中。\nAdvice：通知是要执行的额外逻辑，Spring AOP 包含如下五种类型的 Advice：\n前置通知（Before Advice）：在目标方法调用前，执行通知代码。 后置通知（After Advice）：在目标方法调用后，执行通知代码。 环绕通知（Around Advice）：包裹目标方法，在目标方法调用的前后，分别执行通知代码。 异常通知（After Throwing Advice）：捕获目标方法执行的异常，并在异常抛出时，执行通知代码。 返回通知（After Returning Advice）：在目标方法执行后，正常返回后，执行通知代码。 Pointcut：定义切入点，指定哪些类的哪些方法需要被拦截，可以使用注解方式或者切入表达式的方式。\n切面织入（Weaving）：将切面与目标对象结合生成代理对象，在代理对象方法执行前后或抛出异常时，执行 Advice 中的操作。\n总结，Spring AOP 就是把各种通知写成切面的方式，通过拦截指定的方法实现各种额外的操作。而切面是通过代理实现的，使用 JDK 动态代理或者 CGLIB 动态代理将通知织入目标对象的方法当中。\n有哪些优点？\nIOC 解决了依赖问题。在传统的 Java 编程中，对象之间相互依赖，难以维护和扩展。使用 IOC 将对象的创建、销毁、依赖关系的维护等交给 Spring 容器来管理，使开发者只需要专注于业务逻辑的实现，而不用考虑对象的生命周期管理和依赖关系注入。\nAOP 解决了代码复用问题。在传统的 Java 编程中，业务逻辑和非业务逻辑耦合在一起，难以复用。使用 AOP 可以将某个横切关注点（如日志记录、事务处理、安全检查等）抽象出来，然后以切面的方式添加到业务逻辑中，避免代码的复杂和重复。\nAOP使用场景有哪些？ 记录操作日志，用来在方法调用前、后或异常发生时记录日志，方便跟踪和监控系统的运行情况。\n将获取用户名、获取请求方式、访问结果、模块结果、登录IP、操作时间这些通过方法抽取成切面方法\n权限校验，在某个方法前加上AOP定义的切面，确保具备相应权限的用户才能执行方法\n事务管理，实现事务管理，将事务的开始、提交和回滚操作织入到需要事务支持的方法中\n切片类\n实现@Compenont注解，被Spring管理 实现@Aspect注解，标明是切面类 AOP（面向切面编程）是一种编程范式，用于在程序运行时动态地将横切关注点（如日志记录、安全性检查、事务管理等）与主要业务逻辑（核心关注点）分离开来。AOP可以在不修改原有代码的情况下，通过横切关注点的织入来实现对系统的功能增强和重用。\n以下是一些常见的 AOP 使用场景：\n日志记录： AOP 可以用来在方法调用前、后或异常发生时记录日志，方便跟踪和监控系统的运行情况。\n事务管理： AOP 可以实现事务管理，将事务的开始、提交和回滚操作织入到需要事务支持的方法中，保证数据的一致性和完整性。\n安全性检查： AOP 可以用于在方法执行前进行权限验证和安全性检查，确保只有具备相应权限的用户能够执行特定操作。\n性能监控： AOP 可以用于在方法调用前后记录方法执行时间，以及对方法性能进行监控和优化。\n异常处理： AOP 可以用于在方法执行发生异常时进行异常处理和统一的错误处理。\n缓存管理： AOP 可以用于在方法调用前先查询缓存，如果缓存中存在相应数据，则直接返回缓存数据，减少对数据库的访问。\n日志审计： AOP 可以用于在方法调用前后进行日志审计，记录用户的操作行为，以便后续审计和追踪。\n国际化和本地化： AOP 可以用于在方法调用前根据用户的语言设置进行国际化和本地化处理，显示相应的语言资源。\n权限控制： AOP 可以用于在方法调用前对用户的权限进行校验，确保用户有权执行特定操作。\n你的项目中有没有用过AOP？ 用过，在API开发平台中的用户登录校验用到了\n进行了权限校验，比如修改接口上线接口就是只有管理员身份可以操作的，一般用户无法操作\n如何实现的呢？\n@Autowired 和 @Resource 区别 @Autowired是Spring提供的注解，用于实现自动装配。它根据类型进行依赖注入，如果存在多个匹配的bean，则根据名称进行匹配，也可以结合 @Qualifier 注解来指定具体的bean。 @Resource是Java标准库中的注解，也可用于实现自动装配。它根据名称进行依赖注入，如果存在多个匹配的bean，则根据类型进行匹配。可以通过 name 属性显式指定要注入的bean的名称。 主要区别：\n来源不同：@Autowired是Spring的注解，@Resource是Java标准库的注解。 用法不同：@Autowired可用于字段、构造方法、Setter方法和方法参数，@Resource主要用于字段和方法参数。 依赖注入方式不同：@Autowired根据类型进行注入，@Resource根据名称进行注入。 Spring中框架常用的注解 X Spring注解及其功能：（配置和依赖注入）\n@Component： 将类标记为Spring组件，让Spring容器自动扫描并将其实例化为Bean。（@Controller、@Service、@Repository） @Autowired： 自动注入Bean的依赖，通过类型匹配进行注入。 @Qualifier： 和@Autowired一起使用，指定要注入的具体Bean名称。 @Resource： 和@Autowired类似，但是通过名称匹配进行注入。 @Scope：设置作用域 @Value： 注入简单类型的值或SpEL表达式。 @ComponentScan： 配置Spring组件扫描的基础包。 @Configuration： 声明当前类是一个配置类，相当于Spring的XML配置文件。 @Bean： 声明一个Bean对象，用于替代XML配置中的标签。 @PostConstruct： 在Bean初始化完成后执行指定方法。 还有就是与AOP相关做增强的注解如@Aspect、@Before、@After、@Around、@Pointcut\nSpringMVC中常见的注解：（请求和响应）\n@RequestMapping： **将HTTP请求映射到处理方法上，用于定义Web应用程序的控制器。**可以定义在类上和方法上。 @RestController： 组合了@Controller和@ResponseBody，用于定义RESTful Web服务的控制器。所有方法返回JSON响应格式 @PathVariable： 将URL中的路径参数{/user/{id}}映射到方法参数上。 **@RequestParam：**指定请求参数的名称； @RequestBody： 将请求体内容映射到方法参数上。可以将接收的JSON转换为Java对象 @ResponseBody： 注解实现将controller方法返回对象转化为json 对象响应给客户端 @RequestHeader：获取指定的请求头数据 SpringBoot中常见注解：\n@SpringBootConfiguration：组合了@Configuiration注解，实现配置文件的功能\n@EnableAutoConfiguration：打开自动配置的功能，也可以关闭某个自动配置的选项\n@ComponentScan：Spring扫描组件包的路径\n@PathVariable： 这个注解用于将URL中的路径参数映射到方法的参数上。它通常用于处理RESTful风格的URL，将URL中的一部分作为方法的参数，使得控制器方法能够访问和使用这些参数。例如：\n@GetMapping(\"/users/{userId}\") public ResponseEntity\u003cUser\u003e getUser(@PathVariable Long userId) { // ... } @RequestParam： 这个注解用于将HTTP请求的查询参数映射到方法的参数上。查询参数通常是在URL中通过?符号传递的参数，这个注解使得你可以在控制器方法中轻松地获取和使用这些参数。例如： @GetMapping(\"/search\") public ResponseEntity\u003cList\u003cProduct\u003e\u003e searchProducts(@RequestParam String keyword) { // ... } @RequestBody： 这个注解用于将HTTP请求的请求体内容映射到方法的参数上。通常在处理POST、PUT等请求时使用，它可以将请求体中的JSON、XML等数据直接映射到方法参数的对象上。例如： @PostMapping(\"/create\") public ResponseEntity\u003cProduct\u003e createProduct(@RequestBody Product product) { // ... } @ResponseBody： 这个注解用于将方法的返回值直接写入HTTP响应体中，通常在处理JSON、XML等响应时使用。它告诉Spring框架将方法的返回值转换为响应体内容，并发送给客户端。例如： @GetMapping(\"/user/{userId}\") @ResponseBody public User getUser(@PathVariable Long userId) { // ... return user; } 这些注解帮助你在控制器中更清晰地处理请求和响应，同时可以方便地进行参数映射、数据转换以及响应的构建。通过使用这些注解，你可以更轻松地构建出功能强大且易于维护的Web应用程序。\nSpring的循环依赖是什么？如何解决？ Spring循环依赖（Circular Dependency）是指在Spring应用程序中，两个或多个Bean之间相互依赖，形成了一个循环的引用关系。\n这种情况下，Spring容器无法确定应该首先实例化哪个Bean，因为它们互相依赖于对方的实例。\n比如A依赖于B，B依赖于A\n循环依赖在Spring中允许存在，Spring框架依据三级缓存已经解决了大部分的循环依赖\n一级缓存：单例池，缓存已经经历了完整的生命周期，已经初始化完成的bean对象 二级缓存：缓存早期的bean对象（生命周期还没走完） 三级缓存：缓存的是ObjectFactory，表示对象工厂，用来创建某个对象的 具体流程\n第一，先实例A对象，同时会创建ObjectFactory对象存入三级缓存 singletonFactories 第二，A在初始化的时候需要B对象，然后进行B对象的创建 第三，B实例化完成，也会创建ObjectFactory对象存入三级缓存 singletonFactories 第四，B需要注入A，通过三级缓存中获取ObjectFactory来生成一个A的对象 同时存入二级缓存，这个是有两种情况，一个是可能是A的普通对象，另外 一个是A的代理对象，都可以让ObjectFactory来生产对应的对象，这也是三 级缓存的关键 第五，B通过从通过二级缓存earlySingletonObjects 获得到A的对象后可以正 常注入，B创建成功，存入一级缓存singletonObjects 第六，回到A对象初始化，因为B对象已经创建完成，则可以直接注入B，A 创建成功存入一级缓存singletonObjects 第七，二级缓存中的临时对象A清除 构造方法出现了循环依赖怎么解决？\n由于bean的生命周期中构造函数是第一个执行的，spring框架并不能解决构 造函数的的依赖注入，在循环依赖的其中一个Bean上添加@Lazy注解，什么时候需要对象再进行 bean对象的创建\n循环依赖通常出现在以下情况下：\n构造函数循环依赖：当Bean A的构造函数参数中需要Bean B，而Bean B的构造函数参数中需要Bean A，就会出现循环依赖。 属性循环依赖：Bean A中的属性依赖于Bean B，而Bean B中的属性又依赖于Bean A。 解决Spring循环依赖的方法有几种：\n使用Setter注入：将循环依赖的Bean之间的依赖关系放在setter方法上，而不是构造函数或属性中。这样Spring容器可以先实例化Bean，然后再注入依赖，避免了构造函数循环依赖。\n使用@Lazy注解：在循环依赖的其中一个Bean上添加@Lazy注解，延迟初始化Bean，从而避免在实例化时出现循环依赖。但这可能会导致性能问题，因为Bean在第一次使用时才会被实例化。\n使用代理对象：Spring提供了基于接口的代理机制，可以通过使用接口和代理来解决循环依赖问题。在配置类中，使用@Bean注解声明Bean时，可以添加@Scope(proxyMode = ScopedProxyMode.INTERFACES)来创建接口代理，或者使用@Scope(proxyMode = ScopedProxyMode.TARGET_CLASS)来创建基于CGLIB的代理。\n优化设计：重新设计应用程序结构，尽量减少循环依赖的存在。这可能需要对类的职责和关系进行调整。\n使用构造函数注入和工厂方法：将循环依赖的Bean的依赖通过构造函数注入，并使用工厂方法创建Bean实例。这样可以确保Bean在被完全构造之前不会被暴露给外部。\n请注意，虽然有多种解决循环依赖的方法，但选择哪种方法取决于应用程序的具体情况和需求。最好的实践是尽量避免循环依赖，保持应用程序的设计简单和清晰。\nSpring的三级缓存 在Spring框架中，Bean的创建过程涉及到三级缓存（Three-Level Cache）的概念，用于管理Bean的创建与依赖解析。这三级缓存包括singleton对象的缓存、early singleton对象的缓存以及singleton工厂的缓存。\n一级缓存（singleton对象的缓存）： 这是Spring容器中最常见的缓存级别，**用于存储已经创建的singleton对象。**当你通过Spring容器获取一个singleton对象时，容器会首先查找一级缓存中是否已经存在该对象的实例。如果存在，则直接返回已有实例，否则将会创建新的对象并存储在一级缓存中。\n二级缓存（early singleton对象的缓存）： 二级缓存是在一级缓存之后的一个缓存层。当Spring创建一个singleton对象时，它会在创建过程中首先将对象实例放入二级缓存中。这是为了解决循环依赖的问题。如果在创建过程中发现其他Bean需要引用该对象，Spring可以通过二级缓存来提前暴露对象，从而避免循环依赖问题。一旦对象完全创建并初始化，它就会从二级缓存中移除并放入一级缓存中。\n三级缓存（singleton工厂的缓存）： 三级缓存存储的是用于创建singleton对象的ObjectFactory。在Bean的创建过程中，如果发现需要解决循环依赖，Spring会将正在创建的Bean的ObjectFactory存储在三级缓存中。这允许Spring在适当的时候通过工厂创建对象实例，从而在循环依赖的情况下完成对象的创建和初始化。\n需要注意的是，三级缓存不是公开的API，而是Spring框架内部使用的机制。对于大多数开发者来说，理解一级缓存和二级缓存的概念更加重要，因为它们与Bean的生命周期和依赖解析紧密相关。理解这些缓存级别有助于更好地管理Bean的创建和依赖关系，避免潜在的问题，例如循环依赖。\nSpring用到了哪些设计模式？ 单例模式：Spring 的 Bean 默认是单例模式，通过 Spring 容器管理 Bean 的生命周期，保证每个 Bean 只被创建一次，并在整个应用程序中重用。\n工厂模式：Spring 使用工厂模式通过 BeanFactory 和 ApplicationContext 创建并管理 Bean 对象。\n代理模式：Spring AOP 基于动态代理技术，使用代理模式实现切面编程，提供了对 AOP 编程的支持。\n观察者模式：Spring 中的事件机制基于观察者模式，通过 ApplicationEventPublisher 发布事件，由 ApplicationListener 监听事件，实现了对象间的松耦合。\n策略模式：Spring 中的 HandlerInterceptor 和 HandlerExecutionChain 使用了策略模式，允许开发者自定义处理器拦截器，按照一定顺序执行。\n责任链模式：Spring 中的过滤器和拦截器使用了责任链模式，多个过滤器和拦截器按照一定顺序执行，每个过滤器和拦截器可以拦截请求或者响应并做出相应的处理。\n模板方法模式（Template Method）： 在Spring的JdbcTemplate中，使用模板方法模式封装了JDBC操作，将公共的操作抽象成模板方法，具体实现由子类提供。\n装饰器模式（Decorator）： 在Spring中，使用装饰器模式来实现对Bean的增强，如使用@Async来异步执行方法。\n模型-视图-控制器（MVC）模式： Spring的Web模块采用了MVC模式，将应用程序分成模型、视图和控制器三个组件，实现了业务逻辑和界面的分离。\n委派模式（Delegate）： Spring中的DispatcherServlet采用了委派模式，根据URL将请求分发给不同的处理器来处理。\n适配器模式（Adapter）： 在Spring中，通过HandlerAdapter接口实现了适配器模式，将不同类型的处理器适配到统一的处理器接口上。\nBeanFactory 和 FactoryBean有什么区别 BeanFactory 和 FactoryBean 是 Spring 框架中两个关键的接口，它们在创建和管理 Bean 方面有着不同的作用和用途。\nBeanFactory：\nBeanFactory 是 Spring IoC 容器的核心接口**，用于管理和提供 Bean 实例。** BeanFactory 负责管理 Bean 的生命周期、依赖注入、对象实例化和配置。 在 Spring 中，有多种实现 BeanFactory 接口的类，其中最常用的是 DefaultListableBeanFactory，它是 Spring 容器的默认实现。 BeanFactory 是一种轻量级容器，按需加载和初始化 Bean，只有在使用时才实例化 Bean。 FactoryBean：\nFactoryBean 是一个特殊的 Bean 接口，它允许定义更复杂的 Bean 创建逻辑。 实现 FactoryBean 接口的类是一个工厂 Bean，用于生成其他的 Bean 实例。 通过实现 FactoryBean 接口，你可以自定义 Bean 实例的创建过程，允许更高级的逻辑和配置。 当你在 Spring 容器中注册一个实现了 FactoryBean 接口的类时，实际上并不会直接将该类的实例作为 Bean 放入容器中。相反，容器会调用 FactoryBean 接口的方法，根据你的逻辑来生成最终的 Bean 实例。 总结：\nBeanFactory 是 Spring IoC 容器的基础接口，用于管理 Bean 的声明周期和依赖注入。 FactoryBean 是一个特殊的 Bean 接口，用于定义更复杂的 Bean 创建逻辑，并且允许你自定义 Bean 实例的生成过程。 当你需要在 Spring 容器中使用特定逻辑生成 Bean 实例时，可以实现 FactoryBean 接口来实现自定义的 Bean 创建逻辑。 如果有两个相同名字的bean会怎么样 如果有两个相同名字的Bean，Spring默认的处理方式是抛出异常。\n因为根据名称进行装配时，Spring要求唯一匹配的Bean，否则会报错。\n如果确实存在需要区分的情况，可以使用@Qualifier注解指定具体的Bean名称，或者使用@Autowired和@Qualifier一起使用。\n另外，也可以使用@Primary注解来指定某个Bean为首选Bean，当存在多个匹配的Bean时，会优先选择标记为@Primary的Bean。\nSpring Bean 的生命周期 BeanDefinition对象\n**Spring Bean 的生命周期是指一个 Bean 实例从被创建到被销毁的整个过程。**Spring 容器负责管理 Bean 的生命周期，确保 Bean 在需要时正确创建、初始化和销毁。\nSpring Bean 的生命周期包括以下阶段：\n首先，通过BeanDefinition对象获取bean的定义信息 实例化bean： Spring 容器根据配置信息创建 Bean 的实例。（1 bean的创建） 依赖注入： Spring 容器将 Bean 的依赖注入到 Bean 实例中，即设置 Bean 的属性值和引用。 处理Aware接口： 如果 Bean 实现了 BeanNameAware 、BeanFactoryAware 和ApplicationContextAware接口，Spring 容器会回调相应的方法，以传递 Bean 的名称和 BeanFactory。 前置初始化（Initialization）： 如果 Bean 实现了 InitializingBean 接口，Spring 容器会调用其 afterPropertiesSet() 方法，完成 Bean 的前置初始化工作。 自定义初始化方法（Initialization）： 可以通过 @PostConstruct 注解或来定义自定义的初始化方法。 后置初始化（Initialization）： 如果 Bean 定义了 BeanPostProcessor 接口的实现类，Spring 容器会在初始化过程中调用它们的 postProcessBeforeInitialization() 方法，允许对 Bean 进行额外的处理。（2-6初始化赋值bean）（可以在此阶段使用AOP对对象进行增强，基于动态代理的方式） Bean 使用： Bean 可以被正常使用，执行它们的业务逻辑。 销毁（Destruction）： 如果 Bean 实现了 DisposableBean 接口，Spring 容器在销毁 Bean 之前会调用它的 destroy() 方法。 **默认情况下，Spring 容器中的 Bean 是单例的。**也就是说，对于同一个 Bean 定义，Spring 容器只会创建一个实例，并在后续的请求中重复使用这个实例。这种单例模式可以确保多个对象之间共享同一个实例，从而节省资源和提高性能。\nSpring 容器中的单例 Bean 在容器启动阶段被创建，并在整个容器的生命周期中保持活跃状态。无论是通过 XML 配置文件定义 Bean，还是通过注解声明 Bean，其默认的作用域（scope）都是单例的。\nSpring容器初始化阶段starter？ 在 Spring 容器启动阶段，会执行一系列的操作来初始化和准备容器，以及创建和配置所有的 Bean 实例。\n以下是 Spring 容器启动阶段会进行的主要操作：\n加载配置文件： Spring 容器会根据配置文件（通常是 XML 配置文件或基于注解的配置类）加载应用程序的配置信息。\n创建容器： Spring 容器会根据加载的配置文件创建相应类型的容器。常见的容器类型包括 ApplicationContext 和 BeanFactory。\n解析配置： 容器会解析配置文件中定义的 Bean 和其他配置信息，建立内部的数据结构来管理这些配置。\n实例化 Bean： 容器会根据配置信息创建 Bean 实例。根据配置的作用域，可能会创建单例 Bean 或原型（prototype）Bean。\n属性注入： 容器会通过依赖注入（DI）将属性值注入到 Bean 实例中，满足依赖关系。\nBean 生命周期回调： 容器会调用 Bean 生命周期的回调方法，比如调用 @PostConstruct 方法和 Bean 实现的 InitializingBean 接口的 afterPropertiesSet() 方法。\n处理 Aware 接口： 如果 Bean 实现了 Aware 接口，容器会调用相应的回调方法，比如 BeanNameAware、ApplicationContextAware 等。\n处理后置处理器（PostProcessor）： 容器会调用注册的 Bean 后置处理器，允许开发人员在 Bean 实例化之前或之后进行一些自定义的处理。\n初始化单例 Bean： 对于单例 Bean，容器会在启动阶段初始化并提前创建这些 Bean。\n完成启动： 容器完成上述所有操作后，即完成了启动阶段，此时容器已经准备好了所有的 Bean 实例，应用程序可以开始运行了。\n总体来说，Spring 容器启动阶段的主要任务是读取配置信息、创建和配置 Bean 实例，并在需要时进行依赖注入和生命周期回调。一旦启动阶段完成，容器就进入了运行时阶段，提供服务并管理应用程序中的 Bean 实例。\nSpring框架中的bean是线程安全的吗 答案：不是线程安全的\n当多用户同时请求一个服务时，容器会给每一个请求分配一个线程，这时多个线程会并发执行该请求对应的业务逻辑（成员方法），如果该处理逻辑中有对该单例状态的修改（体现为该单例的成员属性），则必须考虑线程同步问题。\nSpring框架并没有对单例bean进行任何多线程的封装处理。关于单例bean的线程安全和并发问题需要开发者自行去搞定。\n比如：我们通常在项目中使用的Spring bean都是不可变的状态(比如Service类和DAO类)，所以在某种程度上说Spring的单例bean是线程安全的。\n如果你的bean有多种状态的话（比如 View Model对象），就需要自行保证线程安全。最浅显的解决办法就是将多态bean的作用由“singleton”变更为“prototype”。\nSpring的事务你在项目中用到没有，怎么用的? Spring的事务常用的使用方式是通过@Transactional注解来实现。在项目中使用事务时，通常需要按照以下步骤进行配置：\n在Spring的配置文件中开启事务管理，可以使用tx:annotation-driven标签或者@Bean注解方式。\n在需要进行事务管理的方法或类上添加@Transactional注解。\n可以通过@Transactional注解的属性来配置事务的传播行为、隔离级别、回滚规则等。\n在方法内部进行数据库操作，当方法执行结束时，如果抛出异常，则事务会进行回滚；否则，事务会进行提交。\nSpring事务管理有几种方式 主要理解编程式和声明式管理方式\nSpring中的事务本质是通过AOP功能，对方法前后进行拦截，在执行方法之前开启事务，在执行完目标方法之后根据执行情况提交或者回滚事务\nSpring框架提供了多种方式来管理事务，以满足不同的应用场景和需求。以下是Spring事务管理的几种常见方式：\n编程式事务管理： 这种方式通过编写代码来显式地管理事务。开发人员需要在代码中手动开始、提交或回滚事务，使用Spring提供的TransactionTemplate或PlatformTransactionManager接口来实现。这种方式较为灵活，适用于在代码中需要精确控制事务的场景。\n声明式事务管理（基于XML配置）： 这种方式通过在XML配置文件中声明事务管理的规则。开发人员可以通过XML配置来定义事务的传播行为、隔离级别、回滚规则等。然后，在需要应用事务的方法上，使用XML配置中定义的事务管理器进行事务管理。这种方式较为简单，适用于事务管理的规则相对固定的场景。\n声明式事务管理（基于注解）： 这种方式通过在方法或类上使用注解来声明事务管理的规则。开发人员可以使用@Transactional注解来标记需要应用事务的方法，Spring会根据注解的配置来管理事务。这种方式简化了事务配置，使代码更加清晰，并且更容易与业务逻辑整合。\n事务模板（TransactionTemplate）： 事务模板是Spring提供的编程式事务管理的方式之一。通过TransactionTemplate，开发人员可以在代码中精确控制事务的开始、提交和回滚，并在事务中执行需要的操作。\n注解驱动事务管理： Spring支持使用@Transactional注解来声明事务管理的规则。开发人员可以将@Transactional注解应用在方法或类上，来标记需要应用事务的方法。这样，Spring会根据注解的配置来管理事务，实现声明式事务管理。\nAOP 面向切面编程： Spring的事务管理底层实现就是使用了AOP。通过AOP，Spring可以在方法执行前后织入事务处理的逻辑，实现事务的开启、提交和回滚等操作。\n不同的事务管理方式适用于不同的场景，开发人员可以根据具体的需求选择合适的事务管理方式。\n声明式事务和编程式事务有什么区别 声明式事务和编程式事务是两种不同的事务管理方式，它们在事务管理的实现方式和使用方式上有一些区别。\n实现方式：\n编程式事务：编程式事务是通过编写代码来实现的。需要在代码中显式地开始、提交和回滚事务，使用Spring提供的编程式事务管理类（如TransactionTemplate）或接口（如PlatformTransactionManager）来实现。对业务代码有侵入性，项目中很少使用。\n声明式事务：声明式事务是**通过注解或XML配置来实现的。**只需要在方法或类上添加相应的注解或配置即可，无需手动编写事务管理的代码。Spring框架会根据注解或配置来管理事务。\n使用方式：\n编程式事务：编程式事务需要代码中显式地管理事务，需要手动调用事务的开始、提交和回滚等方法。这种方式相对繁琐，需要更多的代码来处理事务。\n声明式事务：声明式事务只需要在应用事务的方法或类上添加相应的注解，Spring框架会根据注解的配置自动管理事务。这样可以使代码更加清晰，并且减少了手动处理事务的代码量。\n灵活性：\n编程式事务：编程式事务相对较为固定，事务管理的代码通常在业务逻辑代码中分散，难以集中管理。对于需要频繁修改事务规则的情况，使用编程式事务可能不够灵活。但能够实现精准事务控制。\n声明式事务：声明式事务更加灵活，可以根据不同的需求，使用不同的事务管理器和事务配置。\nSpring的事务注解 在 Spring 框架中，事务管理可以通过使用 @Transactional 注解来实现。@Transactional 注解可以应用在类或方法上，用于声明事务的属性和行为。它提供了一种简单、声明性的方式来管理方法或类的事务行为。\n以下是常用的 @Transactional 注解的属性：\npropagation（传播行为）： 指定事务的传播行为，默认值是 Propagation.REQUIRED。传播行为定义了方法调用时如何使用现有的事务，比如是否创建新的事务、加入已有的事务等。\nisolation（隔离级别）： 指定事务的隔离级别，默认值是 Isolation.DEFAULT。隔离级别定义了多个事务之间的数据隔离程度，包括读取未提交数据、读取已提交数据、可重复读、串行化等级别。\nreadOnly： 指定事务是否为只读事务，默认值是 false。如果设置为 true，则表示该事务只读取数据，不做数据修改操作。\ntimeout： 指定事务的超时时间，默认值是 -1，表示没有超时限制。如果设置了超时时间，在指定的时间内事务没有完成，将自动回滚。\nrollbackFor 和 noRollbackFor： 分别指定事务中抛出哪些异常会触发回滚操作，以及哪些异常不会触发回滚。\ntransactionManager： 指定使用的事务管理器的名称。当应用中存在多个事务管理器时，可以通过该属性指定要使用的事务管理器。\nvalue 和 qualifier： 这两个属性用于指定事务的名称。value 属性是 @AliasFor 注解，可以替代 qualifier 属性来指定事务的名称。\n示例使用：\n@Service public class MyService { @Transactional(propagation = Propagation.REQUIRED, isolation = Isolation.DEFAULT, readOnly = false, timeout = -1, rollbackFor = {Exception.class}) public void myTransactionalMethod() { // 事务方法的业务逻辑 } } 在上面的例子中，myTransactionalMethod() 方法会被声明为一个事务方法，当调用该方法时，Spring 会根据 @Transactional 注解的属性来管理该方法的事务行为。\nSpring事务的传播机制？ 讲一下Spring事务的传播机制？\nSpring 事务的传播机制决定了事务如何在方法调用之间传播。\nSpring 支持下面的事务传播机制：propagation\nPROPAGATION_REQUIRED：**如果当前存在事务，则加入当前事务，如果当前不存在事务，则新建一个事务。**required PROPAGATION_SUPPORTS：如果当前存在事务，则加入当前事务，**如果当前不存在事务，则以非事务的方式执行。**supports PROPAGATION_MANDATORY：如果当前存在事务，则加入当前事务，**如果当前不存在事务，则抛出异常。**mandatory PROPAGATION_REQUIRES_NEW：当前存在事务则挂起当前事务，并新建一个事务执行。requires_new PROPAGATION_NOT_SUPPORTED：以非事务的方式执行，如果当前存在事务，则挂起事务。not_supported PROPAGATION_NEVER：**以非事务的方式执行，如果当前存在事务，则抛出异常。**never PROPAGATION_NESTED：如果当前存在事务，则在嵌套事务中执行，如果当前不存在事务，则新建一个事务。nested 有时候在一个大的事务中，需要执行一些小的业务操作，这些小的业务操作可以单独成功或失败，不影响大的事务，这属于哪种事务传播机制？\n大事务中执行小业务操作不影响大事务的情况，可以使用 PROPAGATION_REQUIRES_NEW 事务传播机制。在这种传播机制下，一个新的独立事务将会被开启，它不依赖于外部事务。即使内部事务失败回滚，外部事务也不受影响，而且内部事务可以独立地提交或回滚，不会影响到外部事务的结果。\n如果当前存在事务，则使用当前事务，如果当前不存在事务，则无事务执行，这属于哪种事务传播机制？\nPROPAGATION_NOT_SUPPORTED，即如果当前存在事务，则加入当前事务；如果当前不存在事务，则以无事务的方式执行方法。这种传播行为会在方法执行时，暂时暂停已有的事务（如果有的话），然后以非事务方式执行当前方法，从而实现无事务的效果。这在某些情况下很有用，特别是当你想要在不影响现有事务的情况下执行一段逻辑时。\nSpring中事务失效的场景有哪些？ 本题考察对spring框架的深入理解、复杂业务的编码经验\n失效场景：\n异常捕获处理 抛出检查异常 非public方法导致的异常 异常捕获处理\n事务通知只有捉到了目标抛出的异常，才能进行后续的回滚处理，如果目标自己处理掉异常，事务通知无法知悉。\n即如果在使用Spring事务的方法中，如果对可能出现的异常进行自己处理（e.printStackTrace），Spring是发觉不到出现异常的，事务也就失效了。\n解决方法：在catch块中添加throw new RuntimeException(e)抛出\n抛出检查异常\nSpring 默认只会回滚非检查异常（RuntimeException），像FileNotFoundException就不会被检测到 解决方法：配置rollbackFor属性为Exception\n非public方法导致的异常\nSpring为方法创建代理、添加事务通知、前提条件都是该方法是public为前提。\n解决：方法改为public\nSpring给我们提供了很多扩展点，这些有了解吗？ 不太清楚扩展点指的什么\n作者补充：\nSpring框架提供了许多扩展点，使得开发者可以根据需求定制和扩展Spring的功能。以下是一些常用的扩展点：\nBeanFactoryPostProcessor：允许在Spring容器实例化bean之前修改bean的定义。常用于修改bean属性或改变bean的作用域。 BeanPostProcessor：可以在bean实例化、配置以及初始化之后对其进行额外处理。常用于代理bean、修改bean属性等。 PropertySource：用于定义不同的属性源，如文件、数据库等，以便在Spring应用中使用。 ImportSelector和ImportBeanDefinitionRegistrar：用于根据条件动态注册bean定义，实现配置类的模块化。 Spring MVC中的HandlerInterceptor：用于拦截处理请求，可以在请求处理前、处理中和处理后执行特定逻辑。 Spring MVC中的ControllerAdvice：用于全局处理控制器的异常、数据绑定和数据校验。 Spring Boot的自动配置：通过创建自定义的自动配置类，可以实现对框架和第三方库的自动配置。 自定义注解：创建自定义注解，用于实现特定功能或约定，如权限控制、日志记录等。 动态代理有哪两种？如何实现？ 在 Java 中，动态代理有两种主要的实现方式：\n基于接口的动态代理（JDK 动态代理）： JDK 动态代理是 Java 标准库提供的一种动态代理实现方式。它基于接口，要求被代理的类必须实现至少一个接口。JDK 动态代理使用 java.lang.reflect.Proxy 类来创建代理对象。代理对象实现了被代理接口，并将方法调用转发给一个实现了 InvocationHandler 接口的处理器对象。处理器对象中实现了对原始方法的增强逻辑。\nJDK 动态代理的步骤：\n定义一个接口（或一组接口）； 创建一个实现 InvocationHandler 接口的处理器对象； 使用 Proxy.newProxyInstance() 方法创建代理对象，并指定接口、处理器对象以及类加载器。 基于类的动态代理（CGLIB 动态代理）： CGLIB（Code Generation Library）是一个开源的第三方库，它可以在运行时动态生成类的字节码。CGLIB 动态代理不要求被代理的类实现接口，它直接生成被代理类的子类，并重写其中的方法来实现代理。CGLIB 动态代理使用 net.sf.cglib.proxy.Enhancer 类来创建代理对象。\nCGLIB 动态代理的步骤：\n创建一个 Enhancer 对象； 设置被代理类作为父类； 设置 MethodInterceptor 对象，用于实现对原始方法的增强逻辑； 使用 Enhancer.create() 方法创建代理对象。 需要注意的是，JDK 动态代理只能代理实现了接口的类，而 CGLIB 动态代理可以代理普通类。由于 JDK 动态代理基于接口，因此在某些情况下只能使用 CGLIB 动态代理。\n选择使用哪种动态代理方式取决于被代理类的类型和需求。如果被代理类实现了接口，优先考虑使用 JDK 动态代理。如果被代理类没有实现接口，可以考虑使用 CGLIB 动态代理。\n1、JDK动态代理具体实现原理：\n通过实现 InvocationHandler 接口创建自己的调用处理器；\n通过为Proxy类指定 ClassLoader 对象和一组interface来创建动态代理；\n通过反射机制获取动态代理类的构造函数，其唯一参数类型就是调用处理器接口类型；\n通过构造函数创建动态代理类实例，构造时调用处理器对象作为参数参入；\nJDK动态代理是面向接口的代理模式，如果被代理目标没有接口那么Spring也无能为力，Spring通过Java的反射机制生产被代理接口的新的匿名实现类，重写了其中AOP的增强方法。\n2、CGLib动态代理：\n利用ASM开源包，对代理对象类的class文件加载进来，通过修改其字节码生成子类来处理。\n3、两者对比：\nJDK动态代理是面向接口的。\nCGLib动态代理是通过字节码底层继承要代理类来实现，因此如果被代理类被final关键字所修饰，会失败。\n如果要被代理的对象是个实现类，那么Spring会使用JDK动态代理来完成操作（Spirng默认采用JDK动态代理实现机制）；\n**如果要被代理的对象不是个实现类，那么Spring会强制使用CGLib来实现动态代理。\n代理模式和适配器模式有什么区别？ 代理模式主要是去加强一个类的方法。适配器模式是接口转换成一个想要的接口（这个问题被面试说回答的不好）\n作者补充：\n代理模式和适配器模式是两种常用的设计模式，它们的区别主要体现在以下几个方面：\n作用不同：代理模式是为了控制对对象的访问，而适配器模式是为了解决接口不匹配的问题。 解决问题的角度不同：代理模式是从外部控制访问，保护目标对象，而适配器模式是从内部改变对象接口，让其能够适配客户端的要求。 实现方式不同：代理模式通常使用面向对象的继承或者组合方式实现，而适配器模式则通常使用对象组合方式实现。 适用场景不同：代理模式适用于需要对对象进行控制和保护的情况，例如远程代理、虚拟代理等。适配器模式适用于需要将一个类的接口转换成客户端期望的另一个接口的情况，例如旧系统的升级改造、不兼容接口的统一等。 SpringMVC SpringMVC 框架\nSpringMVC 是一个基于 Java 的实现了 MVC 设计模式的请求驱动类型的轻量级 Web 框架，通过把 Model，View，Controller 分离，将 Web 层进行职责解耦，把复杂的 Web 应用分成逻辑清晰的几部分，简化开发，减少出错，方便组内开发人员之间的配合。 简而言之，SpringMVC 就是将我们原来开发在 Servlet 中的代码拆分了，一部分由 SpringMVC 完成，一部分由我们自己完成。\nSpringMVC 主要组件\n前端控制器 DispatcherServlet：接收请求、响应结果，相当于转发器，有了 DispatcherServlet 就减少了其它组件之间的耦合度。\n处理器映射器 HandlerMapping：根据请求的 URL 来查找 Handler。\n处理器适配器 HandlerAdapter：负责执行 Handler。\n处理器 Handler：处理业务逻辑的 Java 类（我们自己写的 Controller 类）。\n视图解析器 ViewResolver：进行视图的解析，根据视图逻辑名将 ModelAndView 解析成真正的视图（view） 。\n视图 View：View 是一个接口， 它的实现类支持不同的视图类型，如 jsp，freemarker， pdf 等。\nSpring和Spring MVC的区别 Spring 和 Spring MVC 是两个相关但不同的模块。\nSpring： Spring 是一个综合性的企业级开发框架，提供了大量的功能和特性，用于简化企业级应用程序的开发。它的核心是 IoC（控制反转）和 AOP（面向切面编程）容器。Spring 提供了一系列的模块，包括但不限于：\nSpring Core：提供 IoC 容器和依赖注入功能，负责管理对象的创建和生命周期。 Spring AOP：实现面向切面编程，用于在程序运行时动态地添加横切关注点。 Spring ORM：集成了各种 ORM 框架，如 Hibernate、JPA，用于数据库访问。 Spring JDBC：提供对 JDBC 的封装，简化数据库访问。 Spring Transactions：提供声明式事务管理。 Spring Security：提供安全认证和授权功能等。 Spring MVC： Spring MVC 是 Spring 框架的一个模块，用于构建基于 MVC（Model-View-Controller）模式的 Web 应用程序。它是 Spring 框架的一部分，用于处理 Web 请求、响应和视图渲染等。Spring MVC 提供了一个灵活的、基于注解的控制器模型，允许开发人员通过注解来定义请求处理方法。Spring MVC 的核心组件包括：\nDispatcherServlet：前端控制器，用于拦截所有的请求，并将其分发给相应的处理器。 HandlerMapping：用于将请求映射到相应的处理器。 HandlerAdapter：用于执行处理器方法，并处理方法返回的结果。 ViewResolver：用于将逻辑视图名解析为实际的视图。 总结：Spring 是一个综合性的企业级开发框架，提供了依赖注入、面向切面编程、数据库访问、事务管理、安全认证等功能。而 Spring MVC 则是 Spring 框架中用于构建 Web 应用程序的一个模块，它基于 MVC 模式，用于处理 Web 请求、响应和视图渲染。 Spring MVC 通常作为 Spring 框架的一部分使用，用于构建 Web 层，使得开发 Web 应用程序更加方便和高效。\nSpring、SpringMVC、SpringBoot 三者之间是什么关系？ Spring、SpringMVC、SpringBoot 是三个独立的框架，它们之间的关系是：\nSpring 是一个 Java 的轻量级应用框架，提供了基于 IoC 和 AOP 的支持，用于构建企业级应用。Spring 有多个模块，包括 Spring Core、Spring Context、Spring JDBC、Spring Web 等，每个模块提供了不同的功能。 SpringMVC 是 Spring 框架的一部分，是基于 MVC 设计模式的 Web 框架，用于构建 Web 应用程序。它提供了控制器、视图解析器、数据绑定、异常处理等功能，使得开发 Web 应用变得更加简单。SpringMVC 还支持 RESTful 架构。 SpringBoot 是基于 Spring 框架的一个开发框架，用于快速构建独立的、生产级别的 Spring 应用程序。它通过自动配置和约定优于配置的方式，简化了 Spring 应用程序的配置和开发过程。SpringBoot 集成了很多常用的第三方库和工具，例如 Spring Data、Spring Security、Thymeleaf、Logback 等，可以极大地提高开发效率。 因此，SpringBoot 可以看作是在 Spring 的基础上，通过自动配置和约定优于配置的方式，提供了更加简单、快速的开发体验。而 SpringMVC 则是 Spring 框架中用于构建 Web 应用程序的模块。\nSpring MVC执行流程 X 视图版本（JSP）\n用户发送请求到前端控制器（DispatcherServlet）。这是一个调度中心 前端控制器 （ DispatcherServlet ） 收到请求调用处理器映射器 （HandlerMapping），去查找处理器（Handler）。 处理器映射器（HandlerMapping）找到具体的处理器(可以根据 xml 配置、注解进行查找)，生成处理器对象及处理器拦截器(如果有则生成)一并返回给前端控制器 DispatcherServlet。 前端控制器（DispatcherServlet）调用处理器适配器（HandlerAdapter）。 处理器适配器（HandlerAdapter）去调用自定义的处理器类（Controller）。 自定义的处理器类（Controller）将得到的参数进行处理并返回结果给处理器适配器（HandlerAdapter）。 处理器适配器 （ HandlerAdapter ）将得到的结果返回给前端控制器 （DispatcherServlet）。 前端控制器（DispatcherServlet ）将 ModelAndView 传给视图解析器 （ViewReslover）。 视图解析器（ViewReslover）将得到的参数从逻辑视图转换为物理视图并返回给前端控制器（DispatcherServlet）。 前端控制器（DispatcherServlet）调用物理视图进行渲染并返回。 前端控制器（DispatcherServlet）将渲染后的结果返回。 这是之前有JSP视图的流程，现在基本都是前后端分离开发的，并没有视图这些，一般都是handler中使用Response直接结果返回。\n前后端开发，接口开发\n用户发送请求到前端控制器（DispatcherServlet）。 前端控制器 （ DispatcherServlet ） 收到请求调用处理器映射器 （HandlerMapping），去查找处理器（Handler）。 处理器映射器（HandlerMapping）找到具体的处理器(可以根据 xml 配置、注解进行查找)，生成处理器对象及处理器拦截器(如果有则生成)一并返回给 DispatcherServlet。 前端控制器（DispatcherServlet）调用处理器适配器（HandlerAdapter）。 处理器适配器（HandlerAdapter）去调用自定义的处理器类（Controller）。 方法上加上了@RequestBody注解 通过HttpMessageConvert来返回结果转换为JSON并响应 SpringBoot SpringBoot比Spring相比的优点 SpringBoot的优点：\nSpring Boot 可以快速创建独⽴的 Spring 应⽤程序。 Spring Boot 内嵌了如 Tomcat，Jetty 和 Undertow 这样的容器，也就是说可以直接跑起来， ⽤不着再做部署⼯作了。 Spring Boot ⽆需再像 Spring ⼀样使⽤⼀堆繁琐的 xml ⽂件配置。 Spring Boot 可以⾃动配置(核⼼)Spring。SpringBoot 将原有的 XML 配置改为 Java 配置，将 bean 注⼊改为使⽤注解注⼊的⽅式(@Autowire)，并将多个 xml、properties 配置浓缩在⼀个 appliaction.yml 配置⽂件中。 Spring Boot 提供了⼀些现有的功能，如量度⼯具，表单数据验证以及⼀些外部配置这样的⼀些 第三⽅功能。 Spring Boot 可以快速整合常⽤依赖（开发库，例如 spring-webmvc、jackson-json、 validation-api 和 tomcat 等），提供的 POM 可以简化 Maven 的配置。当我们引⼊核⼼依赖 时，SpringBoot 会⾃引⼊其他依赖。 Spring Boot 是在 Spring 框架基础上构建的一种简化配置、快速开发的框架，它具有许多优点相对于传统的 Spring 框架，以下是一些 Spring Boot 相对于 Spring 的优点：\n简化配置： Spring Boot 可以通过约定大于配置的方式，自动配置大部分应用程序所需的配置，减少了繁琐的 XML 配置，使得应用的配置更加简单。\n快速开发： Spring Boot 提供了一系列的 Starter 和自动配置，使得开发者可以快速搭建一个可用的应用，并专注于业务逻辑的开发，提高开发效率。\n集成方便： Spring Boot 内置了许多常用的第三方库和框架的 Starter，可以方便地集成数据库、消息队列、安全认证、监控等功能，减少了集成的复杂性。\n嵌入式 Web 服务器： Spring Boot 默认使用嵌入式的 Web 服务器（如 Tomcat、Jetty），不需要部署在外部容器中，简化了部署和运行的过程。\n自动化配置： Spring Boot 可以根据类路径上的依赖和配置，自动配置 Bean 和各种组件，大大减少了手动配置的工作。\n单一 Jar 包： Spring Boot 可以将应用及其依赖打包成一个可执行的 Jar 文件，方便部署和运行，也便于容器化部署。\n健康监测： Spring Boot 提供了健康检查和监控功能，可以方便地查看应用的状态和性能指标。\n生态系统： Spring Boot 是 Spring 生态系统中的一部分，可以与其他 Spring 项目无缝集成，如 Spring Cloud 用于构建微服务架构。\n总的来说，Spring Boot 是一个非常便捷的框架，它简化了 Spring 应用的开发和配置，提高了开发效率，让开发者可以更专注于业务逻辑的实现。同时，Spring Boot 的自动化配置和快速集成功能也为构建现代化的应用提供了很多便利。\nSpring 和 Spring Boot区别 Spring 和 Spring Boot 是两个相关但不同的概念：\nSpring： Spring 是一个综合性的企业级开发框架，提供了大量的功能和特性，用于简化企业级应用程序的开发。Spring 的核心是 IoC（控制反转）和 AOP（面向切面编程）容器。它提供了依赖注入、面向切面编程、事务管理、数据库访问、安全认证等众多功能。\nSpring Boot： Spring Boot 是在 Spring 框架基础上构建的一种简化配置、快速开发的框架。它借助于自动配置和约定大于配置的原则，使得开发者可以快速搭建可用的应用程序，并专注于业务逻辑的开发。Spring Boot 提供了一系列 Starter 和自动配置，简化了应用的配置和依赖管理。\n总结：\nSpring 是一个完整的企业级开发框架，提供了众多功能和模块，适用于各种规模的企业应用开发。 Spring Boot 是在 Spring 框架基础上的扩展，目标是简化 Spring 应用的开发和配置，提高开发效率。 Spring Boot 提供了自动配置、Starter 和约定大于配置等特性，使得开发者能够更轻松地构建现代化的应用。 Spring Boot 是 Spring 生态系统的一部分，可以与其他 Spring 项目（如 Spring Cloud）无缝集成，用于构建分布式和微服务架构。 SpringBoot的启动流程 Spring Boot 的启动流程可以简要概括为以下几个步骤：\n加载 Spring Boot 应用配置： 当应用启动时，Spring Boot 会读取默认的配置文件（例如 application.properties 或 application.yml）以及自定义的配置文件，并将配置信息加载到 Spring 的环境中。\n创建 Spring Boot 应用上下文（ApplicationContext）： Spring Boot 会根据加载的配置信息创建应用上下文，应用上下文是 Spring 中的核心容器，用于管理和组织 Bean 对象。\n扫描和注册 Bean： Spring Boot 会自动扫描指定包及其子包，查找带有注解（如 @Component、@Service、@Controller 等）的类，并将这些类注册为 Bean。\n执行 SpringApplicationRunListeners： Spring Boot 在应用启动的过程中会执行一系列的监听器（SpringApplicationRunListener），用于在不同阶段执行自定义的操作。\n执行 ApplicationRunner 和 CommandLineRunner： Spring Boot 提供了两个接口 ApplicationRunner 和 CommandLineRunner，可以让开发者在 Spring Boot 启动完成后执行一些初始化操作。\n启动 Web 服务器： 如果应用是一个 Web 应用，Spring Boot 会根据配置选择合适的 Web 服务器（如 Tomcat、Jetty），并将应用部署到 Web 服务器中。\n应用启动完成： 当所有初始化和配置工作完成后，Spring Boot 应用就启动完成了，可以响应外部请求。\n在整个启动流程中，Spring Boot 通过自动配置和约定大于配置的原则，大大简化了应用的配置和启动过程，让开发者可以更加专注于业务逻辑的开发，提高开发效率。\nSpring Boot的Starter机制了解吗？ Spring Boot Starter 是 Spring Boot 中用于快速集成和配置特定功能的一种机制。它将相关的依赖项、配置和代码封装在一个 Maven 项目中，以提供特定功能的“启动器”。\nSpring Boot Starter 的主要特点和作用包括：\n简化配置： Starter 封装了一组相关的依赖项和配置，可以一次性引入一个 Starter，从而避免手动添加多个依赖项和配置的繁琐过程。\n约定大于配置： Starter 遵循约定大于配置的原则，提供了默认的配置和依赖项，使得开发者只需要关注自定义配置，而不必过多地关注底层的依赖项。\n功能模块化： Starter 将功能模块化，每个 Starter 提供特定的功能。例如，Spring Boot 提供了多个 Starter，如 spring-boot-starter-web 用于启动 Web 应用，spring-boot-starter-data-jpa 用于启动 JPA 数据访问。\n易于扩展： 开发者可以自定义和编写自己的 Starter，将自定义的功能封装为 Starter，以供项目中使用。\nSpring Boot Starter 的命名约定为 spring-boot-starter-*，其中 * 表示特定的功能模块。当引入一个 Starter 时，Spring Boot 会自动将相关的依赖项和配置添加到项目中。\n例如，如果需要启动一个 Web 应用，只需在 pom.xml 文件中添加以下依赖：\norg.springframework.boot spring-boot-starter-web Spring Boot 会自动将与 Web 相关的依赖项和配置添加到项目中，使得开发者可以快速搭建一个可用的 Web 应用。\n通过使用 Starter 机制，Spring Boot 大大简化了应用的配置和依赖管理，让开发者更加专注于业务开发，提高了开发效率。同时，Starter 也促进了模块化的应用设计，使得应用更加易于维护和扩展。\nSpringBoot的配置文件 Spring Boot 支持多种类型的配置文件，用于配置应用程序的属性和参数。常见的配置文件类型有：\napplication.properties： 这是最常用的配置文件类型，采用键值对的形式，用于配置应用程序的属性。在 Spring Boot 应用的 src/main/resources 目录下，可以创建一个名为 application.properties 的文件，并在其中设置属性值。\n示例：\n# 数据库连接配置 spring.datasource.url=jdbc:mysql://localhost:3306/mydb spring.datasource.username=root spring.datasource.password=secret # Web 服务器端口 server.port=8080 application.yml： 这是另一种常见的配置文件类型，采用 YAML（YAML Ain’t Markup Language）格式，使用缩进来表示层次关系，可读性较好。在 Spring Boot 应用的 src/main/resources 目录下，可以创建一个名为 application.yml 的文件，并在其中设置属性值。\n示例：\n# 数据库连接配置 spring: datasource: url: jdbc:mysql://localhost:3306/mydb username: root password: secret # Web 服务器端口 server: port: 8080 application-{profile}.properties 或 application-{profile}.yml： 这是针对不同环境的配置文件，可以根据不同的运行环境使用不同的配置。{profile} 是环境的标识，例如 dev、prod 等。\n示例：\napplication-dev.properties：\n# 开发环境数据库配置 spring.datasource.url=jdbc:mysql://dev-server:3306/mydb spring.datasource.username=dev-user spring.datasource.password=dev-password application-prod.properties：\n# 生产环境数据库配置 spring.datasource.url=jdbc:mysql://prod-server:3306/mydb spring.datasource.username=prod-user spring.datasource.password=prod-password bootstrap.properties 或 bootstrap.yml： 这是用于 Spring Cloud 配置的特殊配置文件。在 Spring Boot 应用中，如果引入了 Spring Cloud 的相关依赖，可以使用 bootstrap.properties 或 bootstrap.yml 来配置应用程序的属性。\n这些配置文件可以在 Spring Boot 应用的 src/main/resources 目录下创建，并根据需要设置不同的属性值。Spring Boot 会自动加载这些配置文件，并将其中的属性值注入到应用程序中。同时，可以使用多个配置文件来实现不同环境下的配置管理，使得应用程序更具灵活性和可维护性。\nSpring Boot 的自动配置原理 X Spring Boot 的自动装配（Auto-configuration）是指在应用启动时，Spring Boot 根据项目的依赖和配置，自动完成一系列的配置工作，以简化开发者的配置过程。\n在Spring Boot项目中的引导类上有一个注解@SpringBootApplication，这个 注解是对三个注解进行了封装，分别是：\n@SpringBootConfiguration @EnableAutoConfiguration @ComponentScan 其中@EnableAutoConfiguration是实现自动配置的核心注解，该注解通过@Import注解导入对应的配置选择器。关键是内部就是读取了该项目引用jar包的类路径上的 META-INF/spring.factories 文件中所配置的类的全类名\n在这些配置类中所定义的Bean会根据条件注解所指定的条件来决定是否需要 将其导入到Spring容器中。\n一般条件判断会有像 @ConditionalOnClass 这样的注解，判断是否有对应的 class文件，如果有则加载该类，把这个配置类的所有的Bean放入spring容器 中使用。\nSpring Boot 的自动装配基于 Spring 框架的 @Configuration 注解和条件化配置机制。当启动一个 Spring Boot 应用时，Spring Boot 会扫描应用的 classpath，查找指定的依赖和配置，然后根据条件和优先级自动装配相应的组件。\n自动装配的优先级如下：\n用户配置优先： 如果开发者在项目中手动定义了配置（@Configuration），则用户配置优先于自动配置。\n条件化配置： Spring Boot 使用条件化配置来确定是否需要自动装配某个组件。如果满足特定的条件，才会执行自动配置。\n类路径上的 META-INF/spring.factories 文件： Spring Boot 在 classpath 上搜索 META-INF/spring.factories 文件，该文件列出了要执行的自动配置类。\nSpring Boot 中的自动装配类通常带有 @ConditionalOnXXX 注解，用于定义装配的条件，例如 @ConditionalOnClass 表示当特定的类存在时才进行自动装配，@ConditionalOnProperty 表示当指定属性存在时才进行自动装配等。\n例如，Spring Boot 提供了许多 Starter，每个 Starter 都包含了一组相关的依赖和配置，用于快速集成某个功能。例如，spring-boot-starter-web Starter 包含了与 Web 相关的依赖和配置，可以快速构建一个 Web 应用程序。\n总结：\nSpring Boot 的自动装配是通过条件化配置和 classpath 上的 META-INF/spring.factories 文件来实现的。它可以根据项目的依赖和配置，自动装配所需的组件和配置，简化了开发者的配置工作，提高了开发效率。\nMyBatis MyBatis的执行流程 mybatis-config.xml，加载映射文件\n①读取MyBatis配置文件：mybatis-config.xml加载运行环境和映射文件\n②构造会话工厂SqlSessionFactory，一个项目只需要一个，单例的，一般由 spring进行管理\n③会话工厂创建SqlSession对象，这里面就含了执行SQL语句的所有方法\n④操作数据库的接口，Executor执行器，同时负责查询缓存的维护\n⑤Executor接口的执行方法中有一个MappedStatement类型的参数，封装了 映射信息 ⑥输入参数映射\n⑦输出结果映射\nMyBatis 如何实现延迟加载？X 延迟加载：需要用到数据才进行加载，不需要用到数据时就不加载数据\nMyBatis是否支持延迟加载？\nMybatis支持一对一关联对象和一对多关联集合对象的延迟加载\n在Mybatis配置文件中，可以配置是否启用延迟加载 lazyLoadingEnabled=true|false，默认是关闭的\nMyBatis 实现延迟加载的方式有两种：\n延迟加载配置方式：在 MyBatis 的配置文件中，通过配置 来指定延迟加载的触发方法。默认是关闭的。\n动态代理方式：当需要延迟加载某个属性时，MyBatis 会生成一个动态代理，拦截对该属性的访问，然后使用真正的查询操作去加载该属性的值。\n延迟加载的原理\n延迟加载在底层主要使用的CGLIB动态代理完成的\n使用CGLIB创建目标对象的代理对象，这里的目标对象就是开启了 延迟加载的mapper 当调用目标方法时，进入拦截器invoke方法，如果发现目标方法是null 值，再执行sql查询 获取数据以后，调用set方法设置属性值，再继续查询目标方法，就能查到数据 MyBatis的#和$区别 在 MyBatis 中，# 和 $ 都是用于在 SQL 中插入动态值的占位符，但它们在处理动态值时有一些重要的区别。\n# 占位符：\n# 占位符会将参数值当作一个预编译的参数，并使用 JDBC 的 PreparedStatement 来处理。这样可以防止 SQL 注入攻击。 使用 # 占位符时，MyBatis 会自动将参数值转义，因此不需要手动处理特殊字符。 # 占位符一般用于处理参数值，如条件查询等。 示例：\nSELECT * FROM users WHERE id = #{userId} $ 占位符：\n$ 占位符将参数值直接拼接到 SQL 中，不会进行预编译处理，存在 SQL 注入的风险。 使用 $ 占位符时，需要手动处理特殊字符的转义，以防止 SQL 注入攻击。 $ 占位符一般用于处理 SQL 片段，如动态表名或动态列名，而不是参数值。 示例：\nSELECT * FROM ${tableName} WHERE id = ${userId} 总结：\n使用 # 占位符时，参数值会被预编译处理，安全性较高，适用于处理参数值。 使用 $ 占位符时，参数值会直接拼接到 SQL 中，慎用，可能存在 SQL 注入的风险，适用于处理 SQL 片段。 MyBatis 的一级缓存和二级缓存 X MyBatis 的多级缓存机制是指在 MyBatis 中存在多个级别的缓存，用于提高查询性能并减少数据库访问次数。\n本地缓存，基于PrepetualCache，本质上是一个HashMap\n一级缓存：基于 PerpetualCache 的 HashMap 本地缓存，其存储作 用域为 Session，当Session进行flush或close之后，该Session中的所有Cache 就将清空，默认打开一级缓存\n二级缓存：基于namespace和mapper的作用域起作用的，不是依赖于SQL session，默认也是采用 PerpetualCache，HashMap 存储。\n如果想要开启二级缓存需要在全局配置文件和映射文件中开启配置才行。\nMyBatis的二级缓存什么时候清理缓存中的数据？\n当某一个作用域(一级缓存 Session/二级缓存Namespaces)的进行了新增、修 改、删除操作后，默认该作用域下所有 select 中的缓存将被 clear。\n一级缓存（本地缓存）： 一级缓存是 MyBatis 默认开启的缓存，它是在同一个 SqlSession 内部的缓存。 当在同一个 SqlSession 中执行相同的查询语句时，MyBatis 会将查询结果缓存起来，下次再执行相同的查询语句时，直接从缓存中获取结果，避免了重复查询数据库。 一级缓存是与 SqlSession 绑定的，当 SqlSession 被关闭或提交时，缓存也会被清空。 默认情况下，一级缓存是开启的，如果需要关闭一级缓存，可以在配置文件中将 localCacheScope 设置为 STATEMENT。 二级缓存（全局缓存）： 二级缓存是 MyBatis 的全局缓存，它可以被多个 SqlSession 共享。 二级缓存是将查询结果缓存到一个共享的缓存区域中，当多个 SqlSession 执行相同的查询语句时，可以直接从缓存中获取结果，避免了重复查询数据库。 二级缓存的生命周期与整个应用程序的生命周期相同，需要配置相应的缓存实现器，如 Ehcache、Redis 等。 默认情况下，二级缓存是关闭的，如果需要开启二级缓存，可以在配置文件中将 标签的 cacheEnabled 设置为 true。在映射文件中使用生效缓存 MyBatis 如何防止SQL注入 MyBatis 提供了一些机制来防止 SQL 注入攻击，主要包括以下几点：\n使用参数化查询： 在执行 SQL 时，使用参数化查询（Prepared Statement）而不是直接将参数拼接到 SQL 语句中。参数化查询可以让数据库系统将查询语句和参数分开处理，从而避免了 SQL 注入攻击。在 MyBatis 中，我们使用 #{} 占位符来表示参数化查询。\n示例：\nSELECT * FROM users WHERE username = #{username} AND password = #{password} 使用动态 SQL 和条件判断： 在需要拼接动态 SQL 的情况下，使用 MyBatis 提供的动态 SQL 标签（如 、、 等）来进行条件判断和拼接，而不是手动拼接 SQL 字符串。这样可以确保拼接的 SQL 是合法的，从而避免 SQL 注入。\n示例：\n",
+  "wordCount" : "30584",
+  "inLanguage": "zh",
+  "datePublished": "2023-09-25T00:19:38+08:00",
+  "dateModified": "2023-09-25T00:19:38+08:00",
+  "author":[{
+    "@type": "Person",
+    "name": "Lidengxm"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://lidengxm.github.io/posts/java/%E6%A1%86%E6%9E%B6%E5%85%AB%E8%82%A1/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lidengxm's Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://lidengxm.github.io/img/logo.png"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    (function () {
+        let  arr,reg = new RegExp("(^| )"+"change-themes"+"=([^;]*)(;|$)");
+        if(arr = document.cookie.match(reg)) {
+        } else {
+            if (new Date().getHours() >= 19 || new Date().getHours() < 6) {
+                document.body.classList.add('dark');
+                localStorage.setItem("pref-theme", 'dark');
+            } else {
+                document.body.classList.remove('dark');
+                localStorage.setItem("pref-theme", 'light');
+            }
+        }
+    })()
+
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://lidengxm.github.io/" accesskey="h" title="Lidengxm&#39;s Blog (Alt + H)">
+            <img src="https://lidengxm.github.io/images/tree.png" alt="logo" aria-label="logo"
+                 height="35">Lidengxm&#39;s Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                         stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                         stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://lidengxm.github.io/" title="🏠 主页">
+                <span>🏠 主页</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://lidengxm.github.io/posts" title="📚 文章">
+                <span>📚 文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://lidengxm.github.io/tags" title="🧩 标签">
+                <span>🧩 标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://lidengxm.github.io/archives/" title="⏱️ 时间轴">
+                <span>⏱️ 时间轴</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://lidengxm.github.io/about" title="🙋🏻‍♂️ 关于">
+                <span>🙋🏻‍♂️ 关于</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://lidengxm.github.io/links" title="🤝 友链">
+                <span>🤝 友链</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://lidengxm.github.io/search" title="🔍 搜索 (Alt &#43; /)" accesskey=/>
+                <span>🔍 搜索</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main page">
+<style>
+    i[id*="post_meta_style"] {
+        display: flex;
+        align-items: center;
+        margin: 0 0 10px 0;
+    }
+</style>
+
+<article class="post-single">
+    <div id="single-content">
+        <header class="post-header">
+            <div class="breadcrumbs"><a href="https://lidengxm.github.io/">🏠 主页</a>&nbsp;»&nbsp;<a href="https://lidengxm.github.io/posts/">📚文章</a>&nbsp;»&nbsp;<a href="https://lidengxm.github.io/posts/java/">🧱 Java</a></div>
+            <h1 class="post-title">
+                框架八股
+            </h1>
+            <div class="post-meta">
+
+<style>
+    i[id*="post_meta_style"] {
+        display: flex;
+        align-items: center;
+        margin: 0 0 10px 0;
+    }
+
+    .parent-post-meta {
+        display: flex;
+        flex-wrap: wrap;
+        opacity: 0.8;
+    }
+</style>
+
+<span class="parent-post-meta">
+    <span id="post_meta_style_1">
+        <span class="fa fa-calendar-check-o"></span>
+        <span>2023-09-25
+            &nbsp;&nbsp;
+        </span>
+    </span>
+    
+    
+    
+    
+    
+    
+    
+    <span id="post_meta_style_3">
+        <span class="fa fa-file-word-o"></span>
+        <span>30584字
+            &nbsp;&nbsp;
+        </span>
+    </span>
+    <span id="post_meta_style_4">
+        <span class="fa fa-clock-o"></span>
+        <span>62分钟
+            &nbsp;&nbsp;
+        </span>
+    </span>
+    <span id="post_meta_style_5">
+        <span class="fa fa-user-o"></span>
+        <span>Lidengxm
+            &nbsp;&nbsp;
+        </span>
+    </span>
+    <span id="post_meta_style_6">
+        <span class="fa fa-tags" style="opacity: 0.8"></span>
+        <span>
+            <span class="post-tags-meta">
+                <a href="https://lidengxm.github.io/tags/%E6%A1%86%E6%9E%B6/" style="color: var(--secondary)!important;">框架</a>
+                &nbsp;<a href="https://lidengxm.github.io/tags/%E5%85%AB%E8%82%A1/" style="color: var(--secondary)!important;">八股</a>
+            </span>
+        </span>
+    </span>
+</span>
+<span style="opacity: 0.8;">
+                    <span id="post_meta_style_7">
+                        &nbsp;&nbsp;
+                        <span class="fa fa-eye" ></span>
+                        <span>
+                            <span id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv"></span></span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </span>
+                    <span id="post_meta_style_8">
+                        <span class="fa fa-commenting-o"></span>
+                        <span>
+                            <script src="https://cdn.staticfile.org/twikoo/1.5.8/twikoo.all.min.js"></script>
+                            <script>
+                                let url = document.documentURI
+                                
+                                let dnsUrl = "https://lidengxm.github.io/"
+                                let urlSplit = url.split(dnsUrl)
+                                let finalUrl = urlSplit[1]
+                                if (finalUrl[0] !== '/') {
+                                    finalUrl = '/'+finalUrl
+                                }
+                                twikoo.getCommentsCount({
+                                    envId:  null , 
+                                region:  null , 
+                                urls: [ 
+                                    
+                                    finalUrl,
+                                ],
+                                    includeReply: false 
+                                }).then(function (res) {
+                                    let count = res[0].count
+                                    const obj = document.getElementById("comment_count");
+                                    obj.innerText = count
+                                    
+                                    
+                                    
+                                }).catch(function (err) {
+                                    
+                                    console.error(err);
+                                });
+                            </script>
+                            <span id="comment_count"></span>
+                        </span>
+                    </span>
+                </span>
+
+</div>
+        </header> <aside id="toc-container" class="toc-container wide">
+    <div class="toc">
+        <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目录</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e6%a1%86%e6%9e%b6%e9%9d%a2%e8%af%95%e9%a2%98%e5%90%88%e9%9b%86" aria-label="框架面试题合集">框架面试题合集</a><ul>
+                        
+                <li>
+                    <a href="#spring" aria-label="spring">spring</a></li>
+                <li>
+                    <a href="#springmvc" aria-label="springmvc">springmvc</a></li>
+                <li>
+                    <a href="#springboot" aria-label="springboot">springboot</a></li></ul>
+                </li>
+                <li>
+                    <a href="#spring-1" aria-label="Spring">Spring</a><ul>
+                        
+                <li>
+                    <a href="#spring-%e6%98%af%e4%bb%80%e4%b9%88%e7%89%b9%e6%80%a7%e6%9c%89%e5%93%aa%e4%ba%9b%e6%a8%a1%e5%9d%97" aria-label="Spring 是什么？特性？有哪些模块？">Spring 是什么？特性？有哪些模块？</a></li>
+                <li>
+                    <a href="#spring-%e7%9a%84%e4%b8%a4%e5%a4%a7%e6%a0%b8%e5%bf%83%e6%a6%82%e5%bf%b5%e6%98%af%e4%bb%80%e4%b9%88%e7%ae%80%e5%8d%95%e8%ae%b2%e4%b8%80%e4%b8%8b%e4%bd%a0%e5%af%b9%e5%ae%83%e4%bb%ac%e7%9a%84%e7%90%86%e8%a7%a3" aria-label="Spring 的两大核心概念是什么？简单讲一下你对它们的理解">Spring 的两大核心概念是什么？简单讲一下你对它们的理解</a></li>
+                <li>
+                    <a href="#spring%e7%9a%84-ioc-%e5%92%8c-aop-%e6%80%8e%e4%b9%88%e7%90%86%e8%a7%a3" aria-label="Spring的 IOC 和 AOP 怎么理解">Spring的 IOC 和 AOP 怎么理解</a></li>
+                <li>
+                    <a href="#aop%e4%bd%bf%e7%94%a8%e5%9c%ba%e6%99%af%e6%9c%89%e5%93%aa%e4%ba%9b" aria-label="AOP使用场景有哪些？">AOP使用场景有哪些？</a></li>
+                <li>
+                    <a href="#%e4%bd%a0%e7%9a%84%e9%a1%b9%e7%9b%ae%e4%b8%ad%e6%9c%89%e6%b2%a1%e6%9c%89%e7%94%a8%e8%bf%87aop" aria-label="你的项目中有没有用过AOP？">你的项目中有没有用过AOP？</a></li>
+                <li>
+                    <a href="#autowired-%e5%92%8c-resource-%e5%8c%ba%e5%88%ab" aria-label="@Autowired 和 @Resource 区别">@Autowired 和 @Resource 区别</a></li>
+                <li>
+                    <a href="#spring%e4%b8%ad%e6%a1%86%e6%9e%b6%e5%b8%b8%e7%94%a8%e7%9a%84%e6%b3%a8%e8%a7%a3-x" aria-label="Spring中框架常用的注解 X">Spring中框架常用的注解 X</a></li>
+                <li>
+                    <a href="#spring%e7%9a%84%e5%be%aa%e7%8e%af%e4%be%9d%e8%b5%96%e6%98%af%e4%bb%80%e4%b9%88%e5%a6%82%e4%bd%95%e8%a7%a3%e5%86%b3" aria-label="Spring的循环依赖是什么？如何解决？">Spring的循环依赖是什么？如何解决？</a></li>
+                <li>
+                    <a href="#spring%e7%9a%84%e4%b8%89%e7%ba%a7%e7%bc%93%e5%ad%98" aria-label="Spring的三级缓存">Spring的三级缓存</a></li>
+                <li>
+                    <a href="#spring%e7%94%a8%e5%88%b0%e4%ba%86%e5%93%aa%e4%ba%9b%e8%ae%be%e8%ae%a1%e6%a8%a1%e5%bc%8f" aria-label="Spring用到了哪些设计模式？">Spring用到了哪些设计模式？</a></li>
+                <li>
+                    <a href="#beanfactory-%e5%92%8c-factorybean%e6%9c%89%e4%bb%80%e4%b9%88%e5%8c%ba%e5%88%ab" aria-label="BeanFactory 和 FactoryBean有什么区别">BeanFactory 和 FactoryBean有什么区别</a></li>
+                <li>
+                    <a href="#%e5%a6%82%e6%9e%9c%e6%9c%89%e4%b8%a4%e4%b8%aa%e7%9b%b8%e5%90%8c%e5%90%8d%e5%ad%97%e7%9a%84bean%e4%bc%9a%e6%80%8e%e4%b9%88%e6%a0%b7" aria-label="如果有两个相同名字的bean会怎么样">如果有两个相同名字的bean会怎么样</a></li>
+                <li>
+                    <a href="#spring-bean-%e7%9a%84%e7%94%9f%e5%91%bd%e5%91%a8%e6%9c%9f" aria-label="Spring Bean 的生命周期">Spring Bean 的生命周期</a></li>
+                <li>
+                    <a href="#spring%e5%ae%b9%e5%99%a8%e5%88%9d%e5%a7%8b%e5%8c%96%e9%98%b6%e6%ae%b5starter" aria-label="Spring容器初始化阶段starter？">Spring容器初始化阶段starter？</a></li>
+                <li>
+                    <a href="#spring%e6%a1%86%e6%9e%b6%e4%b8%ad%e7%9a%84bean%e6%98%af%e7%ba%bf%e7%a8%8b%e5%ae%89%e5%85%a8%e7%9a%84%e5%90%97" aria-label="Spring框架中的bean是线程安全的吗">Spring框架中的bean是线程安全的吗</a></li>
+                <li>
+                    <a href="#spring%e7%9a%84%e4%ba%8b%e5%8a%a1%e4%bd%a0%e5%9c%a8%e9%a1%b9%e7%9b%ae%e4%b8%ad%e7%94%a8%e5%88%b0%e6%b2%a1%e6%9c%89%e6%80%8e%e4%b9%88%e7%94%a8%e7%9a%84" aria-label="Spring的事务你在项目中用到没有，怎么用的?">Spring的事务你在项目中用到没有，怎么用的?</a></li>
+                <li>
+                    <a href="#spring%e4%ba%8b%e5%8a%a1%e7%ae%a1%e7%90%86%e6%9c%89%e5%87%a0%e7%a7%8d%e6%96%b9%e5%bc%8f" aria-label="Spring事务管理有几种方式">Spring事务管理有几种方式</a></li>
+                <li>
+                    <a href="#%e5%a3%b0%e6%98%8e%e5%bc%8f%e4%ba%8b%e5%8a%a1%e5%92%8c%e7%bc%96%e7%a8%8b%e5%bc%8f%e4%ba%8b%e5%8a%a1%e6%9c%89%e4%bb%80%e4%b9%88%e5%8c%ba%e5%88%ab" aria-label="声明式事务和编程式事务有什么区别">声明式事务和编程式事务有什么区别</a></li>
+                <li>
+                    <a href="#spring%e7%9a%84%e4%ba%8b%e5%8a%a1%e6%b3%a8%e8%a7%a3" aria-label="Spring的事务注解">Spring的事务注解</a></li>
+                <li>
+                    <a href="#spring%e4%ba%8b%e5%8a%a1%e7%9a%84%e4%bc%a0%e6%92%ad%e6%9c%ba%e5%88%b6" aria-label="Spring事务的传播机制？">Spring事务的传播机制？</a></li>
+                <li>
+                    <a href="#spring%e4%b8%ad%e4%ba%8b%e5%8a%a1%e5%a4%b1%e6%95%88%e7%9a%84%e5%9c%ba%e6%99%af%e6%9c%89%e5%93%aa%e4%ba%9b" aria-label="Spring中事务失效的场景有哪些？">Spring中事务失效的场景有哪些？</a></li>
+                <li>
+                    <a href="#spring%e7%bb%99%e6%88%91%e4%bb%ac%e6%8f%90%e4%be%9b%e4%ba%86%e5%be%88%e5%a4%9a%e6%89%a9%e5%b1%95%e7%82%b9%e8%bf%99%e4%ba%9b%e6%9c%89%e4%ba%86%e8%a7%a3%e5%90%97" aria-label="Spring给我们提供了很多扩展点，这些有了解吗？">Spring给我们提供了很多扩展点，这些有了解吗？</a></li>
+                <li>
+                    <a href="#%e5%8a%a8%e6%80%81%e4%bb%a3%e7%90%86%e6%9c%89%e5%93%aa%e4%b8%a4%e7%a7%8d%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0" aria-label="动态代理有哪两种？如何实现？">动态代理有哪两种？如何实现？</a></li>
+                <li>
+                    <a href="#%e4%bb%a3%e7%90%86%e6%a8%a1%e5%bc%8f%e5%92%8c%e9%80%82%e9%85%8d%e5%99%a8%e6%a8%a1%e5%bc%8f%e6%9c%89%e4%bb%80%e4%b9%88%e5%8c%ba%e5%88%ab" aria-label="代理模式和适配器模式有什么区别？">代理模式和适配器模式有什么区别？</a></li></ul>
+                </li>
+                <li>
+                    <a href="#springmvc-1" aria-label="SpringMVC">SpringMVC</a><ul>
+                        
+                <li>
+                    <a href="#spring%e5%92%8cspring-mvc%e7%9a%84%e5%8c%ba%e5%88%ab" aria-label="Spring和Spring MVC的区别">Spring和Spring MVC的区别</a></li>
+                <li>
+                    <a href="#springspringmvcspringboot-%e4%b8%89%e8%80%85%e4%b9%8b%e9%97%b4%e6%98%af%e4%bb%80%e4%b9%88%e5%85%b3%e7%b3%bb" aria-label="Spring、SpringMVC、SpringBoot 三者之间是什么关系？">Spring、SpringMVC、SpringBoot 三者之间是什么关系？</a></li>
+                <li>
+                    <a href="#spring-mvc%e6%89%a7%e8%a1%8c%e6%b5%81%e7%a8%8b-x" aria-label="Spring MVC执行流程 X">Spring MVC执行流程 X</a></li></ul>
+                </li>
+                <li>
+                    <a href="#springboot-1" aria-label="SpringBoot">SpringBoot</a><ul>
+                        
+                <li>
+                    <a href="#springboot%e6%af%94spring%e7%9b%b8%e6%af%94%e7%9a%84%e4%bc%98%e7%82%b9" aria-label="SpringBoot比Spring相比的优点">SpringBoot比Spring相比的优点</a></li>
+                <li>
+                    <a href="#spring-%e5%92%8c-spring-boot%e5%8c%ba%e5%88%ab" aria-label="Spring 和 Spring Boot区别">Spring 和 Spring Boot区别</a></li>
+                <li>
+                    <a href="#springboot%e7%9a%84%e5%90%af%e5%8a%a8%e6%b5%81%e7%a8%8b" aria-label="SpringBoot的启动流程">SpringBoot的启动流程</a></li>
+                <li>
+                    <a href="#spring-boot%e7%9a%84starter%e6%9c%ba%e5%88%b6%e4%ba%86%e8%a7%a3%e5%90%97" aria-label="Spring Boot的Starter机制了解吗？">Spring Boot的Starter机制了解吗？</a></li>
+                <li>
+                    <a href="#springboot%e7%9a%84%e9%85%8d%e7%bd%ae%e6%96%87%e4%bb%b6" aria-label="SpringBoot的配置文件">SpringBoot的配置文件</a></li>
+                <li>
+                    <a href="#spring-boot-%e7%9a%84%e8%87%aa%e5%8a%a8%e9%85%8d%e7%bd%ae%e5%8e%9f%e7%90%86-x" aria-label="Spring Boot 的自动配置原理 X">Spring Boot 的自动配置原理 X</a></li></ul>
+                </li>
+                <li>
+                    <a href="#mybatis" aria-label="MyBatis">MyBatis</a><ul>
+                        
+                <li>
+                    <a href="#mybatis%e7%9a%84%e6%89%a7%e8%a1%8c%e6%b5%81%e7%a8%8b" aria-label="MyBatis的执行流程">MyBatis的执行流程</a></li>
+                <li>
+                    <a href="#mybatis-%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0%e5%bb%b6%e8%bf%9f%e5%8a%a0%e8%bd%bdx" aria-label="MyBatis 如何实现延迟加载？X">MyBatis 如何实现延迟加载？X</a></li>
+                <li>
+                    <a href="#mybatis%e7%9a%84%e5%92%8c%e5%8c%ba%e5%88%ab" aria-label="MyBatis的#和$区别">MyBatis的#和$区别</a></li>
+                <li>
+                    <a href="#mybatis-%e7%9a%84%e4%b8%80%e7%ba%a7%e7%bc%93%e5%ad%98%e5%92%8c%e4%ba%8c%e7%ba%a7%e7%bc%93%e5%ad%98-x" aria-label="MyBatis 的一级缓存和二级缓存 X">MyBatis 的一级缓存和二级缓存 X</a></li>
+                <li>
+                    <a href="#mybatis-%e5%a6%82%e4%bd%95%e9%98%b2%e6%ad%a2sql%e6%b3%a8%e5%85%a5" aria-label="MyBatis 如何防止SQL注入">MyBatis 如何防止SQL注入</a></li>
+                <li>
+                    <a href="#mybatis%e8%bf%90%e7%94%a8%e4%ba%86%e5%93%aa%e4%ba%9b%e5%b8%b8%e8%a7%81%e7%9a%84%e8%ae%be%e8%ae%a1%e6%a8%a1%e5%bc%8f" aria-label="MyBatis运用了哪些常见的设计模式？">MyBatis运用了哪些常见的设计模式？</a></li>
+                <li>
+                    <a href="#jdbc%e8%bf%9e%e6%8e%a5%e6%95%b0%e6%8d%ae%e5%ba%93%e7%9a%84%e6%ad%a5%e9%aa%a4%e5%90%97" aria-label="JDBC连接数据库的步骤吗？">JDBC连接数据库的步骤吗？</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0%e7%bb%9f%e4%b8%80%e5%bc%82%e5%b8%b8%e5%a4%84%e7%90%86" aria-label="如何实现统一异常处理">如何实现统一异常处理</a>
+                </li>
+            </ul>
+        </div>
+        </details>
+    </div>
+</aside>
+<script>
+    let activeElement;
+    let elements;
+    window.addEventListener('DOMContentLoaded', function (event) {
+        checkTocPosition();
+
+        elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
+        
+        activeElement = elements[0];
+        const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
+        document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+    }, false);
+
+    window.addEventListener('resize', function(event) {
+        checkTocPosition();
+    }, false);
+
+    window.addEventListener('scroll', () => {
+        
+        if (elements) {
+            activeElement = Array.from(elements).find((element) => {
+                if ((getOffsetTop(element) - window.pageYOffset) > 0 &&
+                    (getOffsetTop(element) - window.pageYOffset) < window.innerHeight/2) {
+                    return element;
+                }
+            }) || activeElement
+
+            elements.forEach(element => {
+                const id = encodeURI(element.getAttribute('id')).toLowerCase();
+                if (element === activeElement){
+                    document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+                } else {
+                    document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
+                }
+            })
+        }
+    }, false);
+
+    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
+    const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
+    const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
+
+    function checkTocPosition() {
+        const width = document.body.scrollWidth;
+        if (width - main - (toc * 2) - (gap * 4) > 0) {
+            document.getElementById("toc-container").classList.add("wide");
+        } else {
+            document.getElementById("toc-container").classList.remove("wide");
+        }
+    }
+
+    function getOffsetTop(element) {
+        if (!element.getClientRects().length) {
+            return 0;
+        }
+        let rect = element.getBoundingClientRect();
+        let win = element.ownerDocument.defaultView;
+        return rect.top + win.pageYOffset;
+    }
+</script>
+        <div class="post-content"><h1 id="框架面试题合集">框架面试题合集<a hidden class="anchor" aria-hidden="true" href="#框架面试题合集">#</a></h1>
+<h2 id="spring">spring<a hidden class="anchor" aria-hidden="true" href="#spring">#</a></h2>
+<p>当涉及校招应届生的 Spring 框架相关面试题时，通常会着重考察基础知识和理解能力。以下是一些常见的 Spring 相关面试题，希望对你有所帮助：</p>
+<ol>
+<li>
+<p><strong>什么是 Spring 框架？</strong></p>
+<ul>
+<li>解释 Spring 框架的概念、作用和特点。</li>
+</ul>
+</li>
+<li>
+<p><strong>Spring 框架的核心模块是什么？</strong></p>
+<ul>
+<li>提及 Spring 框架的核心模块，如 Spring Core、Spring Context、Spring AOP 和 Spring Beans。</li>
+</ul>
+</li>
+<li>
+<p><strong>什么是 IoC（控制反转）和 DI（依赖注入）？</strong></p>
+<ul>
+<li>解释 IoC 和 DI 的概念，以及它们在 Spring 中的实现。</li>
+</ul>
+</li>
+<li>
+<p><strong>Spring 中的 Bean 是什么？</strong></p>
+<ul>
+<li>说明 Spring 中的 Bean 是如何定义和管理的。</li>
+</ul>
+</li>
+<li>
+<p><strong>如何在 Spring 中进行 Bean 的装配？</strong></p>
+<ul>
+<li>解释通过 XML 配置文件、注解或 Java 配置类来实现 Bean 的装配。</li>
+</ul>
+</li>
+<li>
+<p><strong>Spring 的 AOP 是什么？</strong></p>
+<ul>
+<li>介绍 Spring AOP 的概念和应用场景。</li>
+</ul>
+</li>
+<li>
+<p><strong>在 Spring AOP 中，切面、连接点和通知分别是什么？</strong></p>
+<ul>
+<li>解释 AOP 中的这些概念，以及它们之间的关系。</li>
+</ul>
+</li>
+<li>
+<p><strong>Spring 中的事务管理是怎样实现的？</strong></p>
+<ul>
+<li>解释 Spring 中的事务管理机制，并说明如何配置和使用事务。</li>
+</ul>
+</li>
+<li>
+<p><strong>Spring 中的 MVC 是什么？</strong></p>
+<ul>
+<li>介绍 Spring MVC 的概念和工作原理。</li>
+</ul>
+</li>
+<li>
+<p><strong>Spring Boot 和 Spring 框架有什么区别？</strong></p>
+<ul>
+<li>比较 Spring Boot 和传统 Spring 框架的特点和使用场景。</li>
+</ul>
+</li>
+<li>
+<p><strong>Spring Security 是做什么的？</strong></p>
+<ul>
+<li>解释 Spring Security 的作用和目的。</li>
+</ul>
+</li>
+<li>
+<p><strong>什么是 Spring Bean 的作用域？</strong></p>
+<ul>
+<li>解释 Spring Bean 的单例、原型、会话和请求等作用域。</li>
+</ul>
+</li>
+<li>
+<p><strong>如何解决 Spring 中的循环依赖问题？</strong></p>
+<ul>
+<li>说明 Spring 是如何处理循环依赖的。</li>
+</ul>
+</li>
+<li>
+<p><strong>Spring 中的异常处理机制是什么？</strong></p>
+<ul>
+<li>解释 Spring 中的异常处理方式，例如使用 <code>@ControllerAdvice</code> 和 <code>@ExceptionHandler</code>。</li>
+</ul>
+</li>
+<li>
+<p><strong>如何集成 Spring 和其他技术？</strong></p>
+<ul>
+<li>举例说明如何集成 Spring 和数据库、消息队列、缓存等技术。</li>
+</ul>
+</li>
+</ol>
+<p>这些问题涵盖了 Spring 框架的一些核心概念和常见用法。在准备面试时，建议深入学习 Spring 框架的基础知识，并通过实践来加深理解。此外，还可以尝试解决一些与 Spring 相关的小项目或实际问题，以加强自己在面试中的表现。祝你面试顺利！</p>
+<h2 id="springmvc">springmvc<a hidden class="anchor" aria-hidden="true" href="#springmvc">#</a></h2>
+<p>当涉及校招应届生的 Spring MVC 框架相关面试题时，通常会重点考察基础知识和理解能力。以下是一些常见的 Spring MVC 相关面试题，希望对你有所帮助：</p>
+<ol>
+<li>
+<p><strong>什么是 Spring MVC 框架？</strong></p>
+<ul>
+<li>解释 Spring MVC 框架的概念、作用和特点。</li>
+</ul>
+</li>
+<li>
+<p><strong>Spring MVC 的主要组件是什么？</strong></p>
+<ul>
+<li>提及 Spring MVC 的主要组件，如 DispatcherServlet、HandlerMapping、Controller、ViewResolver 等。</li>
+</ul>
+</li>
+<li>
+<p><strong>Spring MVC 的工作原理是什么？</strong></p>
+<ul>
+<li>说明客户端请求到达服务器并经过 Spring MVC 框架处理的流程。</li>
+</ul>
+</li>
+<li>
+<p><strong>Spring MVC 中的 DispatcherServlet 是什么？</strong></p>
+<ul>
+<li>解释 DispatcherServlet 的作用和工作方式。</li>
+</ul>
+</li>
+<li>
+<p><strong>如何在 Spring MVC 中定义 Controller？</strong></p>
+<ul>
+<li>介绍在 Spring MVC 中定义 Controller 的几种方式，如使用注解、实现接口等。</li>
+</ul>
+</li>
+<li>
+<p><strong>Spring MVC 中的请求映射是怎样实现的？</strong></p>
+<ul>
+<li>解释请求映射的方式，如使用注解、XML 配置等。</li>
+</ul>
+</li>
+<li>
+<p><strong>Spring MVC 中的数据绑定是什么？</strong></p>
+<ul>
+<li>解释数据绑定的概念，以及如何将请求参数绑定到方法参数或模型属性。</li>
+</ul>
+</li>
+<li>
+<p><strong>如何处理 Spring MVC 中的表单提交？</strong></p>
+<ul>
+<li>说明如何在 Controller 中处理表单提交，并如何验证表单数据。</li>
+</ul>
+</li>
+<li>
+<p><strong>Spring MVC 中的视图解析器是什么？</strong></p>
+<ul>
+<li>解释视图解析器的作用，以及如何配置和使用它。</li>
+</ul>
+</li>
+<li>
+<p><strong>什么是拦截器（Interceptor）？</strong></p>
+<ul>
+<li>解释拦截器的概念和作用，以及如何在 Spring MVC 中配置和使用拦截器。</li>
+</ul>
+</li>
+<li>
+<p><strong>Spring MVC 的异常处理机制是什么？</strong></p>
+<ul>
+<li>解释 Spring MVC 如何处理控制器中的异常，并如何自定义异常处理。</li>
+</ul>
+</li>
+<li>
+<p><strong>如何使用 RESTful 风格的 API 开发？</strong></p>
+<ul>
+<li>说明如何在 Spring MVC 中设计和实现 RESTful 风格的 API。</li>
+</ul>
+</li>
+<li>
+<p><strong>Spring MVC 中的文件上传是怎样实现的？</strong></p>
+<ul>
+<li>解释 Spring MVC 如何处理文件上传，并如何配置和使用文件上传功能。</li>
+</ul>
+</li>
+<li>
+<p><strong>如何进行 Spring MVC 的单元测试？</strong></p>
+<ul>
+<li>说明如何编写和执行 Spring MVC 控制器的单元测试。</li>
+</ul>
+</li>
+<li>
+<p><strong>Spring MVC 和 Spring Boot 有什么区别？</strong></p>
+<ul>
+<li>比较 Spring MVC 和 Spring Boot 的特点和使用场景。</li>
+</ul>
+</li>
+</ol>
+<p>这些问题涵盖了 Spring MVC 框架的一些核心概念和常见用法。在准备面试时，建议深入学习 Spring MVC 框架的基础知识，并通过实践来加深理解。还可以尝试解决一些与 Spring MVC 相关的小项目或实际问题，以加强自己在面试中的表现。祝你面试顺利！</p>
+<h2 id="springboot">springboot<a hidden class="anchor" aria-hidden="true" href="#springboot">#</a></h2>
+<p>当涉及校招应届生的 Spring Boot 框架相关面试题时，通常会考察基础知识和对 Spring Boot 的理解。以下是一些常见的 Spring Boot 相关面试题，希望对你有所帮助：</p>
+<ol>
+<li>
+<p><strong>什么是 Spring Boot？</strong></p>
+<ul>
+<li>解释 Spring Boot 的概念、作用和特点。</li>
+</ul>
+</li>
+<li>
+<p><strong>Spring Boot 的主要优点是什么？</strong></p>
+<ul>
+<li>介绍使用 Spring Boot 的好处，如简化配置、快速开发等。</li>
+</ul>
+</li>
+<li>
+<p><strong>Spring Boot 中的自动配置是什么？</strong></p>
+<ul>
+<li>解释 Spring Boot 自动配置的原理和作用。</li>
+</ul>
+</li>
+<li>
+<p><strong>如何创建一个 Spring Boot 项目？</strong></p>
+<ul>
+<li>说明如何使用 Spring Initializr 创建一个新的 Spring Boot 项目。</li>
+</ul>
+</li>
+<li>
+<p><strong>如何配置 Spring Boot 项目的属性？</strong></p>
+<ul>
+<li>介绍如何使用 <code>application.properties</code> 或 <code>application.yml</code> 文件来配置项目属性。</li>
+</ul>
+</li>
+<li>
+<p><strong>如何在 Spring Boot 中定义一个 RESTful API？</strong></p>
+<ul>
+<li>解释如何在 Spring Boot 中创建和暴露 RESTful 风格的 API。</li>
+</ul>
+</li>
+<li>
+<p><strong>Spring Boot 中的启动类是什么？</strong></p>
+<ul>
+<li>解释 Spring Boot 项目中的启动类作用和特点。</li>
+</ul>
+</li>
+<li>
+<p><strong>Spring Boot 的热部署是怎样实现的？</strong></p>
+<ul>
+<li>说明 Spring Boot 如何支持热部署和开发者热部署的区别。</li>
+</ul>
+</li>
+<li>
+<p><strong>如何使用 Spring Boot 进行数据访问？</strong></p>
+<ul>
+<li>介绍如何使用 Spring Boot 和 Spring Data JPA 或其他数据访问技术来操作数据库。</li>
+</ul>
+</li>
+<li>
+<p><strong>Spring Boot 中的 Bean 是什么？</strong></p>
+<ul>
+<li>解释 Spring Boot 中的 Bean 是如何定义和管理的。</li>
+</ul>
+</li>
+<li>
+<p><strong>如何在 Spring Boot 中处理异常？</strong></p>
+<ul>
+<li>解释如何定义全局异常处理器来处理项目中的异常。</li>
+</ul>
+</li>
+<li>
+<p><strong>Spring Boot 中如何进行单元测试？</strong></p>
+<ul>
+<li>说明如何编写和执行 Spring Boot 应用的单元测试。</li>
+</ul>
+</li>
+<li>
+<p><strong>如何在 Spring Boot 中使用缓存？</strong></p>
+<ul>
+<li>解释如何配置和使用 Spring Boot 中的缓存功能。</li>
+</ul>
+</li>
+<li>
+<p><strong>Spring Boot 中的配置文件有哪些种类？</strong></p>
+<ul>
+<li>介绍 <code>application.properties</code> 和 <code>application.yml</code> 之间的区别和使用场景。</li>
+</ul>
+</li>
+<li>
+<p><strong>如何集成其他技术到 Spring Boot 项目中？</strong></p>
+<ul>
+<li>举例说明如何集成消息队列、NoSQL 数据库等技术到 Spring Boot 项目中。</li>
+</ul>
+</li>
+</ol>
+<p>这些问题涵盖了 Spring Boot 框架的一些核心概念和常见用法。在准备面试时，建议深入学习 Spring Boot 框架的基础知识，并通过实践来加深理解。还可以尝试解决一些与 Spring Boot 相关的小项目或实际问题，以加强自己在面试中的表现。祝你面试顺利！</p>
+<h1 id="spring-1">Spring<a hidden class="anchor" aria-hidden="true" href="#spring-1">#</a></h1>
+<h2 id="spring-是什么特性有哪些模块">Spring 是什么？特性？有哪些模块？<a hidden class="anchor" aria-hidden="true" href="#spring-是什么特性有哪些模块">#</a></h2>
+<p>Spring是一个开源的Java应用程序框架，它提供了全面的基础设施，用于帮助开发人员构建高效、灵活和可维护的企业级Java应用程序。</p>
+<p>Spring的特性包括：</p>
+<ol>
+<li>
+<p><strong>IoC（控制反转）：</strong> Spring采用IoC容器来管理和组织对象的生命周期和依赖关系。通过IoC，对象的创建和依赖关系不再由代码硬编码决定，而是由Spring容器动态地管理。</p>
+</li>
+<li>
+<p><strong>DI（依赖注入）：</strong> DI是IoC的一种实现方式，通过依赖注入，Spring容器会自动将依赖关系注入到需要它们的对象中，从而实现对象之间的松耦合。</p>
+</li>
+<li>
+<p><strong>AOP（面向切面编程）：</strong> Spring支持AOP，它允许开发人员在不修改原有代码的情况下，将横切关注点（如日志、安全性等）从应用程序中提取出来，以增强代码的复用性和可维护性。</p>
+</li>
+<li>
+<p><strong>事务管理：</strong> Spring提供了强大的事务管理功能，它支持声明式事务和编程式事务，能够轻松地管理数据库事务。</p>
+</li>
+<li>
+<p><strong>MVC框架：</strong> Spring提供了一个灵活的MVC框架，用于构建Web应用程序。它支持将请求映射到控制器、视图渲染、数据绑定等功能。</p>
+</li>
+<li>
+<p><strong>面向切面编程（AOP）：</strong> Spring支持AOP，允许开发人员将横切关注点（如日志、安全性等）从应用程序代码中提取出来，实现横向代码的重用。</p>
+</li>
+<li>
+<p><strong>JDBC支持：</strong> Spring提供了JDBC模块，简化了JDBC的使用，提供了更便捷的数据库访问方式。</p>
+</li>
+</ol>
+<p>Spring框架主要由以下几个模块组成：</p>
+<ol>
+<li>
+<p><strong>Spring Core（核心容器）：</strong> 提供了Spring框架的基本功能，包括IoC容器的实现、Bean的创建和管理、依赖注入等。</p>
+</li>
+<li>
+<p><strong>Spring AOP（面向切面编程）：</strong> 提供了AOP的支持，允许开发人员将横切关注点从应用程序代码中解耦出来，以增强代码的复用性和可维护性。</p>
+</li>
+<li>
+<p><strong>Spring JDBC（数据库访问）：</strong> 提供了简化JDBC操作的功能，使得开发人员可以更方便地访问数据库。</p>
+</li>
+<li>
+<p><strong>Spring ORM（对象关系映射）：</strong> 提供了集成各种ORM框架（如Hibernate、JPA）的功能，简化了对象和数据库之间的映射。</p>
+</li>
+<li>
+<p><strong>Spring Web（Web开发）：</strong> 提供了构建Web应用程序的支持，包括MVC框架、RESTful Web服务等。</p>
+</li>
+<li>
+<p><strong>Spring Test（测试）：</strong> 提供了对Spring应用程序进行单元测试和集成测试的功能。</p>
+</li>
+</ol>
+<p>总体来说，Spring框架为Java开发者提供了丰富的功能和工具，使得开发高效、可维护和可扩展的应用程序变得更加简单。</p>
+<h2 id="spring-的两大核心概念是什么简单讲一下你对它们的理解">Spring 的两大核心概念是什么？简单讲一下你对它们的理解<a hidden class="anchor" aria-hidden="true" href="#spring-的两大核心概念是什么简单讲一下你对它们的理解">#</a></h2>
+<p>来自：编程导航官方、yes.</p>
+<blockquote>
+<p>Spring 框架的两大核心概念是<strong>控制反转（Inversion of Control，IoC）和面向切面编程（Aspect Oriented Programming，AOP）。</strong></p>
+<p><strong>控制反转IOC</strong>指的是将对象的创建和依赖注入由应用代码转移到了 Spring 容器中进行，即由 Spring 容器负责创建对象和管理它们之间的依赖关系。这样，应用代码只需要关注业务逻辑的实现，而不需要关注对象的创建和管理，降低了应用代码的复杂度，提高了代码的可重用性和可维护性。</p>
+<p><strong>面向切面编程AOP</strong>是指将与业务逻辑无关的代码（如日志、安全、事务等）从业务逻辑中剥离出来，以便于统一管理和维护。通过 AOP，我们可以将这些与业务逻辑无关的横切关注点（Cross-cutting Concerns）定义为切面（Aspect），并将它们织入到业务逻辑中，从而实现了业务逻辑与横切关注点的解耦。并且可维护性也大大提高</p>
+<p><strong>扩展：</strong></p>
+<ol>
+<li>那<strong>AOP是如何实现的呢？</strong></li>
+</ol>
+<ul>
+<li>(见 面试题挑战 Day3 JDK 动态代理和 CGLIB 动态代理的区别是什么？)</li>
+</ul>
+<ol>
+<li>如果你简历上写了设计模式，<strong>那么这两个核心概念中有涉及到什么设计模式可以讲讲吗？</strong></li>
+</ol>
+<ul>
+<li><strong>工厂模式</strong>：spring中使用了BeanFactory和ApplicationContext创建了Bean对象。</li>
+<li><strong>单例模式</strong>：在IOC中的对象默认都是单例的，可以通过配置文件修改。</li>
+<li><strong>代理模式</strong>：AOP就是基于动态代理的，如果对象实现了接口，使用JDK的动态代理，如果对象没有实现接口则使用CGLIB的动态代理。（<strong>这里可以暗示往这两个动态代理方面问，就又撞到前几天刷过的题了</strong>）</li>
+</ul>
+</blockquote>
+<h2 id="spring的-ioc-和-aop-怎么理解">Spring的 IOC 和 AOP 怎么理解<a hidden class="anchor" aria-hidden="true" href="#spring的-ioc-和-aop-怎么理解">#</a></h2>
+<p>控制的是对象的创建权，管理权。反转的是权利，使用对象时，由主动new产生对象转换为由外部提供对象</p>
+<p>Spring容器负责创建、配置和管理 bean，也就是它管理着 bean 的生命周期，控制着 bean 的依赖注入</p>
+<p><strong>控制对象⽣命周期的不再是引⽤它的对象，⽽是容器。对具体对象，以前是它控制其它对象，现在所有对象都被容器控制，所以这就叫控制反转</strong></p>
+<p><strong>AOP切面编程简单说，就是把⼀些业务逻辑中相同代码抽取到⼀个独⽴的模块中，让业务逻辑更加清爽。</strong></p>
+<p>通过切面技术为业务主体增加额外的通知（Advice），从而对声明为“切点”（Pointcut）的代码块进行统一管理和装饰</p>
+<p>AOP是面向对象OOP的一种补充，OOP的核心单元是类class，AOP的核心单元是切面aspect。利用AOP可以对业务逻辑各个部分进行隔离，从而降低耦合度，提高程序的可重用性，也提高了效率</p>
+<blockquote>
+<p><strong>SpringAOP主要想解决什么问题？</strong></p>
+</blockquote>
+<p>Spring AOP主要解决的是<strong>横切关注点的问题</strong>，即在一个系统中，可能存在多个模块或组件都需要实现类似的功能，比如日志记录、权限校验、事务管理等等。</p>
+<p>如果每个模块都去实现这些功能，就会导致代码冗余，可维护性和可扩展性降低。</p>
+<p>而AOP则是<strong>基于动态代理</strong>的机制，在不修改原有代码的情况下，通过在代码执行前后插入增强代码的方式，可以减少系统中的重复代码，降低了模块间的耦合度。<strong>实现对横切关注点的统一处理，从而提高代码的复用性和可维护性。</strong></p>
+<blockquote>
+<p><strong>AOP的原理了解吗？</strong></p>
+</blockquote>
+<p>Spring AOP 是基于动态代理的，它使用 JDK 的动态代理或 CGLIB 动态代理来为目标对象生成代理对象，进而实现切面功能。主要应⽤于处理⼀些具有横切性质的系统级服务，如⽇志收集、事务管理、权限校验、安全检查、缓存、对象池管理等。</p>
+<ul>
+<li>**JDK 动态代理：**通过目标对象实现的接口来为目标对象生成代理对象，利用反射机制实现方法的调用。</li>
+<li>**CGLIB 动态代理：**通过目标对象的子类来为目标对象生成代理对象，利用字节码技术实现方法的调用。</li>
+</ul>
+<p>实现 Spring AOP，<strong>需要定义切面（Aspect）和连接点（Join Point）</strong>，并将切面织入到连接点处，生成代理对象。</p>
+<ul>
+<li>
+<p>Join Point：连接点指的是程序中进行方法调用的点。Spring AOP 可以对类的方法调用进行拦截，并在目标方法的前后添加额外的功能逻辑。</p>
+</li>
+<li>
+<p>Aspect：切面是一系列横切逻辑的集合，可通过 Spring AOP 把这些横切逻辑模块化，然后把它们应用到多个对象当中。</p>
+</li>
+<li>
+<p>Advice：通知是要执行的额外逻辑，Spring AOP 包含如下五种类型的 Advice：</p>
+</li>
+<li>
+<ul>
+<li>前置通知（Before Advice）：在目标方法调用前，执行通知代码。</li>
+<li>后置通知（After Advice）：在目标方法调用后，执行通知代码。</li>
+<li>环绕通知（Around Advice）：包裹目标方法，在目标方法调用的前后，分别执行通知代码。</li>
+<li>异常通知（After Throwing Advice）：捕获目标方法执行的异常，并在异常抛出时，执行通知代码。</li>
+<li>返回通知（After Returning Advice）：在目标方法执行后，正常返回后，执行通知代码。</li>
+</ul>
+</li>
+<li>
+<p>Pointcut：定义切入点，指定哪些类的哪些方法需要被拦截，可以使用注解方式或者切入表达式的方式。</p>
+</li>
+<li>
+<p>切面织入（Weaving）：将切面与目标对象结合生成代理对象，在代理对象方法执行前后或抛出异常时，执行 Advice 中的操作。</p>
+</li>
+</ul>
+<p>总结，Spring AOP 就是把各种通知写成切面的方式，通过拦截指定的方法实现各种额外的操作。而切面是通过代理实现的，使用 JDK 动态代理或者 CGLIB 动态代理将通知织入目标对象的方法当中。</p>
+<p><strong>有哪些优点？</strong></p>
+<ul>
+<li>
+<p>IOC 解决了依赖问题。在传统的 Java 编程中，对象之间相互依赖，难以维护和扩展。使用 IOC 将对象的创建、销毁、依赖关系的维护等交给 Spring 容器来管理，使开发者只需要专注于业务逻辑的实现，而不用考虑对象的生命周期管理和依赖关系注入。</p>
+</li>
+<li>
+<p>AOP 解决了代码复用问题。在传统的 Java 编程中，业务逻辑和非业务逻辑耦合在一起，难以复用。使用 AOP 可以将某个横切关注点（如日志记录、事务处理、安全检查等）抽象出来，然后以切面的方式添加到业务逻辑中，避免代码的复杂和重复。</p>
+</li>
+</ul>
+<h2 id="aop使用场景有哪些">AOP使用场景有哪些？<a hidden class="anchor" aria-hidden="true" href="#aop使用场景有哪些">#</a></h2>
+<ul>
+<li>
+<p>记录操作日志，用来在方法调用前、后或异常发生时记录日志，方便跟踪和监控系统的运行情况。</p>
+</li>
+<li>
+<p>将获取用户名、获取请求方式、访问结果、模块结果、登录IP、操作时间这些通过方法抽取成切面方法</p>
+</li>
+<li>
+<p>权限校验，在某个方法前加上AOP定义的切面，确保具备相应权限的用户才能执行方法</p>
+</li>
+<li>
+<p>事务管理，实现事务管理，将事务的开始、提交和回滚操作织入到需要事务支持的方法中</p>
+</li>
+</ul>
+<blockquote>
+<p>切片类</p>
+<ul>
+<li>实现@Compenont注解，被Spring管理</li>
+<li>实现@Aspect注解，标明是切面类</li>
+<li></li>
+</ul>
+</blockquote>
+<p>AOP（面向切面编程）是一种编程范式，用于在程序运行时动态地将横切关注点（如日志记录、安全性检查、事务管理等）与主要业务逻辑（核心关注点）分离开来。AOP可以在不修改原有代码的情况下，通过横切关注点的织入来实现对系统的功能增强和重用。</p>
+<p>以下是一些常见的 AOP 使用场景：</p>
+<ol>
+<li>
+<p><strong>日志记录：</strong> AOP 可以用来在方法调用前、后或异常发生时记录日志，方便跟踪和监控系统的运行情况。</p>
+</li>
+<li>
+<p><strong>事务管理：</strong> AOP 可以实现事务管理，将事务的开始、提交和回滚操作织入到需要事务支持的方法中，保证数据的一致性和完整性。</p>
+</li>
+<li>
+<p><strong>安全性检查：</strong> AOP 可以用于在方法执行前进行权限验证和安全性检查，确保只有具备相应权限的用户能够执行特定操作。</p>
+</li>
+<li>
+<p><strong>性能监控：</strong> AOP 可以用于在方法调用前后记录方法执行时间，以及对方法性能进行监控和优化。</p>
+</li>
+<li>
+<p><strong>异常处理：</strong> AOP 可以用于在方法执行发生异常时进行异常处理和统一的错误处理。</p>
+</li>
+<li>
+<p><strong>缓存管理：</strong> AOP 可以用于在方法调用前先查询缓存，如果缓存中存在相应数据，则直接返回缓存数据，减少对数据库的访问。</p>
+</li>
+<li>
+<p><strong>日志审计：</strong> AOP 可以用于在方法调用前后进行日志审计，记录用户的操作行为，以便后续审计和追踪。</p>
+</li>
+<li>
+<p><strong>国际化和本地化：</strong> AOP 可以用于在方法调用前根据用户的语言设置进行国际化和本地化处理，显示相应的语言资源。</p>
+</li>
+<li>
+<p><strong>权限控制：</strong> AOP 可以用于在方法调用前对用户的权限进行校验，确保用户有权执行特定操作。</p>
+</li>
+</ol>
+<h2 id="你的项目中有没有用过aop">你的项目中有没有用过AOP？<a hidden class="anchor" aria-hidden="true" href="#你的项目中有没有用过aop">#</a></h2>
+<p>用过，在API开发平台中的用户登录校验用到了</p>
+<p>进行了权限校验，比如修改接口上线接口就是只有管理员身份可以操作的，一般用户无法操作</p>
+<p>如何实现的呢？</p>
+<h2 id="autowired-和-resource-区别">@Autowired 和 @Resource 区别<a hidden class="anchor" aria-hidden="true" href="#autowired-和-resource-区别">#</a></h2>
+<ul>
+<li>@Autowired是<code>Spring</code>提供的注解，用于实现自动装配。它<strong>根据类型进行依赖注入</strong>，如果存在多个匹配的bean，则根据名称进行匹配，也可以结合 <code>@Qualifier</code> 注解来指定具体的bean。</li>
+<li>@Resource是<code>Java标准库</code>中的注解，也可用于实现自动装配。它<strong>根据名称进行依赖注入</strong>，如果存在多个匹配的bean，则根据类型进行匹配。可以通过 <code>name</code> 属性显式指定要注入的bean的名称。</li>
+</ul>
+<p>主要区别：</p>
+<ul>
+<li>来源不同：<code>@Autowired</code>是Spring的注解，<code>@Resource</code>是Java标准库的注解。</li>
+<li>用法不同：<code>@Autowired</code>可用于字段、构造方法、Setter方法和方法参数，<code>@Resource</code>主要用于字段和方法参数。</li>
+<li>依赖注入方式不同：@Autowired根据类型进行注入，@Resource根据名称进行注入。</li>
+</ul>
+<h2 id="spring中框架常用的注解-x">Spring中框架常用的注解 X<a hidden class="anchor" aria-hidden="true" href="#spring中框架常用的注解-x">#</a></h2>
+<p>Spring注解及其功能：（配置和依赖注入）</p>
+<ol>
+<li><code>@Component</code>： 将类标记为Spring组件，让Spring容器自动扫描并将其实例化为Bean。（<code>@Controller、@Service、@Repository</code>）</li>
+<li><strong>@Autowired：</strong> 自动注入Bean的依赖，<strong>通过类型匹配进行注入。</strong></li>
+<li><strong>@Qualifier：</strong> 和@Autowired一起使用，指定要注入的具体Bean名称。</li>
+<li><strong>@Resource：</strong> 和@Autowired类似，但是<strong>通过名称匹配进行注入。</strong></li>
+<li><strong>@Scope</strong>：设置作用域</li>
+<li><strong>@Value：</strong> 注入简单类型的值或SpEL表达式。</li>
+<li><strong>@ComponentScan：</strong> 配置Spring组件扫描的基础包。</li>
+<li><strong>@Configuration：</strong> <strong>声明当前类是一个配置类</strong>，相当于Spring的XML配置文件。</li>
+<li><strong>@Bean：</strong> 声明一个Bean对象，用于替代XML配置中的<bean>标签。</li>
+<li><strong>@PostConstruct：</strong> 在Bean初始化完成后执行指定方法。</li>
+</ol>
+<p>还有就是与AOP相关做增强的注解如<code>@Aspect、@Before、@After、@Around、@Pointcut</code></p>
+<p>SpringMVC中常见的注解：（请求和响应）</p>
+<ol>
+<li><strong>@RequestMapping：</strong> **将HTTP请求映射到处理方法上，用于定义Web应用程序的控制器。**可以定义在类上和方法上。</li>
+<li><strong>@RestController：</strong> 组合了@Controller和@ResponseBody，<code>用于定义RESTful Web服务的控制器。</code>所有方法返回JSON响应格式</li>
+<li><strong>@PathVariable：</strong> <strong>将URL中的路径参数{/user/{id}}映射到方法参数上。</strong></li>
+<li>**@RequestParam：**指定请求参数的名称；</li>
+<li><strong>@RequestBody：</strong> <strong>将请求体内容映射到方法参数上</strong>。可以将接收的JSON转换为Java对象</li>
+<li><strong>@ResponseBody：</strong> 注解实现将controller方法返回对象转化为json 对象响应给客户端</li>
+<li><strong>@RequestHeader</strong>：获取指定的请求头数据</li>
+</ol>
+<p>SpringBoot中常见注解：</p>
+<ol>
+<li>
+<p><strong>@SpringBootConfiguration</strong>：组合了@Configuiration注解，实现配置文件的功能</p>
+</li>
+<li>
+<p><strong>@EnableAutoConfiguration</strong>：打开自动配置的功能，也可以关闭某个自动配置的选项</p>
+</li>
+<li>
+<p><strong>@ComponentScan</strong>：Spring扫描组件包的路径</p>
+</li>
+<li>
+<p><strong>@PathVariable：</strong> 这个注解用于将URL中的路径参数映射到方法的参数上。它通常用于处理RESTful风格的URL，将URL中的一部分作为方法的参数，使得控制器方法能够访问和使用这些参数。例如：</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@GetMapping</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/users/{userId}&#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> ResponseEntity<span style="color:#f92672">&lt;</span>User<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">getUser</span><span style="color:#f92672">(</span><span style="color:#a6e22e">@PathVariable</span> Long userId<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><ol start="2">
+<li><strong>@RequestParam：</strong> 这个注解用于将HTTP请求的查询参数映射到方法的参数上。查询参数通常是在URL中通过<code>?</code>符号传递的参数，这个注解使得你可以在控制器方法中轻松地获取和使用这些参数。例如：</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@GetMapping</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/search&#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> ResponseEntity<span style="color:#f92672">&lt;</span>List<span style="color:#f92672">&lt;</span>Product<span style="color:#f92672">&gt;&gt;</span> <span style="color:#a6e22e">searchProducts</span><span style="color:#f92672">(</span><span style="color:#a6e22e">@RequestParam</span> String keyword<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><ol start="3">
+<li><strong>@RequestBody：</strong> 这个注解用于将HTTP请求的请求体内容映射到方法的参数上。通常在处理POST、PUT等请求时使用，它可以将请求体中的JSON、XML等数据直接映射到方法参数的对象上。例如：</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@PostMapping</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/create&#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> ResponseEntity<span style="color:#f92672">&lt;</span>Product<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">createProduct</span><span style="color:#f92672">(</span><span style="color:#a6e22e">@RequestBody</span> Product product<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><ol start="4">
+<li><strong>@ResponseBody：</strong> 这个注解用于将方法的返回值直接写入HTTP响应体中，通常在处理JSON、XML等响应时使用。它告诉Spring框架将方法的返回值转换为响应体内容，并发送给客户端。例如：</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@GetMapping</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/user/{userId}&#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@ResponseBody</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> User <span style="color:#a6e22e">getUser</span><span style="color:#f92672">(</span><span style="color:#a6e22e">@PathVariable</span> Long userId<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> user<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>这些注解帮助你在控制器中更清晰地处理请求和响应，同时可以方便地进行参数映射、数据转换以及响应的构建。通过使用这些注解，你可以更轻松地构建出功能强大且易于维护的Web应用程序。</p>
+<h2 id="spring的循环依赖是什么如何解决">Spring的循环依赖是什么？如何解决？<a hidden class="anchor" aria-hidden="true" href="#spring的循环依赖是什么如何解决">#</a></h2>
+<p>Spring循环依赖（Circular Dependency）是<strong>指在Spring应用程序中，两个或多个Bean之间相互依赖，形成了一个循环的引用关系。</strong></p>
+<p>这种情况下，Spring容器无法确定应该首先实例化哪个Bean，因为它们互相依赖于对方的实例。</p>
+<p>比如A依赖于B，B依赖于A</p>
+<p>循环依赖在Spring中允许存在，Spring框架依据三级缓存已经解决了大部分的循环依赖</p>
+<ul>
+<li>一级缓存：单例池，缓存已经经历了完整的生命周期，已经初始化完成的bean对象</li>
+<li>二级缓存：缓存早期的bean对象（生命周期还没走完）</li>
+<li>三级缓存：缓存的是ObjectFactory，表示对象工厂，用来创建某个对象的</li>
+</ul>
+<blockquote>
+<p>具体流程</p>
+</blockquote>
+<p><img loading="lazy" src="https://alylmengbucket.oss-cn-nanjing.aliyuncs.com/pictures/202308152109530.png" alt="image-20230815210923137"  />
+</p>
+<ol>
+<li>第一，先实例A对象，同时会创建ObjectFactory对象存入三级缓存 singletonFactories</li>
+<li>第二，A在初始化的时候需要B对象，然后进行B对象的创建</li>
+<li>第三，B实例化完成，也会创建ObjectFactory对象存入三级缓存 singletonFactories</li>
+<li>第四，B需要注入A，通过三级缓存中获取ObjectFactory来生成一个A的对象 同时存入二级缓存，这个是有两种情况，一个是可能是A的普通对象，另外 一个是A的代理对象，都可以让ObjectFactory来生产对应的对象，这也是三 级缓存的关键</li>
+<li>第五，B通过从通过二级缓存earlySingletonObjects 获得到A的对象后可以正 常注入，B创建成功，存入一级缓存singletonObjects</li>
+<li>第六，回到A对象初始化，因为B对象已经创建完成，则可以直接注入B，A 创建成功存入一级缓存singletonObjects</li>
+<li>第七，二级缓存中的临时对象A清除</li>
+</ol>
+<blockquote>
+<p>构造方法出现了循环依赖怎么解决？</p>
+</blockquote>
+<p>由于bean的生命周期中构造函数是第一个执行的，spring框架并不能解决构 造函数的的依赖注入，在循环依赖的其中一个Bean上添加<code>@Lazy</code>注解，什么时候需要对象再进行 bean对象的创建</p>
+<p>循环依赖通常出现在以下情况下：</p>
+<ol>
+<li>构造函数循环依赖：当Bean A的构造函数参数中需要Bean B，而Bean B的构造函数参数中需要Bean A，就会出现循环依赖。</li>
+<li>属性循环依赖：Bean A中的属性依赖于Bean B，而Bean B中的属性又依赖于Bean A。</li>
+</ol>
+<p>解决Spring循环依赖的方法有几种：</p>
+<ol>
+<li>
+<p><strong>使用Setter注入</strong>：将循环依赖的Bean之间的依赖关系放在setter方法上，而不是构造函数或属性中。这样Spring容器可以先实例化Bean，然后再注入依赖，避免了构造函数循环依赖。</p>
+</li>
+<li>
+<p><strong>使用@Lazy注解</strong>：在循环依赖的其中一个Bean上添加<code>@Lazy</code>注解，延迟初始化Bean，从而避免在实例化时出现循环依赖。但这可能会导致性能问题，因为Bean在第一次使用时才会被实例化。</p>
+</li>
+<li>
+<p><strong>使用代理对象</strong>：Spring提供了基于接口的代理机制，可以通过使用接口和代理来解决循环依赖问题。在配置类中，使用<code>@Bean</code>注解声明Bean时，可以添加<code>@Scope(proxyMode = ScopedProxyMode.INTERFACES)</code>来创建接口代理，或者使用<code>@Scope(proxyMode = ScopedProxyMode.TARGET_CLASS)</code>来创建基于CGLIB的代理。</p>
+</li>
+<li>
+<p><strong>优化设计</strong>：重新设计应用程序结构，尽量减少循环依赖的存在。这可能需要对类的职责和关系进行调整。</p>
+</li>
+<li>
+<p><strong>使用构造函数注入和工厂方法</strong>：将循环依赖的Bean的依赖通过构造函数注入，并使用工厂方法创建Bean实例。这样可以确保Bean在被完全构造之前不会被暴露给外部。</p>
+</li>
+</ol>
+<p>请注意，虽然有多种解决循环依赖的方法，但选择哪种方法取决于应用程序的具体情况和需求。最好的实践是尽量避免循环依赖，保持应用程序的设计简单和清晰。</p>
+<h2 id="spring的三级缓存">Spring的三级缓存<a hidden class="anchor" aria-hidden="true" href="#spring的三级缓存">#</a></h2>
+<p>在Spring框架中，Bean的创建过程涉及到三级缓存（Three-Level Cache）的概念，用于管理Bean的创建与依赖解析。这三级缓存包括singleton对象的缓存、early singleton对象的缓存以及singleton工厂的缓存。</p>
+<ol>
+<li>
+<p><strong>一级缓存（singleton对象的缓存）</strong>：
+这是Spring容器中最常见的缓存级别，**用于存储已经创建的singleton对象。**当你通过Spring容器获取一个singleton对象时，容器会首先查找一级缓存中是否已经存在该对象的实例。如果存在，则直接返回已有实例，否则将会创建新的对象并存储在一级缓存中。</p>
+</li>
+<li>
+<p><strong>二级缓存（early singleton对象的缓存）</strong>：
+二级缓存是在一级缓存之后的一个缓存层。当Spring创建一个singleton对象时，它会在创建过程中首先将对象实例放入二级缓存中。这是为了解决循环依赖的问题。如果在创建过程中发现其他Bean需要引用该对象，Spring可以通过二级缓存来提前暴露对象，从而避免循环依赖问题。一旦对象完全创建并初始化，它就会从二级缓存中移除并放入一级缓存中。</p>
+</li>
+<li>
+<p><strong>三级缓存（singleton工厂的缓存）</strong>：
+三级缓存存储的是用于创建singleton对象的ObjectFactory。在Bean的创建过程中，如果发现需要解决循环依赖，Spring会将正在创建的Bean的ObjectFactory存储在三级缓存中。这允许Spring在适当的时候通过工厂创建对象实例，从而在循环依赖的情况下完成对象的创建和初始化。</p>
+</li>
+</ol>
+<p>需要注意的是，三级缓存不是公开的API，而是Spring框架内部使用的机制。对于大多数开发者来说，理解一级缓存和二级缓存的概念更加重要，因为它们与Bean的生命周期和依赖解析紧密相关。理解这些缓存级别有助于更好地管理Bean的创建和依赖关系，避免潜在的问题，例如循环依赖。</p>
+<h2 id="spring用到了哪些设计模式">Spring用到了哪些设计模式？<a hidden class="anchor" aria-hidden="true" href="#spring用到了哪些设计模式">#</a></h2>
+<ol>
+<li>
+<p><strong>单例模式</strong>：Spring 的 Bean 默认是单例模式，通过 Spring 容器管理 Bean 的生命周期，保证每个 Bean 只被创建一次，并在整个应用程序中重用。</p>
+</li>
+<li>
+<p><strong>工厂模式</strong>：Spring 使用工厂模式通过 BeanFactory 和 ApplicationContext 创建并管理 Bean 对象。</p>
+</li>
+<li>
+<p><strong>代理模式</strong>：Spring AOP 基于动态代理技术，使用代理模式实现切面编程，提供了对 AOP 编程的支持。</p>
+</li>
+<li>
+<p><strong>观察者模式</strong>：Spring 中的事件机制基于观察者模式，通过 ApplicationEventPublisher 发布事件，由 ApplicationListener 监听事件，实现了对象间的松耦合。</p>
+</li>
+<li>
+<p><strong>策略模式</strong>：Spring 中的 HandlerInterceptor 和 HandlerExecutionChain 使用了策略模式，<strong>允许开发者自定义处理器拦截器，按照一定顺序执行。</strong></p>
+</li>
+<li>
+<p><strong>责任链模式</strong>：Spring 中的过滤器和拦截器使用了责任链模式，多个过滤器和拦截器按照一定顺序执行，每个过滤器和拦截器可以拦截请求或者响应并做出相应的处理。</p>
+</li>
+<li>
+<p><strong>模板方法模式（Template Method）：</strong> 在Spring的JdbcTemplate中，使用模板方法模式封装了JDBC操作，将公共的操作抽象成模板方法，具体实现由子类提供。</p>
+</li>
+<li>
+<p><strong>装饰器模式（Decorator）：</strong> 在Spring中，使用装饰器模式来实现对Bean的增强，如使用@Async来异步执行方法。</p>
+</li>
+<li>
+<p><strong>模型-视图-控制器（MVC）模式：</strong> Spring的Web模块采用了MVC模式，将应用程序分成模型、视图和控制器三个组件，实现了业务逻辑和界面的分离。</p>
+</li>
+<li>
+<p><strong>委派模式（Delegate）：</strong> Spring中的DispatcherServlet采用了委派模式，根据URL将请求分发给不同的处理器来处理。</p>
+</li>
+<li>
+<p><strong>适配器模式（Adapter）：</strong> 在Spring中，通过HandlerAdapter接口实现了适配器模式，将不同类型的处理器适配到统一的处理器接口上。</p>
+</li>
+</ol>
+<h2 id="beanfactory-和-factorybean有什么区别">BeanFactory 和 FactoryBean有什么区别<a hidden class="anchor" aria-hidden="true" href="#beanfactory-和-factorybean有什么区别">#</a></h2>
+<p><code>BeanFactory</code> 和 <code>FactoryBean</code> 是 Spring 框架中两个关键的接口，它们在创建和管理 Bean 方面有着不同的作用和用途。</p>
+<ol>
+<li>
+<p><strong>BeanFactory：</strong></p>
+<ul>
+<li><code>BeanFactory</code> 是 Spring IoC 容器的核心接口**，用于管理和提供 Bean 实例。**</li>
+<li><code>BeanFactory</code> 负责管理 Bean 的生命周期、依赖注入、对象实例化和配置。</li>
+<li>在 Spring 中，有多种实现 <code>BeanFactory</code> 接口的类，其中最常用的是 <code>DefaultListableBeanFactory</code>，它是 Spring 容器的默认实现。</li>
+<li><code>BeanFactory</code> 是一种轻量级容器，按需加载和初始化 Bean，只有在使用时才实例化 Bean。</li>
+</ul>
+</li>
+<li>
+<p><strong>FactoryBean：</strong></p>
+<ul>
+<li><code>FactoryBean</code> 是一个特殊的 Bean 接口，它允许定义更复杂的 Bean 创建逻辑。</li>
+<li>实现 <code>FactoryBean</code> 接口的类是一个工厂 Bean，用于生成其他的 Bean 实例。</li>
+<li>通过实现 <code>FactoryBean</code> 接口，你可以自定义 Bean 实例的创建过程，允许更高级的逻辑和配置。</li>
+<li>当你在 Spring 容器中注册一个实现了 <code>FactoryBean</code> 接口的类时，实际上并不会直接将该类的实例作为 Bean 放入容器中。相反，容器会调用 <code>FactoryBean</code> 接口的方法，根据你的逻辑来生成最终的 Bean 实例。</li>
+</ul>
+</li>
+</ol>
+<p>总结：</p>
+<ul>
+<li><code>BeanFactory</code> 是 Spring IoC 容器的基础接口，用于管理 Bean 的声明周期和依赖注入。</li>
+<li><code>FactoryBean</code> 是一个特殊的 Bean 接口，用于定义更复杂的 Bean 创建逻辑，并且允许你自定义 Bean 实例的生成过程。</li>
+<li>当你需要在 Spring 容器中使用特定逻辑生成 Bean 实例时，可以实现 <code>FactoryBean</code> 接口来实现自定义的 Bean 创建逻辑。</li>
+</ul>
+<h2 id="如果有两个相同名字的bean会怎么样">如果有两个相同名字的bean会怎么样<a hidden class="anchor" aria-hidden="true" href="#如果有两个相同名字的bean会怎么样">#</a></h2>
+<p>如果有两个相同名字的Bean，Spring默认的处理方式是抛出异常。</p>
+<p>因为根据名称进行装配时，Spring要求唯一匹配的Bean，否则会报错。</p>
+<p>如果确实存在需要区分的情况，可以使用@Qualifier注解指定具体的Bean名称，或者使用@Autowired和@Qualifier一起使用。</p>
+<p>另外，也可以使用@Primary注解来指定某个Bean为首选Bean，当存在多个匹配的Bean时，会优先选择标记为@Primary的Bean。</p>
+<h2 id="spring-bean-的生命周期">Spring Bean 的生命周期<a hidden class="anchor" aria-hidden="true" href="#spring-bean-的生命周期">#</a></h2>
+<blockquote>
+<p>BeanDefinition对象</p>
+</blockquote>
+<p>**Spring Bean 的生命周期是指一个 Bean 实例从被创建到被销毁的整个过程。**Spring 容器负责管理 Bean 的生命周期，确保 Bean 在需要时正确创建、初始化和销毁。</p>
+<p>Spring Bean 的生命周期包括以下阶段：</p>
+<ol>
+<li>首先，通过BeanDefinition对象获取bean的定义信息</li>
+<li><strong>实例化bean：</strong> Spring 容器根据配置信息创建 Bean 的实例。（1 bean的创建）</li>
+<li><strong>依赖注入：</strong> Spring 容器将 Bean 的依赖注入到 Bean 实例中，即设置 Bean 的属性值和引用。</li>
+<li><strong>处理Aware接口：</strong> 如果 Bean 实现了 BeanNameAware 、BeanFactoryAware 和ApplicationContextAware接口，Spring 容器会回调相应的方法，以传递 Bean 的名称和 BeanFactory。</li>
+<li><strong>前置初始化（Initialization）：</strong> 如果 Bean 实现了 InitializingBean 接口，Spring 容器会调用其 afterPropertiesSet() 方法，完成 Bean 的前置初始化工作。</li>
+<li><strong>自定义初始化方法（Initialization）：</strong> 可以通过 @PostConstruct 注解或来定义自定义的初始化方法。</li>
+<li><strong>后置初始化（Initialization）：</strong> 如果 Bean 定义了 BeanPostProcessor 接口的实现类，Spring 容器会在初始化过程中调用它们的 postProcessBeforeInitialization() 方法，允许对 Bean 进行额外的处理。（2-6初始化赋值bean）（<strong>可以在此阶段使用AOP对对象进行增强，基于动态代理的方式</strong>）</li>
+<li><strong>Bean 使用：</strong> Bean 可以被正常使用，执行它们的业务逻辑。</li>
+<li><strong>销毁（Destruction）：</strong> 如果 Bean 实现了 DisposableBean 接口，Spring 容器在销毁 Bean 之前会调用它的 destroy() 方法。</li>
+</ol>
+<p>**默认情况下，Spring 容器中的 Bean 是单例的。**也就是说，对于同一个 Bean 定义，Spring 容器只会创建一个实例，并在后续的请求中重复使用这个实例。这种单例模式可以确保多个对象之间共享同一个实例，从而节省资源和提高性能。</p>
+<p>Spring 容器中的单例 Bean 在容器启动阶段被创建，并在整个容器的生命周期中保持活跃状态。无论是通过 XML 配置文件定义 Bean，还是通过注解声明 Bean，其默认的作用域（scope）都是单例的。</p>
+<h2 id="spring容器初始化阶段starter">Spring容器初始化阶段starter？<a hidden class="anchor" aria-hidden="true" href="#spring容器初始化阶段starter">#</a></h2>
+<p>在 Spring 容器启动阶段，会执行一系列的操作来初始化和准备容器，以及创建和配置所有的 Bean 实例。</p>
+<p>以下是 Spring 容器启动阶段会进行的主要操作：</p>
+<ol>
+<li>
+<p><strong>加载配置文件：</strong> Spring 容器会根据配置文件（通常是 XML 配置文件或基于注解的配置类）加载应用程序的配置信息。</p>
+</li>
+<li>
+<p><strong>创建容器：</strong> Spring 容器会根据加载的配置文件创建相应类型的容器。常见的容器类型包括 <code>ApplicationContext</code> 和 <code>BeanFactory</code>。</p>
+</li>
+<li>
+<p><strong>解析配置：</strong> 容器会解析配置文件中定义的 Bean 和其他配置信息，建立内部的数据结构来管理这些配置。</p>
+</li>
+<li>
+<p><strong>实例化 Bean：</strong> 容器会根据配置信息创建 Bean 实例。根据配置的作用域，可能会创建单例 Bean 或原型（prototype）Bean。</p>
+</li>
+<li>
+<p><strong>属性注入：</strong> 容器会通过依赖注入（DI）将属性值注入到 Bean 实例中，满足依赖关系。</p>
+</li>
+<li>
+<p><strong>Bean 生命周期回调：</strong> 容器会调用 Bean 生命周期的回调方法，比如调用 <code>@PostConstruct</code> 方法和 Bean 实现的 <code>InitializingBean</code> 接口的 <code>afterPropertiesSet()</code> 方法。</p>
+</li>
+<li>
+<p><strong>处理 Aware 接口：</strong> 如果 Bean 实现了 Aware 接口，容器会调用相应的回调方法，比如 BeanNameAware、ApplicationContextAware 等。</p>
+</li>
+<li>
+<p><strong>处理后置处理器（PostProcessor）：</strong> 容器会调用注册的 Bean 后置处理器，允许开发人员在 Bean 实例化之前或之后进行一些自定义的处理。</p>
+</li>
+<li>
+<p><strong>初始化单例 Bean：</strong> 对于单例 Bean，容器会在启动阶段初始化并提前创建这些 Bean。</p>
+</li>
+<li>
+<p><strong>完成启动：</strong> 容器完成上述所有操作后，即完成了启动阶段，此时容器已经准备好了所有的 Bean 实例，应用程序可以开始运行了。</p>
+</li>
+</ol>
+<p>总体来说，Spring 容器启动阶段的主要任务是读取配置信息、创建和配置 Bean 实例，并在需要时进行依赖注入和生命周期回调。一旦启动阶段完成，容器就进入了运行时阶段，提供服务并管理应用程序中的 Bean 实例。</p>
+<h2 id="spring框架中的bean是线程安全的吗">Spring框架中的bean是线程安全的吗<a hidden class="anchor" aria-hidden="true" href="#spring框架中的bean是线程安全的吗">#</a></h2>
+<p>答案：不是线程安全的</p>
+<p><strong>当多用户同时请求一个服务时，容器会给每一个请求分配一个线程，这时多个线程会并发执行该请求对应的业务逻辑（成员方法），如果该处理逻辑中有对该单例状态的修改（体现为该单例的成员属性），则必须考虑线程同步问题。</strong></p>
+<p>Spring框架并没有对单例bean进行任何多线程的封装处理。关于单例bean的线程安全和并发问题需要开发者自行去搞定。</p>
+<p>比如：我们通常在项目中使用的Spring bean都是不可变的状态(比如Service类和DAO类)，所以在某种程度上说Spring的单例bean是线程安全的。</p>
+<p>如果你的bean有多种状态的话（比如 View Model对象），就需要自行保证线程安全。最浅显的解决办法就是将多态bean的作用由“<strong>singleton</strong>”变更为“<strong>prototype</strong>”。</p>
+<h2 id="spring的事务你在项目中用到没有怎么用的">Spring的事务你在项目中用到没有，怎么用的?<a hidden class="anchor" aria-hidden="true" href="#spring的事务你在项目中用到没有怎么用的">#</a></h2>
+<p>Spring的事务常用的使用方式是通过@Transactional注解来实现。在项目中使用事务时，通常需要按照以下步骤进行配置：</p>
+<ul>
+<li>
+<p>在Spring的配置文件中开启事务管理，可以使用tx:annotation-driven标签或者@Bean注解方式。</p>
+</li>
+<li>
+<p><strong>在需要进行事务管理的方法或类上添加@Transactional注解</strong>。</p>
+</li>
+<li>
+<p>可以通过@Transactional注解的属性来配置事务的传播行为、隔离级别、回滚规则等。</p>
+</li>
+<li>
+<p>在方法内部进行数据库操作，当方法执行结束时，如果抛出异常，则事务会进行回滚；否则，事务会进行提交。</p>
+</li>
+</ul>
+<h2 id="spring事务管理有几种方式">Spring事务管理有几种方式<a hidden class="anchor" aria-hidden="true" href="#spring事务管理有几种方式">#</a></h2>
+<blockquote>
+<p>主要理解编程式和声明式管理方式</p>
+<p>Spring中的事务本质是通过AOP功能，对方法前后进行拦截，在执行方法之前开启事务，在执行完目标方法之后根据执行情况提交或者回滚事务</p>
+</blockquote>
+<p>Spring框架提供了多种方式来管理事务，以满足不同的应用场景和需求。以下是Spring事务管理的几种常见方式：</p>
+<ol>
+<li>
+<p><strong>编程式事务管理：</strong> 这种方式通过编写代码来显式地管理事务。开发人员需要在代码中手动开始、提交或回滚事务，使用Spring提供的TransactionTemplate或PlatformTransactionManager接口来实现。这种方式较为灵活，适用于在代码中需要<strong>精确控制事务</strong>的场景。</p>
+</li>
+<li>
+<p><strong>声明式事务管理（基于XML配置）：</strong> 这种方式通过在XML配置文件中声明事务管理的规则。开发人员可以通过XML配置来定义事务的传播行为、隔离级别、回滚规则等。然后，在需要应用事务的方法上，使用XML配置中定义的事务管理器进行事务管理。这种方式较为简单，适用于事务管理的规则相对固定的场景。</p>
+</li>
+<li>
+<p><strong>声明式事务管理（基于注解）：</strong> 这种方式<strong>通过在方法或类上使用注解</strong>来声明事务管理的规则。开发人员可以使用@Transactional注解来标记需要应用事务的方法，Spring会根据注解的配置来管理事务。这种方式简化了事务配置，使代码更加清晰，并且更容易与业务逻辑整合。</p>
+</li>
+<li>
+<p><strong>事务模板（TransactionTemplate）：</strong> 事务模板是Spring提供的编程式事务管理的方式之一。通过TransactionTemplate，开发人员可以在代码中精确控制事务的开始、提交和回滚，并在事务中执行需要的操作。</p>
+</li>
+<li>
+<p><strong>注解驱动事务管理：</strong> Spring支持使用@Transactional注解来声明事务管理的规则。开发人员可以将@Transactional注解应用在方法或类上，来标记需要应用事务的方法。这样，Spring会根据注解的配置来管理事务，实现声明式事务管理。</p>
+</li>
+<li>
+<p><strong>AOP 面向切面编程：</strong> Spring的事务管理底层实现就是使用了AOP。通过AOP，Spring可以在方法执行前后织入事务处理的逻辑，实现事务的开启、提交和回滚等操作。</p>
+</li>
+</ol>
+<p>不同的事务管理方式适用于不同的场景，开发人员可以根据具体的需求选择合适的事务管理方式。</p>
+<h2 id="声明式事务和编程式事务有什么区别">声明式事务和编程式事务有什么区别<a hidden class="anchor" aria-hidden="true" href="#声明式事务和编程式事务有什么区别">#</a></h2>
+<p>声明式事务和编程式事务是两种不同的事务管理方式，它们在事务管理的实现方式和使用方式上有一些区别。</p>
+<ol>
+<li>
+<p><strong>实现方式：</strong></p>
+<ul>
+<li>
+<p>编程式事务：编程式事务是<strong>通过编写代码来实现的</strong>。需要在代码中显式地开始、提交和回滚事务，使用Spring提供的编程式事务管理类（如TransactionTemplate）或接口（如PlatformTransactionManager）来实现。<strong>对业务代码有侵入性，项目中很少使用。</strong></p>
+</li>
+<li>
+<p>声明式事务：声明式事务是**通过注解或XML配置来实现的。**只需要在方法或类上添加相应的注解或配置即可，无需手动编写事务管理的代码。Spring框架会根据注解或配置来管理事务。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>使用方式：</strong></p>
+<ul>
+<li>
+<p>编程式事务：<strong>编程式事务需要代码中显式地管理事务，需要手动调用事务的开始、提交和回滚等方法</strong>。这种方式相对繁琐，需要更多的代码来处理事务。</p>
+</li>
+<li>
+<p>声明式事务：声明式事务只<strong>需要在应用事务的方法或类上添加相应的注解，Spring框架会根据注解的配置自动管理事务</strong>。这样可以使代码更加清晰，并且减少了手动处理事务的代码量。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>灵活性：</strong></p>
+<ul>
+<li>
+<p>编程式事务：<strong>编程式事务相对较为固定，事务管理的代码通常在业务逻辑代码中分散，难以集中管理</strong>。对于需要频繁修改事务规则的情况，使用编程式事务可能不够灵活。但能够实现精准事务控制。</p>
+</li>
+<li>
+<p>声明式事务：<strong>声明式事务更加灵活，可以根据不同的需求，使用不同的事务管理器和事务配置。</strong></p>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="spring的事务注解">Spring的事务注解<a hidden class="anchor" aria-hidden="true" href="#spring的事务注解">#</a></h2>
+<p>在 Spring 框架中，事务管理可以通过使用 <code>@Transactional</code> 注解来实现。<code>@Transactional</code> 注解可以应用在类或方法上，用于声明事务的属性和行为。<strong>它提供了一种简单、声明性的方式来管理方法或类的事务行为。</strong></p>
+<p>以下是常用的 <code>@Transactional</code> 注解的属性：</p>
+<ol>
+<li>
+<p><strong>propagation（传播行为）：</strong> 指定事务的传播行为，默认值是 <code>Propagation.REQUIRED</code>。传播行为定义了方法调用时如何使用现有的事务，比如是否创建新的事务、加入已有的事务等。</p>
+</li>
+<li>
+<p><strong>isolation（隔离级别）：</strong> 指定事务的隔离级别，默认值是 <code>Isolation.DEFAULT</code>。隔离级别定义了多个事务之间的数据隔离程度，包括读取未提交数据、读取已提交数据、可重复读、串行化等级别。</p>
+</li>
+<li>
+<p><strong>readOnly：</strong> 指定事务是否为只读事务，默认值是 <code>false</code>。如果设置为 <code>true</code>，则表示该事务只读取数据，不做数据修改操作。</p>
+</li>
+<li>
+<p><strong>timeout：</strong> 指定事务的超时时间，默认值是 <code>-1</code>，表示没有超时限制。如果设置了超时时间，在指定的时间内事务没有完成，将自动回滚。</p>
+</li>
+<li>
+<p><strong>rollbackFor 和 noRollbackFor：</strong> 分别指定事务中抛出哪些异常会触发回滚操作，以及哪些异常不会触发回滚。</p>
+</li>
+<li>
+<p><strong>transactionManager：</strong> 指定使用的事务管理器的名称。当应用中存在多个事务管理器时，可以通过该属性指定要使用的事务管理器。</p>
+</li>
+<li>
+<p><strong>value 和 qualifier：</strong> 这两个属性用于指定事务的名称。<code>value</code> 属性是 <code>@AliasFor</code> 注解，可以替代 <code>qualifier</code> 属性来指定事务的名称。</p>
+</li>
+</ol>
+<p>示例使用：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@Service</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyService</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@Transactional</span><span style="color:#f92672">(</span>propagation <span style="color:#f92672">=</span> Propagation<span style="color:#f92672">.</span><span style="color:#a6e22e">REQUIRED</span><span style="color:#f92672">,</span> isolation <span style="color:#f92672">=</span> Isolation<span style="color:#f92672">.</span><span style="color:#a6e22e">DEFAULT</span><span style="color:#f92672">,</span> readOnly <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span><span style="color:#f92672">,</span> timeout <span style="color:#f92672">=</span> <span style="color:#f92672">-</span>1<span style="color:#f92672">,</span> rollbackFor <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>Exception<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">})</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">myTransactionalMethod</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// 事务方法的业务逻辑
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>在上面的例子中，<code>myTransactionalMethod()</code> 方法会被声明为一个事务方法，当调用该方法时，Spring 会根据 <code>@Transactional</code> 注解的属性来管理该方法的事务行为。</p>
+<h2 id="spring事务的传播机制">Spring事务的传播机制？<a hidden class="anchor" aria-hidden="true" href="#spring事务的传播机制">#</a></h2>
+<blockquote>
+<p><strong>讲一下Spring事务的传播机制？</strong></p>
+</blockquote>
+<p>Spring 事务的传播机制决定了事务如何在方法调用之间传播。</p>
+<p>Spring 支持下面的事务传播机制：propagation</p>
+<ul>
+<li>PROPAGATION_REQUIRED：**如果当前存在事务，则加入当前事务，如果当前不存在事务，则新建一个事务。**required</li>
+<li>PROPAGATION_SUPPORTS：如果当前存在事务，则加入当前事务，**如果当前不存在事务，则以非事务的方式执行。**supports</li>
+<li>PROPAGATION_MANDATORY：如果当前存在事务，则加入当前事务，**如果当前不存在事务，则抛出异常。**mandatory</li>
+<li>PROPAGATION_REQUIRES_NEW：当前存在事务则挂起当前事务，并新建一个事务执行。requires_new</li>
+<li>PROPAGATION_NOT_SUPPORTED：以非事务的方式执行，如果当前存在事务，则挂起事务。not_supported</li>
+<li>PROPAGATION_NEVER：**以非事务的方式执行，如果当前存在事务，则抛出异常。**never</li>
+<li>PROPAGATION_NESTED：如果当前存在事务，则在嵌套事务中执行，如果当前不存在事务，则新建一个事务。nested</li>
+</ul>
+<blockquote>
+<p><strong>有时候在一个大的事务中，需要执行一些小的业务操作，这些小的业务操作可以单独成功或失败，不影响大的事务，这属于哪种事务传播机制？</strong></p>
+</blockquote>
+<p>大事务中执行小业务操作不影响大事务的情况，可以使用 <strong>PROPAGATION_REQUIRES_NEW 事务传播机制</strong>。在这种传播机制下，一个新的独立事务将会被开启，它不依赖于外部事务。即使内部事务失败回滚，外部事务也不受影响，而且内部事务可以独立地提交或回滚，不会影响到外部事务的结果。</p>
+<blockquote>
+<p><strong>如果当前存在事务，则使用当前事务，如果当前不存在事务，则无事务执行，这属于哪种事务传播机制？</strong></p>
+</blockquote>
+<p><strong>PROPAGATION_NOT_SUPPORTED</strong>，即如果当前存在事务，则加入当前事务；如果当前不存在事务，则以无事务的方式执行方法。这种传播行为会在方法执行时，暂时暂停已有的事务（如果有的话），然后以非事务方式执行当前方法，从而实现无事务的效果。这在某些情况下很有用，特别是当你想要在不影响现有事务的情况下执行一段逻辑时。</p>
+<h2 id="spring中事务失效的场景有哪些">Spring中事务失效的场景有哪些？<a hidden class="anchor" aria-hidden="true" href="#spring中事务失效的场景有哪些">#</a></h2>
+<blockquote>
+<p>本题考察对spring框架的深入理解、复杂业务的编码经验</p>
+</blockquote>
+<p>失效场景：</p>
+<ol>
+<li>异常捕获处理</li>
+<li>抛出检查异常</li>
+<li>非public方法导致的异常</li>
+</ol>
+<blockquote>
+<p>异常捕获处理</p>
+</blockquote>
+<ul>
+<li>
+<p>事务通知只有捉到了目标抛出的异常，才能进行后续的回滚处理，如果目标自己处理掉异常，事务通知无法知悉。</p>
+</li>
+<li>
+<p>即如果在使用Spring事务的方法中，如果对可能出现的异常进行自己处理（<code>e.printStackTrace</code>），Spring是发觉不到出现异常的，事务也就失效了。</p>
+</li>
+<li>
+<p>解决方法：在catch块中添加<code>throw new RuntimeException(e)</code>抛出</p>
+</li>
+</ul>
+<blockquote>
+<p>抛出检查异常</p>
+</blockquote>
+<ul>
+<li>Spring 默认只会回滚非检查异常（RuntimeException），像FileNotFoundException就不会被检测到</li>
+</ul>
+<p>解决方法：配置rollbackFor属性为Exception</p>
+<blockquote>
+<p>非public方法导致的异常</p>
+</blockquote>
+<p>Spring为方法创建代理、添加事务通知、前提条件都是该方法是public为前提。</p>
+<p>解决：方法改为public</p>
+<h2 id="spring给我们提供了很多扩展点这些有了解吗">Spring给我们提供了很多扩展点，这些有了解吗？<a hidden class="anchor" aria-hidden="true" href="#spring给我们提供了很多扩展点这些有了解吗">#</a></h2>
+<p>不太清楚扩展点指的什么</p>
+<p><strong>作者补充：</strong></p>
+<p>Spring框架提供了许多扩展点，使得开发者可以根据需求定制和扩展Spring的功能。以下是一些常用的扩展点：</p>
+<ol>
+<li>BeanFactoryPostProcessor：允许在Spring容器实例化bean之前修改bean的定义。常用于修改bean属性或改变bean的作用域。</li>
+<li>BeanPostProcessor：可以在bean实例化、配置以及初始化之后对其进行额外处理。常用于代理bean、修改bean属性等。</li>
+<li>PropertySource：用于定义不同的属性源，如文件、数据库等，以便在Spring应用中使用。</li>
+<li>ImportSelector和ImportBeanDefinitionRegistrar：用于根据条件动态注册bean定义，实现配置类的模块化。</li>
+<li>Spring MVC中的HandlerInterceptor：用于拦截处理请求，可以在请求处理前、处理中和处理后执行特定逻辑。</li>
+<li>Spring MVC中的ControllerAdvice：用于全局处理控制器的异常、数据绑定和数据校验。</li>
+<li>Spring Boot的自动配置：通过创建自定义的自动配置类，可以实现对框架和第三方库的自动配置。</li>
+<li>自定义注解：创建自定义注解，用于实现特定功能或约定，如权限控制、日志记录等。</li>
+</ol>
+<h2 id="动态代理有哪两种如何实现">动态代理有哪两种？如何实现？<a hidden class="anchor" aria-hidden="true" href="#动态代理有哪两种如何实现">#</a></h2>
+<p>在 Java 中，动态代理有两种主要的实现方式：</p>
+<ol>
+<li>
+<p><strong>基于接口的动态代理（JDK 动态代理）：</strong> JDK 动态代理是 Java 标准库提供的一种动态代理实现方式。它基于接口，要求被代理的类必须实现至少一个接口。JDK 动态代理使用 <code>java.lang.reflect.Proxy</code> 类来创建代理对象。代理对象实现了被代理接口，并将方法调用转发给一个实现了 <code>InvocationHandler</code> 接口的处理器对象。处理器对象中实现了对原始方法的增强逻辑。</p>
+<p>JDK 动态代理的步骤：</p>
+<ul>
+<li>定义一个接口（或一组接口）；</li>
+<li>创建一个实现 <code>InvocationHandler</code> 接口的处理器对象；</li>
+<li>使用 <code>Proxy.newProxyInstance()</code> 方法创建代理对象，并指定接口、处理器对象以及类加载器。</li>
+</ul>
+</li>
+<li>
+<p><strong>基于类的动态代理（CGLIB 动态代理）：</strong> CGLIB（Code Generation Library）是一个开源的第三方库，它可以在运行时动态生成类的字节码。CGLIB 动态代理不要求被代理的类实现接口，它直接生成被代理类的子类，并重写其中的方法来实现代理。CGLIB 动态代理使用 <code>net.sf.cglib.proxy.Enhancer</code> 类来创建代理对象。</p>
+<p>CGLIB 动态代理的步骤：</p>
+<ul>
+<li>创建一个 <code>Enhancer</code> 对象；</li>
+<li>设置被代理类作为父类；</li>
+<li>设置 <code>MethodInterceptor</code> 对象，用于实现对原始方法的增强逻辑；</li>
+<li>使用 <code>Enhancer.create()</code> 方法创建代理对象。</li>
+</ul>
+</li>
+</ol>
+<p>需要注意的是，JDK 动态代理只能代理实现了接口的类，而 CGLIB 动态代理可以代理普通类。由于 JDK 动态代理基于接口，因此在某些情况下只能使用 CGLIB 动态代理。</p>
+<blockquote>
+<p>选择使用哪种动态代理方式取决于被代理类的类型和需求。如果被代理类实现了接口，优先考虑使用 JDK 动态代理。如果被代理类没有实现接口，可以考虑使用 CGLIB 动态代理。</p>
+</blockquote>
+<p><strong>1、JDK动态代理具体实现原理：</strong></p>
+<p>通过实现 InvocationHandler 接口创建自己的调用处理器；</p>
+<p>通过为Proxy类指定 ClassLoader 对象和一组interface来创建动态代理；</p>
+<p>通过反射机制获取动态代理类的构造函数，其唯一参数类型就是调用处理器接口类型；</p>
+<p>通过构造函数创建动态代理类实例，构造时调用处理器对象作为参数参入；</p>
+<p><strong>JDK动态代理是面向接口的代理模式</strong>，如果被代理目标没有接口那么Spring也无能为力，Spring通过Java的反射机制生产被代理接口的新的匿名实现类，重写了其中AOP的增强方法。</p>
+<p><strong>2、CGLib动态代理：</strong></p>
+<p>利用ASM开源包，对代理对象类的class文件加载进来，<strong>通过修改其字节码生成子类来处理。</strong></p>
+<p><strong>3、两者对比：</strong></p>
+<p>JDK动态代理是<strong>面向接口</strong>的。</p>
+<p>CGLib动态代理是<strong>通过字节码底层继承要代理类来实现</strong>，因此如果<strong>被代理类被final关键字所修饰，会失败。</strong></p>
+<p><strong>如果要被代理的对象是个实现类，那么Spring会使用JDK动态代理来完成操作</strong>（Spirng默认采用JDK动态代理实现机制）；</p>
+<p>**如果要被代理的对象不是个实现类，那么Spring会强制使用CGLib来实现动态代理。</p>
+<h2 id="代理模式和适配器模式有什么区别">代理模式和适配器模式有什么区别？<a hidden class="anchor" aria-hidden="true" href="#代理模式和适配器模式有什么区别">#</a></h2>
+<p>代理模式主要是去加强一个类的方法。适配器模式是接口转换成一个想要的接口（这个问题被面试说回答的不好）</p>
+<p><strong>作者补充：</strong></p>
+<p>代理模式和适配器模式是两种常用的设计模式，它们的区别主要体现在以下几个方面：</p>
+<ol>
+<li>作用不同：代理模式是为了控制对对象的访问，而适配器模式是为了解决接口不匹配的问题。</li>
+<li>解决问题的角度不同：代理模式是从外部控制访问，保护目标对象，而适配器模式是从内部改变对象接口，让其能够适配客户端的要求。</li>
+<li>实现方式不同：代理模式通常使用面向对象的继承或者组合方式实现，而适配器模式则通常使用对象组合方式实现。</li>
+<li>适用场景不同：代理模式适用于需要对对象进行控制和保护的情况，例如远程代理、虚拟代理等。适配器模式适用于需要将一个类的接口转换成客户端期望的另一个接口的情况，例如旧系统的升级改造、不兼容接口的统一等。</li>
+</ol>
+<h1 id="springmvc-1">SpringMVC<a hidden class="anchor" aria-hidden="true" href="#springmvc-1">#</a></h1>
+<p>SpringMVC 框架</p>
+<p>SpringMVC 是一个基于 Java 的实现了 MVC 设计模式的请求驱动类型的轻量级 Web 框架，通过把 Model，View，Controller 分离，将 Web 层进行职责解耦，把复杂的 Web 应用分成逻辑清晰的几部分，简化开发，减少出错，方便组内开发人员之间的配合。 简而言之，SpringMVC 就是将我们原来开发在 Servlet 中的代码拆分了，一部分由 SpringMVC 完成，一部分由我们自己完成。</p>
+<p>SpringMVC 主要组件</p>
+<p>前端控制器 DispatcherServlet：接收请求、响应结果，相当于转发器，有了 DispatcherServlet 就减少了其它组件之间的耦合度。</p>
+<p>处理器映射器 HandlerMapping：根据请求的 URL 来查找 Handler。</p>
+<p>处理器适配器 HandlerAdapter：负责执行 Handler。</p>
+<p>处理器 Handler：处理业务逻辑的 Java 类（我们自己写的 Controller 类）。</p>
+<p>视图解析器 ViewResolver：进行视图的解析，根据视图逻辑名将 ModelAndView 解析成真正的视图（view） 。</p>
+<p>视图 View：View 是一个接口， 它的实现类支持不同的视图类型，如 jsp，freemarker， pdf 等。</p>
+<h2 id="spring和spring-mvc的区别">Spring和Spring MVC的区别<a hidden class="anchor" aria-hidden="true" href="#spring和spring-mvc的区别">#</a></h2>
+<p>Spring 和 Spring MVC 是两个相关但不同的模块。</p>
+<ol>
+<li>
+<p><strong>Spring：</strong> Spring 是一个综合性的企业级开发框架，提供了大量的功能和特性，用于简化企业级应用程序的开发。它的核心是 IoC（控制反转）和 AOP（面向切面编程）容器。Spring 提供了一系列的模块，包括但不限于：</p>
+<ul>
+<li>Spring Core：提供 IoC 容器和依赖注入功能，负责管理对象的创建和生命周期。</li>
+<li>Spring AOP：实现面向切面编程，用于在程序运行时动态地添加横切关注点。</li>
+<li>Spring ORM：集成了各种 ORM 框架，如 Hibernate、JPA，用于数据库访问。</li>
+<li>Spring JDBC：提供对 JDBC 的封装，简化数据库访问。</li>
+<li>Spring Transactions：提供声明式事务管理。</li>
+<li>Spring Security：提供安全认证和授权功能等。</li>
+</ul>
+</li>
+<li>
+<p><strong>Spring MVC：</strong> Spring MVC 是 Spring 框架的一个模块，用于构建基于 MVC（Model-View-Controller）模式的 Web 应用程序。它是 Spring 框架的一部分，用于处理 Web 请求、响应和视图渲染等。Spring MVC 提供了一个灵活的、基于注解的控制器模型，允许开发人员通过注解来定义请求处理方法。Spring MVC 的核心组件包括：</p>
+<ul>
+<li>DispatcherServlet：前端控制器，用于拦截所有的请求，并将其分发给相应的处理器。</li>
+<li>HandlerMapping：用于将请求映射到相应的处理器。</li>
+<li>HandlerAdapter：用于执行处理器方法，并处理方法返回的结果。</li>
+<li>ViewResolver：用于将逻辑视图名解析为实际的视图。</li>
+</ul>
+</li>
+</ol>
+<p>总结：Spring 是一个综合性的企业级开发框架，提供了依赖注入、面向切面编程、数据库访问、事务管理、安全认证等功能。而 Spring MVC 则是 Spring 框架中用于构建 Web 应用程序的一个模块，它基于 MVC 模式，用于处理 Web 请求、响应和视图渲染。 Spring MVC 通常作为 Spring 框架的一部分使用，用于构建 Web 层，使得开发 Web 应用程序更加方便和高效。</p>
+<h2 id="springspringmvcspringboot-三者之间是什么关系">Spring、SpringMVC、SpringBoot 三者之间是什么关系？<a hidden class="anchor" aria-hidden="true" href="#springspringmvcspringboot-三者之间是什么关系">#</a></h2>
+<p>Spring、SpringMVC、SpringBoot 是三个独立的框架，它们之间的关系是：</p>
+<ol>
+<li><strong>Spring 是一个 Java 的轻量级应用框架</strong>，提供了<strong>基于 IoC 和 AOP 的支持，用于构建企业级应用</strong>。Spring 有多个模块，包括 Spring Core、Spring Context、Spring JDBC、Spring Web 等，每个模块提供了不同的功能。</li>
+<li><strong>SpringMVC 是 Spring 框架的一部分</strong>，是<strong>基于 MVC 设计模式的 Web 框架</strong>，用于构建 Web 应用程序。它提供了控制器、视图解析器、数据绑定、异常处理等功能，使得开发 Web 应用变得更加简单。SpringMVC 还支持 RESTful 架构。</li>
+<li><strong>SpringBoot 是基于 Spring 框架的一个开发框架</strong>，用于快速构建独立的、生产级别的 Spring 应用程序。它<strong>通过自动配置和约定优于配置的方式</strong>，<strong>简化了 Spring 应用程序的配置和开发过程</strong>。SpringBoot 集成了很多常用的第三方库和工具，例如 Spring Data、Spring Security、Thymeleaf、Logback 等，可以极大地提高开发效率。</li>
+</ol>
+<p>因此，SpringBoot 可以看作是在 Spring 的基础上，通过自动配置和约定优于配置的方式，提供了更加简单、快速的开发体验。而 SpringMVC 则是 Spring 框架中用于构建 Web 应用程序的模块。</p>
+<h2 id="spring-mvc执行流程-x">Spring MVC执行流程 X<a hidden class="anchor" aria-hidden="true" href="#spring-mvc执行流程-x">#</a></h2>
+<p><img loading="lazy" src="https://alylmengbucket.oss-cn-nanjing.aliyuncs.com/pictures/202308040930598.png" alt="7a9cf9e8548645ec9aa5fd302a53cc26"  />
+</p>
+<p>视图版本（JSP）</p>
+<ol>
+<li>用户发送请求到前端控制器（DispatcherServlet）。这是一个调度中心</li>
+<li>前端控制器 （ DispatcherServlet ） 收到请求调用处理器映射器 （HandlerMapping），去查找处理器（Handler）。</li>
+<li>处理器映射器（HandlerMapping）找到具体的处理器(可以根据 xml 配置、注解进行查找)，生成处理器对象及处理器拦截器(如果有则生成)一并返回给前端控制器 DispatcherServlet。</li>
+<li>前端控制器（DispatcherServlet）调用处理器适配器（HandlerAdapter）。</li>
+<li>处理器适配器（HandlerAdapter）去调用自定义的处理器类（Controller）。</li>
+<li>自定义的处理器类（Controller）将得到的参数进行处理并返回结果给处理器适配器（HandlerAdapter）。</li>
+<li>处理器适配器 （ HandlerAdapter ）将得到的结果返回给前端控制器 （DispatcherServlet）。</li>
+<li>前端控制器（DispatcherServlet ）将 ModelAndView 传给视图解析器 （ViewReslover）。</li>
+<li>视图解析器（ViewReslover）将得到的参数从逻辑视图转换为物理视图并返回给前端控制器（DispatcherServlet）。</li>
+<li>前端控制器（DispatcherServlet）调用物理视图进行渲染并返回。</li>
+<li>前端控制器（DispatcherServlet）将渲染后的结果返回。</li>
+</ol>
+<p><strong>这是之前有JSP视图的流程，现在基本都是前后端分离开发的，并没有视图这些，一般都是handler中使用Response直接结果返回。</strong></p>
+<p>前后端开发，接口开发</p>
+<ol>
+<li>用户发送请求到前端控制器（DispatcherServlet）。</li>
+<li>前端控制器 （ DispatcherServlet ） 收到请求调用处理器映射器 （HandlerMapping），去查找处理器（Handler）。</li>
+<li>处理器映射器（HandlerMapping）找到具体的处理器(可以根据 xml 配置、注解进行查找)，生成处理器对象及处理器拦截器(如果有则生成)一并返回给 DispatcherServlet。</li>
+<li>前端控制器（DispatcherServlet）调用处理器适配器（HandlerAdapter）。</li>
+<li>处理器适配器（HandlerAdapter）去调用自定义的处理器类（Controller）。</li>
+<li>方法上加上了@RequestBody注解</li>
+<li>通过HttpMessageConvert来返回结果转换为JSON并响应</li>
+</ol>
+<h1 id="springboot-1">SpringBoot<a hidden class="anchor" aria-hidden="true" href="#springboot-1">#</a></h1>
+<h2 id="springboot比spring相比的优点">SpringBoot比Spring相比的优点<a hidden class="anchor" aria-hidden="true" href="#springboot比spring相比的优点">#</a></h2>
+<p>SpringBoot的优点：</p>
+<ul>
+<li>Spring Boot 可以快速创建独⽴的 Spring 应⽤程序。</li>
+<li>Spring Boot 内嵌了如 Tomcat，Jetty 和 Undertow 这样的容器，也就是说可以直接跑起来， ⽤不着再做部署⼯作了。</li>
+<li>Spring Boot ⽆需再像 Spring ⼀样使⽤⼀堆繁琐的 xml ⽂件配置。</li>
+<li>Spring Boot 可以⾃动配置(核⼼)Spring。SpringBoot 将原有的 XML 配置改为 Java 配置，将 bean 注⼊改为使⽤注解注⼊的⽅式(@Autowire)，并将多个 xml、properties 配置浓缩在⼀个 appliaction.yml 配置⽂件中。</li>
+<li>Spring Boot 提供了⼀些现有的功能，如量度⼯具，表单数据验证以及⼀些外部配置这样的⼀些 第三⽅功能。</li>
+<li>Spring Boot 可以快速整合常⽤依赖（开发库，例如 spring-webmvc、jackson-json、 validation-api 和 tomcat 等），提供的 POM 可以简化 Maven 的配置。当我们引⼊核⼼依赖 时，SpringBoot 会⾃引⼊其他依赖。</li>
+</ul>
+<p>Spring Boot 是在 Spring 框架基础上构建的一种简化配置、快速开发的框架，它具有许多优点相对于传统的 Spring 框架，以下是一些 Spring Boot 相对于 Spring 的优点：</p>
+<ol>
+<li>
+<p><strong>简化配置：</strong> Spring Boot 可以通过约定大于配置的方式，自动配置大部分应用程序所需的配置，减少了繁琐的 XML 配置，使得应用的配置更加简单。</p>
+</li>
+<li>
+<p><strong>快速开发：</strong> Spring Boot 提供了一系列的 Starter 和自动配置，使得开发者可以快速搭建一个可用的应用，并专注于业务逻辑的开发，提高开发效率。</p>
+</li>
+<li>
+<p><strong>集成方便：</strong> Spring Boot 内置了许多常用的第三方库和框架的 Starter，可以方便地集成数据库、消息队列、安全认证、监控等功能，减少了集成的复杂性。</p>
+</li>
+<li>
+<p><strong>嵌入式 Web 服务器：</strong> Spring Boot 默认使用嵌入式的 Web 服务器（如 Tomcat、Jetty），不需要部署在外部容器中，简化了部署和运行的过程。</p>
+</li>
+<li>
+<p><strong>自动化配置：</strong> Spring Boot 可以根据类路径上的依赖和配置，自动配置 Bean 和各种组件，大大减少了手动配置的工作。</p>
+</li>
+<li>
+<p><strong>单一 Jar 包：</strong> Spring Boot 可以将应用及其依赖打包成一个可执行的 Jar 文件，方便部署和运行，也便于容器化部署。</p>
+</li>
+<li>
+<p><strong>健康监测：</strong> Spring Boot 提供了健康检查和监控功能，可以方便地查看应用的状态和性能指标。</p>
+</li>
+<li>
+<p><strong>生态系统：</strong> Spring Boot 是 Spring 生态系统中的一部分，可以与其他 Spring 项目无缝集成，如 Spring Cloud 用于构建微服务架构。</p>
+</li>
+</ol>
+<p>总的来说，Spring Boot 是一个非常便捷的框架，它简化了 Spring 应用的开发和配置，提高了开发效率，让开发者可以更专注于业务逻辑的实现。同时，Spring Boot 的自动化配置和快速集成功能也为构建现代化的应用提供了很多便利。</p>
+<h2 id="spring-和-spring-boot区别">Spring 和 Spring Boot区别<a hidden class="anchor" aria-hidden="true" href="#spring-和-spring-boot区别">#</a></h2>
+<p>Spring 和 Spring Boot 是两个相关但不同的概念：</p>
+<ol>
+<li>
+<p><strong>Spring：</strong> Spring 是一个综合性的企业级开发框架，提供了大量的功能和特性，用于简化企业级应用程序的开发。Spring 的核心是 IoC（控制反转）和 AOP（面向切面编程）容器。它提供了依赖注入、面向切面编程、事务管理、数据库访问、安全认证等众多功能。</p>
+</li>
+<li>
+<p><strong>Spring Boot：</strong> Spring Boot 是在 Spring 框架基础上构建的一种简化配置、快速开发的框架。它借助于自动配置和约定大于配置的原则，使得开发者可以快速搭建可用的应用程序，并专注于业务逻辑的开发。Spring Boot 提供了一系列 Starter 和自动配置，简化了应用的配置和依赖管理。</p>
+</li>
+</ol>
+<p>总结：</p>
+<ul>
+<li>Spring 是一个完整的企业级开发框架，提供了众多功能和模块，适用于各种规模的企业应用开发。</li>
+<li>Spring Boot 是在 Spring 框架基础上的扩展，目标是简化 Spring 应用的开发和配置，提高开发效率。</li>
+<li>Spring Boot 提供了自动配置、Starter 和约定大于配置等特性，使得开发者能够更轻松地构建现代化的应用。</li>
+<li>Spring Boot 是 Spring 生态系统的一部分，可以与其他 Spring 项目（如 Spring Cloud）无缝集成，用于构建分布式和微服务架构。</li>
+</ul>
+<h2 id="springboot的启动流程">SpringBoot的启动流程<a hidden class="anchor" aria-hidden="true" href="#springboot的启动流程">#</a></h2>
+<p>Spring Boot 的启动流程可以简要概括为以下几个步骤：</p>
+<ol>
+<li>
+<p><strong>加载 Spring Boot 应用配置：</strong> 当应用启动时，Spring Boot 会读取默认的配置文件（例如 <code>application.properties</code> 或 <code>application.yml</code>）以及自定义的配置文件，并将配置信息加载到 Spring 的环境中。</p>
+</li>
+<li>
+<p><strong>创建 Spring Boot 应用上下文（ApplicationContext）：</strong> Spring Boot 会根据加载的配置信息创建应用上下文，应用上下文是 Spring 中的核心容器，用于管理和组织 Bean 对象。</p>
+</li>
+<li>
+<p><strong>扫描和注册 Bean：</strong> Spring Boot 会自动扫描指定包及其子包，查找带有注解（如 <code>@Component</code>、<code>@Service</code>、<code>@Controller</code> 等）的类，并将这些类注册为 Bean。</p>
+</li>
+<li>
+<p><strong>执行 SpringApplicationRunListeners：</strong> Spring Boot 在应用启动的过程中会执行一系列的监听器（<code>SpringApplicationRunListener</code>），用于在不同阶段执行自定义的操作。</p>
+</li>
+<li>
+<p><strong>执行 ApplicationRunner 和 CommandLineRunner：</strong> Spring Boot 提供了两个接口 <code>ApplicationRunner</code> 和 <code>CommandLineRunner</code>，可以让开发者在 Spring Boot 启动完成后执行一些初始化操作。</p>
+</li>
+<li>
+<p><strong>启动 Web 服务器：</strong> 如果应用是一个 Web 应用，Spring Boot 会根据配置选择合适的 Web 服务器（如 Tomcat、Jetty），并将应用部署到 Web 服务器中。</p>
+</li>
+<li>
+<p><strong>应用启动完成：</strong> 当所有初始化和配置工作完成后，Spring Boot 应用就启动完成了，可以响应外部请求。</p>
+</li>
+</ol>
+<p>在整个启动流程中，Spring Boot 通过自动配置和约定大于配置的原则，大大简化了应用的配置和启动过程，让开发者可以更加专注于业务逻辑的开发，提高开发效率。</p>
+<h2 id="spring-boot的starter机制了解吗">Spring Boot的Starter机制了解吗？<a hidden class="anchor" aria-hidden="true" href="#spring-boot的starter机制了解吗">#</a></h2>
+<p>Spring Boot Starter 是 Spring Boot 中用于快速集成和配置特定功能的一种机制。它将相关的依赖项、配置和代码封装在一个 Maven 项目中，以提供特定功能的“启动器”。</p>
+<p>Spring Boot Starter 的主要特点和作用包括：</p>
+<ol>
+<li>
+<p><strong>简化配置：</strong> Starter 封装了一组相关的依赖项和配置，可以一次性引入一个 Starter，从而避免手动添加多个依赖项和配置的繁琐过程。</p>
+</li>
+<li>
+<p><strong>约定大于配置：</strong> Starter 遵循约定大于配置的原则，提供了默认的配置和依赖项，使得开发者只需要关注自定义配置，而不必过多地关注底层的依赖项。</p>
+</li>
+<li>
+<p><strong>功能模块化：</strong> Starter 将功能模块化，每个 Starter 提供特定的功能。例如，Spring Boot 提供了多个 Starter，如 <code>spring-boot-starter-web</code> 用于启动 Web 应用，<code>spring-boot-starter-data-jpa</code> 用于启动 JPA 数据访问。</p>
+</li>
+<li>
+<p><strong>易于扩展：</strong> 开发者可以自定义和编写自己的 Starter，将自定义的功能封装为 Starter，以供项目中使用。</p>
+</li>
+</ol>
+<p>Spring Boot Starter 的命名约定为 <code>spring-boot-starter-*</code>，其中 <code>*</code> 表示特定的功能模块。当引入一个 Starter 时，Spring Boot 会自动将相关的依赖项和配置添加到项目中。</p>
+<p>例如，如果需要启动一个 Web 应用，只需在 <code>pom.xml</code> 文件中添加以下依赖：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;dependency&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;groupId&gt;</span>org.springframework.boot<span style="color:#f92672">&lt;/groupId&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;artifactId&gt;</span>spring-boot-starter-web<span style="color:#f92672">&lt;/artifactId&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/dependency&gt;</span>
+</span></span></code></pre></div><p>Spring Boot 会自动将与 Web 相关的依赖项和配置添加到项目中，使得开发者可以快速搭建一个可用的 Web 应用。</p>
+<p>通过使用 Starter 机制，Spring Boot 大大简化了应用的配置和依赖管理，让开发者更加专注于业务开发，提高了开发效率。同时，Starter 也促进了模块化的应用设计，使得应用更加易于维护和扩展。</p>
+<h2 id="springboot的配置文件">SpringBoot的配置文件<a hidden class="anchor" aria-hidden="true" href="#springboot的配置文件">#</a></h2>
+<p>Spring Boot 支持多种类型的配置文件，用于配置应用程序的属性和参数。常见的配置文件类型有：</p>
+<ol>
+<li>
+<p><strong>application.properties：</strong> 这是最常用的配置文件类型，采用键值对的形式，用于配置应用程序的属性。在 Spring Boot 应用的 <code>src/main/resources</code> 目录下，可以创建一个名为 <code>application.properties</code> 的文件，并在其中设置属性值。</p>
+<p>示例：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-properties" data-lang="properties"><span style="display:flex;"><span><span style="color:#75715e"># 数据库连接配置</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">spring.datasource.url</span><span style="color:#f92672">=</span><span style="color:#e6db74">jdbc:mysql://localhost:3306/mydb</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">spring.datasource.username</span><span style="color:#f92672">=</span><span style="color:#e6db74">root</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">spring.datasource.password</span><span style="color:#f92672">=</span><span style="color:#e6db74">secret</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Web 服务器端口</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">server.port</span><span style="color:#f92672">=</span><span style="color:#e6db74">8080</span>
+</span></span></code></pre></div></li>
+<li>
+<p><strong>application.yml：</strong> 这是另一种常见的配置文件类型，采用 YAML（YAML Ain&rsquo;t Markup Language）格式，使用缩进来表示层次关系，可读性较好。在 Spring Boot 应用的 <code>src/main/resources</code> 目录下，可以创建一个名为 <code>application.yml</code> 的文件，并在其中设置属性值。</p>
+<p>示例：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># 数据库连接配置</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spring</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">datasource</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">url</span>: <span style="color:#ae81ff">jdbc:mysql://localhost:3306/mydb</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">username</span>: <span style="color:#ae81ff">root</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">password</span>: <span style="color:#ae81ff">secret</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Web 服务器端口</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">server</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">port</span>: <span style="color:#ae81ff">8080</span>
+</span></span></code></pre></div></li>
+<li>
+<p><strong>application-{profile}.properties 或 application-{profile}.yml：</strong> 这是针对不同环境的配置文件，可以根据不同的运行环境使用不同的配置。<code>{profile}</code> 是环境的标识，例如 <code>dev</code>、<code>prod</code> 等。</p>
+<p>示例：</p>
+<ul>
+<li>
+<p><code>application-dev.properties</code>：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-properties" data-lang="properties"><span style="display:flex;"><span><span style="color:#75715e"># 开发环境数据库配置</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">spring.datasource.url</span><span style="color:#f92672">=</span><span style="color:#e6db74">jdbc:mysql://dev-server:3306/mydb</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">spring.datasource.username</span><span style="color:#f92672">=</span><span style="color:#e6db74">dev-user</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">spring.datasource.password</span><span style="color:#f92672">=</span><span style="color:#e6db74">dev-password</span>
+</span></span></code></pre></div></li>
+<li>
+<p><code>application-prod.properties</code>：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-properties" data-lang="properties"><span style="display:flex;"><span><span style="color:#75715e"># 生产环境数据库配置</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">spring.datasource.url</span><span style="color:#f92672">=</span><span style="color:#e6db74">jdbc:mysql://prod-server:3306/mydb</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">spring.datasource.username</span><span style="color:#f92672">=</span><span style="color:#e6db74">prod-user</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">spring.datasource.password</span><span style="color:#f92672">=</span><span style="color:#e6db74">prod-password</span>
+</span></span></code></pre></div></li>
+</ul>
+</li>
+<li>
+<p><strong>bootstrap.properties 或 bootstrap.yml：</strong> 这是用于 Spring Cloud 配置的特殊配置文件。在 Spring Boot 应用中，如果引入了 Spring Cloud 的相关依赖，可以使用 <code>bootstrap.properties</code> 或 <code>bootstrap.yml</code> 来配置应用程序的属性。</p>
+</li>
+</ol>
+<p>这些配置文件可以在 Spring Boot 应用的 <code>src/main/resources</code> 目录下创建，并根据需要设置不同的属性值。Spring Boot 会自动加载这些配置文件，并将其中的属性值注入到应用程序中。同时，可以使用多个配置文件来实现不同环境下的配置管理，使得应用程序更具灵活性和可维护性。</p>
+<h2 id="spring-boot-的自动配置原理-x">Spring Boot 的自动配置原理 X<a hidden class="anchor" aria-hidden="true" href="#spring-boot-的自动配置原理-x">#</a></h2>
+<p>Spring Boot 的自动装配（Auto-configuration）是指在应用启动时，Spring Boot 根据项目的依赖和配置，自动完成一系列的配置工作，以简化开发者的配置过程。</p>
+<p>在Spring Boot项目中的引导类上有一个注解<code>@SpringBootApplication</code>，这个 注解是对三个注解进行了封装，分别是：</p>
+<ul>
+<li><code>@SpringBootConfiguration </code></li>
+<li><code>@EnableAutoConfiguration </code></li>
+<li><code>@ComponentScan</code></li>
+</ul>
+<p>其中<code>@EnableAutoConfiguration</code>是实现自动配置的核心注解，该注解通过@Import注解导入对应的配置选择器。关键是内部就是读取了该项目引用jar包的类路径上的 <code>META-INF/spring.factories </code>文件中所配置的类的全类名</p>
+<p>在这些配置类中所定义的Bean会根据条件注解所指定的条件来决定是否需要 将其导入到Spring容器中。</p>
+<p>一般条件判断会有像 <code>@ConditionalOnClass</code> 这样的注解，判断是否有对应的 class文件，如果有则加载该类，把这个配置类的所有的Bean放入spring容器 中使用。</p>
+<p>Spring Boot 的自动装配基于 Spring 框架的 <code>@Configuration</code> 注解和条件化配置机制。当启动一个 Spring Boot 应用时，Spring Boot 会扫描应用的 classpath，查找指定的依赖和配置，然后根据条件和优先级自动装配相应的组件。</p>
+<p>自动装配的优先级如下：</p>
+<ol>
+<li>
+<p><strong>用户配置优先：</strong> 如果开发者在项目中手动定义了配置（<code>@Configuration</code>），则用户配置优先于自动配置。</p>
+</li>
+<li>
+<p><strong>条件化配置：</strong> Spring Boot 使用条件化配置来确定是否需要自动装配某个组件。如果满足特定的条件，才会执行自动配置。</p>
+</li>
+<li>
+<p><strong>类路径上的 META-INF/spring.factories 文件：</strong> Spring Boot 在 classpath 上搜索 META-INF/spring.factories 文件，该文件列出了要执行的自动配置类。</p>
+</li>
+</ol>
+<p>Spring Boot 中的自动装配类通常带有 <code>@ConditionalOnXXX</code> 注解，用于定义装配的条件，例如 <code>@ConditionalOnClass</code> 表示当特定的类存在时才进行自动装配，<code>@ConditionalOnProperty</code> 表示当指定属性存在时才进行自动装配等。</p>
+<p>例如，Spring Boot 提供了许多 Starter，每个 Starter 都包含了一组相关的依赖和配置，用于快速集成某个功能。例如，<code>spring-boot-starter-web</code> Starter 包含了与 Web 相关的依赖和配置，可以快速构建一个 Web 应用程序。</p>
+<p>总结：</p>
+<p>Spring Boot 的自动装配是通过条件化配置和 classpath 上的 META-INF/spring.factories 文件来实现的。它可以根据项目的依赖和配置，自动装配所需的组件和配置，简化了开发者的配置工作，提高了开发效率。</p>
+<h1 id="mybatis">MyBatis<a hidden class="anchor" aria-hidden="true" href="#mybatis">#</a></h1>
+<h2 id="mybatis的执行流程">MyBatis的执行流程<a hidden class="anchor" aria-hidden="true" href="#mybatis的执行流程">#</a></h2>
+<p><code>mybatis-config.xml</code>，加载映射文件</p>
+<p>①读取MyBatis配置文件：mybatis-config.xml加载运行环境和映射文件</p>
+<p>②构造会话工厂SqlSessionFactory，一个项目只需要一个，单例的，一般由 spring进行管理</p>
+<p>③会话工厂创建SqlSession对象，这里面就含了执行SQL语句的所有方法</p>
+<p>④操作数据库的接口，Executor执行器，同时负责查询缓存的维护</p>
+<p>⑤Executor接口的执行方法中有一个MappedStatement类型的参数，封装了 映射信息 ⑥输入参数映射</p>
+<p>⑦输出结果映射</p>
+<h2 id="mybatis-如何实现延迟加载x">MyBatis 如何实现延迟加载？X<a hidden class="anchor" aria-hidden="true" href="#mybatis-如何实现延迟加载x">#</a></h2>
+<p>延迟加载：需要用到数据才进行加载，不需要用到数据时就不加载数据</p>
+<blockquote>
+<p>MyBatis是否支持延迟加载？</p>
+</blockquote>
+<p>Mybatis支持一对一关联对象和一对多关联集合对象的延迟加载</p>
+<p>在Mybatis配置文件中，可以配置是否启用延迟加载<code> lazyLoadingEnabled=true|false</code>，默认是关闭的</p>
+<p>MyBatis 实现延迟加载的方式有两种：</p>
+<ol>
+<li>
+<p>延迟加载配置方式：在 MyBatis 的配置文件中，通过配置 <setting name="lazyLoadTriggerMethods" value="true/false"/> 来指定延迟加载的触发方法。默认是关闭的。</p>
+</li>
+<li>
+<p>动态代理方式：当需要延迟加载某个属性时，MyBatis 会生成一个动态代理，拦截对该属性的访问，然后使用真正的查询操作去加载该属性的值。</p>
+</li>
+</ol>
+<blockquote>
+<p>延迟加载的原理</p>
+</blockquote>
+<p>延迟加载在底层主要使用的CGLIB动态代理完成的</p>
+<ol>
+<li>使用CGLIB创建目标对象的代理对象，这里的目标对象就是开启了 延迟加载的mapper</li>
+<li>当调用目标方法时，进入拦截器invoke方法，如果发现目标方法是null 值，再执行sql查询</li>
+<li>获取数据以后，调用set方法设置属性值，再继续查询目标方法，就能查到数据</li>
+</ol>
+<h2 id="mybatis的和区别">MyBatis的#和$区别<a hidden class="anchor" aria-hidden="true" href="#mybatis的和区别">#</a></h2>
+<p>在 MyBatis 中，<code>#</code> 和 <code>$</code> 都是用于在 SQL 中插入动态值的占位符，但它们在处理动态值时有一些重要的区别。</p>
+<ol>
+<li>
+<p><code>#</code> 占位符：</p>
+<ul>
+<li><code>#</code> 占位符会将参数值当作一个预编译的参数，并使用 JDBC 的 PreparedStatement 来处理。这样可以防止 SQL 注入攻击。</li>
+<li>使用 <code>#</code> 占位符时，MyBatis 会自动将参数值转义，因此不需要手动处理特殊字符。</li>
+<li><code>#</code> 占位符一般用于处理参数值，如条件查询等。</li>
+</ul>
+<p>示例：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- 使用 # 占位符 --&gt;</span>
+</span></span><span style="display:flex;"><span>SELECT * FROM users WHERE id = #{userId}
+</span></span></code></pre></div></li>
+<li>
+<p><code>$</code> 占位符：</p>
+<ul>
+<li><code>$</code> 占位符将参数值直接拼接到 SQL 中，不会进行预编译处理，存在 SQL 注入的风险。</li>
+<li>使用 <code>$</code> 占位符时，需要手动处理特殊字符的转义，以防止 SQL 注入攻击。</li>
+<li><code>$</code> 占位符一般用于处理 SQL 片段，如动态表名或动态列名，而不是参数值。</li>
+</ul>
+<p>示例：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- 使用 $ 占位符 --&gt;</span>
+</span></span><span style="display:flex;"><span>SELECT * FROM ${tableName} WHERE id = ${userId}
+</span></span></code></pre></div></li>
+</ol>
+<p>总结：</p>
+<ul>
+<li>使用 <code>#</code> 占位符时，参数值会被预编译处理，安全性较高，适用于处理参数值。</li>
+<li>使用 <code>$</code> 占位符时，参数值会直接拼接到 SQL 中，慎用，可能存在 SQL 注入的风险，适用于处理 SQL 片段。</li>
+</ul>
+<h2 id="mybatis-的一级缓存和二级缓存-x">MyBatis 的一级缓存和二级缓存 X<a hidden class="anchor" aria-hidden="true" href="#mybatis-的一级缓存和二级缓存-x">#</a></h2>
+<p>MyBatis 的多级缓存机制是指在 MyBatis 中存在多个级别的缓存，<strong>用于提高查询性能并减少数据库访问次数</strong>。</p>
+<p>本地缓存，基于PrepetualCache，本质上是一个HashMap</p>
+<p>一级缓存：基于 PerpetualCache 的 HashMap 本地缓存，其存储作 用域为 Session，当Session进行flush或close之后，该Session中的所有Cache 就将清空，默认打开一级缓存</p>
+<p>二级缓存：基于namespace和mapper的作用域起作用的，不是依赖于SQL session，默认也是采用 PerpetualCache，HashMap 存储。</p>
+<p>如果想要开启二级缓存需要在全局配置文件和映射文件中开启配置才行。</p>
+<blockquote>
+<p>MyBatis的二级缓存什么时候清理缓存中的数据？</p>
+</blockquote>
+<p>当某一个作用域(一级缓存 Session/二级缓存Namespaces)的进行了新增、修 改、删除操作后，默认该作用域下所有 select 中的缓存将被 clear。</p>
+<ol>
+<li><strong>一级缓存（本地缓存）：</strong>
+<ul>
+<li>一级缓存是 MyBatis 默认开启的缓存，它是在同一个 SqlSession 内部的缓存。</li>
+<li>当在同一个 SqlSession 中执行相同的查询语句时，MyBatis 会将查询结果缓存起来，下次再执行相同的查询语句时，直接从缓存中获取结果，避免了重复查询数据库。</li>
+<li>一级缓存是与 SqlSession 绑定的，当 SqlSession 被关闭或提交时，缓存也会被清空。</li>
+<li>默认情况下，一级缓存是开启的，如果需要关闭一级缓存，可以在配置文件中将 <code>localCacheScope</code> 设置为 <code>STATEMENT</code>。</li>
+</ul>
+</li>
+<li><strong>二级缓存（全局缓存）：</strong>
+<ul>
+<li>二级缓存是 MyBatis 的全局缓存，它可以被多个 SqlSession 共享。</li>
+<li>二级缓存是将查询结果缓存到一个共享的缓存区域中，当多个 SqlSession 执行相同的查询语句时，可以直接从缓存中获取结果，避免了重复查询数据库。</li>
+<li>二级缓存的生命周期与整个应用程序的生命周期相同，需要配置相应的缓存实现器，如 Ehcache、Redis 等。</li>
+<li>默认情况下，二级缓存是关闭的，如果需要开启二级缓存，可以在配置文件中将 <code>&lt;setting&gt;</code> 标签的 <code>cacheEnabled</code> 设置为 <code>true</code>。在映射文件中使用<code>&lt;cache/&gt;</code>生效缓存</li>
+</ul>
+</li>
+</ol>
+<h2 id="mybatis-如何防止sql注入">MyBatis 如何防止SQL注入<a hidden class="anchor" aria-hidden="true" href="#mybatis-如何防止sql注入">#</a></h2>
+<p>MyBatis 提供了一些机制来防止 SQL 注入攻击，主要包括以下几点：</p>
+<ol>
+<li>
+<p><strong>使用参数化查询：</strong> 在执行 SQL 时，使用参数化查询（Prepared Statement）而不是直接将参数拼接到 SQL 语句中。参数化查询可以让数据库系统将查询语句和参数分开处理，从而避免了 SQL 注入攻击。在 MyBatis 中，我们使用 <code>#{}</code> 占位符来表示参数化查询。</p>
+<p>示例：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- 使用参数化查询，避免 SQL 注入 --&gt;</span>
+</span></span><span style="display:flex;"><span>SELECT * FROM users WHERE username = #{username} AND password = #{password}
+</span></span></code></pre></div></li>
+<li>
+<p><strong>使用动态 SQL 和条件判断：</strong> 在需要拼接动态 SQL 的情况下，使用 MyBatis 提供的动态 SQL 标签（如 <code>&lt;if&gt;</code>、<code>&lt;where&gt;</code>、<code>&lt;choose&gt;</code> 等）来进行条件判断和拼接，而不是手动拼接 SQL 字符串。这样可以确保拼接的 SQL 是合法的，从而避免 SQL 注入。</p>
+<p>示例：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- 使用动态 SQL 和条件判断，避免 SQL 注入 --&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;select</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;getUserByUsernameAndPassword&#34;</span> <span style="color:#a6e22e">resultType=</span><span style="color:#e6db74">&#34;User&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    SELECT * FROM users
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;where&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;if</span> <span style="color:#a6e22e">test=</span><span style="color:#e6db74">&#34;username != null and password != null&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>            AND username = #{username} AND password = #{password}
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;/if&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;/where&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/select&gt;</span>
+</span></span></code></pre></div></li>
+<li>
+<p><strong>过滤特殊字符：</strong> 在输入参数传递到 SQL 之前，对参数值进行特殊字符的过滤和转义，以确保参数值不包含恶意的 SQL 注入代码。</p>
+</li>
+<li>
+<p><strong>限制输入长度：</strong> 对于输入的字符串参数，可以对其长度进行限制，避免超长输入导致的 SQL 注入攻击。</p>
+</li>
+<li>
+<p><strong>使用 MyBatis 提供的参数检查：</strong> MyBatis 提供了一些有用的函数，如 <code>Ognl</code> 和 <code>OGNL</code>，用于在条件判断时对参数值进行合法性检查。</p>
+</li>
+</ol>
+<p>虽然 MyBatis 采取了上述措施来防止 SQL 注入攻击，但在实际开发中，仍需谨慎对待用户输入，严格校验输入参数，以确保应用程序的安全性。除了 MyBatis 本身的防御措施，还可以结合其他安全框架和数据库权限控制，从多个层面来保护应用程序的安全。</p>
+<h2 id="mybatis运用了哪些常见的设计模式">MyBatis运用了哪些常见的设计模式？<a hidden class="anchor" aria-hidden="true" href="#mybatis运用了哪些常见的设计模式">#</a></h2>
+<p>MyBatis 运用了一些常见的设计模式来实现其核心功能和提供灵活性。以下是 MyBatis 中常见的设计模式：</p>
+<ol>
+<li>
+<p><strong>工厂模式（Factory Pattern）：</strong> MyBatis 使用工厂模式来创建 SqlSessionFactory 和 SqlSession。SqlSessionFactory 是用于创建 SqlSession 的工厂类，而 SqlSession 是与数据库交互的主要接口。工厂模式将对象的创建和使用分离，使得系统更加灵活，易于扩展和维护。</p>
+</li>
+<li>
+<p><strong>装饰器模式（Decorator Pattern）：</strong> MyBatis 使用装饰器模式来扩展和定制功能。通过装饰器模式，可以在不修改原有代码的情况下，动态地增加功能和行为。例如，MyBatis 的 Mapper 接口在运行时通过动态代理来生成实现类，从而实现了 Mapper 接口的具体实现。</p>
+</li>
+<li>
+<p><strong>代理模式（Proxy Pattern）：</strong> MyBatis 使用动态代理实现了 Mapper 接口的具体实现。Mapper 接口的方法调用会被动态代理拦截，然后委托给相应的 SqlSession 进行数据库操作。代理模式可以实现对目标对象的控制，而不需要修改目标对象的代码。</p>
+</li>
+<li>
+<p><strong>模板方法模式（Template Method Pattern）：</strong> MyBatis 中的 SqlSession 和 Statement 都采用了模板方法模式。模板方法模式将算法的框架定义在父类中，将具体实现延迟到子类中。SqlSession 和 Statement 提供了一系列的模板方法，子类可以通过继承并实现这些方法来完成具体的数据库操作。</p>
+</li>
+<li>
+<p><strong>观察者模式（Observer Pattern）：</strong> MyBatis 使用了观察者模式来通知 Mapper 方法的调用，触发相应的数据库操作。在 Mapper 方法调用时，MyBatis 会触发相应的事件，通知注册的观察者进行处理。</p>
+</li>
+<li>
+<p><strong>享元模式（Flyweight Pattern）：</strong> MyBatis 使用了享元模式来缓存复用 Statement 对象。Statement 对象是预编译的 SQL 语句的抽象表示，MyBatis 通过享元模式将 Statement 对象缓存起来，避免了重复创建。</p>
+</li>
+</ol>
+<p>以上是 MyBatis 中常见的设计模式，这些设计模式使得 MyBatis 可以实现高度灵活的 SQL 映射和数据库操作，并提供了强大的扩展性和可维护性。</p>
+<h2 id="jdbc连接数据库的步骤吗">JDBC连接数据库的步骤吗？<a hidden class="anchor" aria-hidden="true" href="#jdbc连接数据库的步骤吗">#</a></h2>
+<p>使用JDBC连接数据库的步骤如下：</p>
+<ul>
+<li>加载数据库驱动程序：使用Class.forName()方法加载对应的数据库驱动程序，例如：Class.forName(&ldquo;com.mysql.jdbc.Driver&rdquo;);</li>
+<li>建立数据库连接：使用DriverManager.getConnection()方法建立与数据库的连接，需要指定数据库的URL、用户名和密码，例如：Connection conn = DriverManager.getConnection(&ldquo;jdbc:mysql://localhost/mydatabase&rdquo;, &ldquo;username&rdquo;, &ldquo;password&rdquo;);</li>
+<li>创建Statement对象：使用Connection对象的createStatement()方法创建一个Statement对象，用于执行SQL语句，例如：Statement stmt = conn.createStatement();</li>
+<li>执行SQL语句：使用Statement对象的executeQuery()或executeUpdate()方法执行SQL语句，例如：ResultSet rs = stmt.executeQuery(&ldquo;SELECT * FROM mytable&rdquo;);</li>
+<li>处理查询结果：如果执行的是查询语句，需要使用ResultSet对象来处理查询结果，例如：while (rs.next()) { String name = rs.getString(&ldquo;name&rdquo;); int age = rs.getInt(&ldquo;age&rdquo;); }</li>
+<li>关闭数据库连接：在程序结束时，需要使用Connection对象的close()方法关闭数据库连接，例如：conn.close();</li>
+</ul>
+<h1 id="如何实现统一异常处理">如何实现统一异常处理<a hidden class="anchor" aria-hidden="true" href="#如何实现统一异常处理">#</a></h1>
+<p>在 Spring 框架中，可以通过自定义异常处理器来实现统一异常处理。Spring 提供了一个异常处理接口 <code>HandlerExceptionResolver</code>，可以通过实现该接口来自定义全局异常处理器。</p>
+<p>统一异常处理的步骤如下：</p>
+<ol>
+<li>
+<p>创建一个自定义的异常类，该异常类继承自 <code>Exception</code> 或其子类。这个异常类可以用于表示你应用程序中可能发生的特定异常情况。</p>
+</li>
+<li>
+<p>实现 <code>HandlerExceptionResolver</code> 接口，该接口包含一个方法 <code>resolveException()</code>，在该方法中进行异常处理逻辑。</p>
+</li>
+<li>
+<p>在实现的 <code>resolveException()</code> 方法中，根据不同的异常类型进行相应的处理。你可以将异常信息记录日志、返回自定义的错误页面、返回 JSON 格式的错误信息等。</p>
+</li>
+<li>
+<p>注册自定义的异常处理器，在 Spring 配置文件（如 applicationContext.xml 或 Spring Boot 的配置类）中配置该处理器。</p>
+</li>
+</ol>
+<p>示例：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyCustomException</span> <span style="color:#66d9ef">extends</span> RuntimeException <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 自定义异常类
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// 可以添加自定义的异常信息和构造方法
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyExceptionHandler</span> <span style="color:#66d9ef">implements</span> HandlerExceptionResolver <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> ModelAndView <span style="color:#a6e22e">resolveException</span><span style="color:#f92672">(</span>HttpServletRequest request<span style="color:#f92672">,</span> HttpServletResponse response<span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>            Object handler<span style="color:#f92672">,</span> Exception ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        ModelAndView mav <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ModelAndView<span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>ex <span style="color:#66d9ef">instanceof</span> MyCustomException<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// 处理自定义异常 MyCustomException
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            mav<span style="color:#f92672">.</span><span style="color:#a6e22e">addObject</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;errorMsg&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;发生了自定义异常&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>            mav<span style="color:#f92672">.</span><span style="color:#a6e22e">setViewName</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;error-page&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// 处理其他异常
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            mav<span style="color:#f92672">.</span><span style="color:#a6e22e">addObject</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;errorMsg&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;发生了其他异常&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>            mav<span style="color:#f92672">.</span><span style="color:#a6e22e">setViewName</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;error-page&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> mav<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>在 Spring 配置文件中配置自定义异常处理器：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;myExceptionHandler&#34;</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;com.example.MyExceptionHandler&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span></code></pre></div><p>这样，当应用程序中抛出 <code>MyCustomException</code> 或其他异常时，都会被自定义的异常处理器拦截并进行相应的处理。通过这种方式，你可以实现统一的异常处理，使应用程序的异常响应更加规范和友好。</p>
+
+
+        </div>
+        <div class="post-reward">
+            <div style="padding: 0 0 0 0; margin: 0 0 0 0; width: 100%; font-size:16px; text-align: center;">
+                <div id="QR" style="opacity: 0;">
+                    <div id="wechat" style="display: inline-block">
+                        <a class="fancybox" rel="group">
+                            <img id="wechat_qr" src="https://lidengxm.github.io/img/wechat_pay.png" alt="wechat_pay"></a>
+                        <p>微信</p>
+                    </div>
+                    <div id="alipay" style="display: inline-block">
+                        <a class="fancybox" rel="group">
+                            <img id="alipay_qr" src="https://lidengxm.github.io/img/alipay.png" alt="alipay"></a>
+                        <p>支付宝</p>
+                    </div>
+                </div>
+                <button id="rewardButton"
+                        onclick="
+                    var qr = document.getElementById('QR');
+                    if (qr.style.opacity === '0') {
+                        qr.style.opacity='1';
+                    } else {
+                        qr.style.opacity='0'
+                    }"
+                >
+                    <span>🧧 鼓励</span>
+                </button>
+            </div>
+        </div>
+
+        <footer class="post-footer">
+            
+<nav class="paginav">
+  <a class="prev" href="https://lidengxm.github.io/posts/java/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80%E5%85%AB%E8%82%A1/">
+    <span class="title">« 上一页</span>
+    <br>
+    <span>计算机基础八股</span>
+  </a>
+  <a class="next" href="https://lidengxm.github.io/posts/java/redis%E5%85%AB%E8%82%A1/">
+    <span class="title">下一页 »</span>
+    <br>
+    <span>Redis八股</span>
+  </a>
+</nav>
+
+
+<div class="share-buttons">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 框架八股 on twitter"
+       href="https://twitter.com/intent/tweet/?text=%e6%a1%86%e6%9e%b6%e5%85%ab%e8%82%a1&amp;url=https%3a%2f%2flidengxm.github.io%2fposts%2fjava%2f%25E6%25A1%2586%25E6%259E%25B6%25E5%2585%25AB%25E8%2582%25A1%2f&amp;hashtags=%e6%a1%86%e6%9e%b6%2c%e5%85%ab%e8%82%a1">
+    <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 框架八股 on linkedin"
+       href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2flidengxm.github.io%2fposts%2fjava%2f%25E6%25A1%2586%25E6%259E%25B6%25E5%2585%25AB%25E8%2582%25A1%2f&amp;title=%e6%a1%86%e6%9e%b6%e5%85%ab%e8%82%a1&amp;summary=%e6%a1%86%e6%9e%b6%e5%85%ab%e8%82%a1&amp;source=https%3a%2f%2flidengxm.github.io%2fposts%2fjava%2f%25E6%25A1%2586%25E6%259E%25B6%25E5%2585%25AB%25E8%2582%25A1%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 框架八股 on reddit"
+       href="https://reddit.com/submit?url=https%3a%2f%2flidengxm.github.io%2fposts%2fjava%2f%25E6%25A1%2586%25E6%259E%25B6%25E5%2585%25AB%25E8%2582%25A1%2f&title=%e6%a1%86%e6%9e%b6%e5%85%ab%e8%82%a1">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 框架八股 on facebook"
+       href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2flidengxm.github.io%2fposts%2fjava%2f%25E6%25A1%2586%25E6%259E%25B6%25E5%2585%25AB%25E8%2582%25A1%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 框架八股 on whatsapp"
+       href="https://api.whatsapp.com/send?text=%e6%a1%86%e6%9e%b6%e5%85%ab%e8%82%a1%20-%20https%3a%2f%2flidengxm.github.io%2fposts%2fjava%2f%25E6%25A1%2586%25E6%259E%25B6%25E5%2585%25AB%25E8%2582%25A1%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 框架八股 on telegram"
+       href="https://telegram.me/share/url?text=%e6%a1%86%e6%9e%b6%e5%85%ab%e8%82%a1&amp;url=https%3a%2f%2flidengxm.github.io%2fposts%2fjava%2f%25E6%25A1%2586%25E6%259E%25B6%25E5%2585%25AB%25E8%2582%25A1%2f">
+        <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28">
+            <path
+                    d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+        </svg>
+    </a>
+</div>
+
+        </footer>
+    </div>
+
+<style>
+    .comments_details summary::marker {
+        font-size: 20px;
+        content: '👉展开评论';
+        color: var(--content);
+    }
+    .comments_details[open] summary::marker{
+        font-size: 20px;
+        content: '👇关闭评论';
+        color: var(--content);
+    }
+</style>
+
+
+<div>
+    <details class="comments_details">
+        <summary style="cursor: pointer; margin: 50px 0 20px 0;width: 130px;">
+            <span style="font-size: 20px;color: var(--content);">...</span>
+        </summary>
+        <div id="tcomment"></div>
+    </details>
+    <script src="https://cdn.staticfile.org/twikoo/1.5.8/twikoo.all.min.js">
+    </script>
+    <script>
+        twikoo.init({
+            envId:  null ,
+        el: "#tcomment",
+            lang: 'zh-CN',
+            region:  null ,
+        path: window.TWIKOO_MAGIC_PATH||window.location.pathname,
+        })
+    </script>
+</div>
+</article>
+</main>
+
+<footer class="footer">
+    <span>
+        Copyright
+        &copy;
+        2023
+        <a href="https://lidengxm.github.io/" style="color:#939393;">Lidengxm&#39;s Blog</a>
+        All Rights Reserved
+    </span>
+    <a href="https://beian.miit.gov.cn/" target="_blank" style="color:#939393;">皖ICP备2023009937号-1</a>&nbsp;
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <span class="topInner">
+        <svg class="topSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z"/>
+        </svg>
+        <span id="read_progress"></span>
+    </span>
+</a>
+
+<script>
+    document.addEventListener('scroll', function (e) {
+        const readProgress = document.getElementById("read_progress");
+        const scrollHeight = document.documentElement.scrollHeight;
+        const clientHeight = document.documentElement.clientHeight;
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        readProgress.innerText = ((scrollTop / (scrollHeight - clientHeight)).toFixed(2) * 100).toFixed(0);
+    })
+</script>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+</script>
+<script>
+    let mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        (function() {
+            document.cookie = "change-themes" + "="+ escape ("false");
+        })()
+
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    });
+</script>
+
+<script>
+    document.body.addEventListener('copy', function (e) {
+        if (window.getSelection().toString() && window.getSelection().toString().length > 50) {
+            let clipboardData = e.clipboardData || window.clipboardData;
+            if (clipboardData) {
+                e.preventDefault();
+                let htmlData = window.getSelection().toString() +
+                    '\r\n\n————————————————\r\n' +
+                    '版权声明：本文为「'+"Lidengxm's Blog"+'」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。' +
+                '\r\n原文链接：' + location.href;
+                let textData = window.getSelection().toString() +
+                    '\r\n\n————————————————\r\n' +
+                    '版权声明：本文为「'+"Lidengxm's Blog"+'」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。' +
+                '\r\n原文链接：' + location.href;
+                clipboardData.setData('text/html', htmlData);
+                clipboardData.setData('text/plain', textData);
+            }
+        }
+    });
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = '复制';
+
+        function copyingDone() {
+            copybutton.innerText = '已复制！';
+            setTimeout(() => {
+                copybutton.innerText = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                let text = codeblock.textContent +
+                    '\r\n————————————————\r\n' +
+                    '版权声明：本文为「'+"Lidengxm's Blog"+'」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。' +
+                '\r\n原文链接：' + location.href;
+                navigator.clipboard.writeText(text);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) {}
+            selection.removeRange(range);
+        });
+
+        let language = codeblock.className.replaceAll("language-", "")
+        let macTool = document.createElement("div")
+        let macTool1 = document.createElement("div")
+        let macTool2 = document.createElement("div")
+        let macTool3 = document.createElement("div")
+        let languageType = document.createElement("div")
+        languageType.innerText = language
+        macTool.setAttribute('class', 'mac-tool')
+        macTool1.setAttribute('class', 'mac bb1')
+        macTool2.setAttribute('class', 'mac bb2')
+        macTool3.setAttribute('class', 'mac bb3')
+        languageType.setAttribute('class', 'language-type')
+        macTool.appendChild(macTool1)
+        macTool.appendChild(macTool2)
+        macTool.appendChild(macTool3)
+        macTool.appendChild(languageType)
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+            container.appendChild(macTool)
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+            container.appendChild(macTool)
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+            container.appendChild(macTool)
+        }
+    });
+</script>
+</body>
+
+</html>

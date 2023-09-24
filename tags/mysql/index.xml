@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>MySQL on Lidengxm&#39;s Blog</title>
+    <link>https://lidengxm.github.io/tags/mysql/</link>
+    <description>Recent content in MySQL on Lidengxm&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Tue, 05 Sep 2023 00:18:23 +0800</lastBuildDate><atom:link href="https://lidengxm.github.io/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MySQL八股</title>
+      <link>https://lidengxm.github.io/posts/java/mysql%E5%85%AB%E8%82%A1/</link>
+      <pubDate>Tue, 05 Sep 2023 00:18:23 +0800</pubDate>
+      
+      <guid>https://lidengxm.github.io/posts/java/mysql%E5%85%AB%E8%82%A1/</guid>
+      <description>整理的MySQL相关八股</description>
+    </item>
+    
+  </channel>
+</rss>

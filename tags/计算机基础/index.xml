@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>计算机基础 on Lidengxm&#39;s Blog</title>
+    <link>https://lidengxm.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/</link>
+    <description>Recent content in 计算机基础 on Lidengxm&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 25 Sep 2023 00:22:12 +0800</lastBuildDate><atom:link href="https://lidengxm.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>计算机基础八股</title>
+      <link>https://lidengxm.github.io/posts/java/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80%E5%85%AB%E8%82%A1/</link>
+      <pubDate>Mon, 25 Sep 2023 00:22:12 +0800</pubDate>
+      
+      <guid>https://lidengxm.github.io/posts/java/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80%E5%85%AB%E8%82%A1/</guid>
+      <description>计算机网络与操作系统的知识</description>
+    </item>
+    
+  </channel>
+</rss>
