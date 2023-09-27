@@ -6,7 +6,34 @@
     <description>Recent content in 🧱 Java on Lidengxm&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 25 Sep 2023 00:23:47 +0800</lastBuildDate><atom:link href="https://lidengxm.github.io/posts/java/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Sep 2023 23:23:43 +0800</lastBuildDate><atom:link href="https://lidengxm.github.io/posts/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IO流知识图谱</title>
+      <link>https://lidengxm.github.io/posts/java/io%E6%B5%81%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1/</link>
+      <pubDate>Wed, 27 Sep 2023 23:23:43 +0800</pubDate>
+      
+      <guid>https://lidengxm.github.io/posts/java/io%E6%B5%81%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1/</guid>
+      <description>IO 分类 字节流可以处理一切文件，而字符流只能处理文本 认识 IO IO，即 in 和 out，也就是输入和输出，指应用程序和外部设备之间的数据传递，常见的外部设备包括文件、管道、网络连接。 Java 中是通过流处理 IO 的，那么什么是流？ 流（Stream），是一个抽象的概念，是指一连串的数据（字符或字节），是以</description>
+    </item>
+    
+    <item>
+      <title>HashMap详解</title>
+      <link>https://lidengxm.github.io/posts/java/hashmap%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Wed, 27 Sep 2023 23:22:33 +0800</pubDate>
+      
+      <guid>https://lidengxm.github.io/posts/java/hashmap%E8%AF%A6%E8%A7%A3/</guid>
+      <description>HashMap 基本用法 这篇文章将通过源码的方式，详细透彻地讲清楚 Java 的 HashMap，包括 hash 方法的原理、HashMap 的扩容机制、HashMap 的加载因子为什么是 0.75 而不是 0.6、0.8，以及 HashMap 为什么是线程不安全的，基本上 HashMap 的常见面试题 open in new window，都会在这一篇文章里讲明白。 HashMap 是 Java 中常用的</description>
+    </item>
+    
+    <item>
+      <title>ArrayList与LinkedList一网打通</title>
+      <link>https://lidengxm.github.io/posts/java/arraylist%E4%B8%8Elinkedlist%E4%B8%80%E7%BD%91%E6%89%93%E9%80%9A/</link>
+      <pubDate>Wed, 27 Sep 2023 23:20:18 +0800</pubDate>
+      
+      <guid>https://lidengxm.github.io/posts/java/arraylist%E4%B8%8Elinkedlist%E4%B8%80%E7%BD%91%E6%89%93%E9%80%9A/</guid>
+      <description>集合框架结构 看一下集合框架的结构图 Java 集合框架分为两条支线：Collection 和 Map Collection，主要由 List、Set、Queue 组成 List 代表有序、可重复的集合，典型代表就是封装了动态数组的 ArrayList 和封装了链表的 LinkedList； Set 代表无序、不可重复的集合，典型代表就是 HashSet 和 T</description>
+    </item>
+    
     <item>
       <title>JUC并发编程八股</title>
       <link>https://lidengxm.github.io/posts/java/juc%E5%85%AB%E8%82%A1/</link>

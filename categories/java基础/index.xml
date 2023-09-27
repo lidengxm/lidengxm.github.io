@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Java基础 on Lidengxm&#39;s Blog</title>
-    <link>https://lidengxm.github.io/tags/java%E5%9F%BA%E7%A1%80/</link>
+    <link>https://lidengxm.github.io/categories/java%E5%9F%BA%E7%A1%80/</link>
     <description>Recent content in Java基础 on Lidengxm&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Wed, 27 Sep 2023 23:23:43 +0800</lastBuildDate><atom:link href="https://lidengxm.github.io/tags/java%E5%9F%BA%E7%A1%80/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Sep 2023 23:23:43 +0800</lastBuildDate><atom:link href="https://lidengxm.github.io/categories/java%E5%9F%BA%E7%A1%80/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>IO流知识图谱</title>
       <link>https://lidengxm.github.io/posts/java/io%E6%B5%81%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1/</link>
@@ -32,15 +32,6 @@
       
       <guid>https://lidengxm.github.io/posts/java/arraylist%E4%B8%8Elinkedlist%E4%B8%80%E7%BD%91%E6%89%93%E9%80%9A/</guid>
       <description>集合框架结构 看一下集合框架的结构图 Java 集合框架分为两条支线：Collection 和 Map Collection，主要由 List、Set、Queue 组成 List 代表有序、可重复的集合，典型代表就是封装了动态数组的 ArrayList 和封装了链表的 LinkedList； Set 代表无序、不可重复的集合，典型代表就是 HashSet 和 T</description>
-    </item>
-    
-    <item>
-      <title>Java基础八股</title>
-      <link>https://lidengxm.github.io/posts/java/java%E5%9F%BA%E7%A1%80%E5%85%AB%E8%82%A1/</link>
-      <pubDate>Tue, 05 Sep 2023 00:18:23 +0800</pubDate>
-      
-      <guid>https://lidengxm.github.io/posts/java/java%E5%9F%BA%E7%A1%80%E5%85%AB%E8%82%A1/</guid>
-      <description>整理的Java基础相关八股</description>
     </item>
     
   </channel>
